@@ -1,0 +1,6 @@
+fastapi>=0.104
+uvicorn[standard]>=0.24
+python-multipart>=0.0.6
+numpy>=1.21
+Pillow>=9.0
+tflite-runtime>=2.14
