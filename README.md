@@ -1,19 +1,23 @@
 # AutoVision
 
-**Identify 667 car makes, models & generations from a single photo.**
+**Identify car make, model & generation from a single photo — 896 model-generations across 76 makes.**
 
-AutoVision is a production-ready car recognition engine powered by EfficientNet-V2-S, trained on a curated dataset spanning 60 makes and 666 model-generation classes. It delivers generation-level granularity — distinguishing not just "BMW 3 Series" but "BMW 3 Series E90 (2005-2011)" from "BMW 3 Series F30 (2012-2018)".
+AutoVision is a production-ready car recognition engine powered by EfficientNet-V2-S. It delivers generation-level granularity — distinguishing not just "BMW 3 Series" but "BMW 3 Series E90 (2005-2011)" from "BMW 3 Series F30 (2012-2018)" — and ships as an embeddable SDK for on-device inference or a self-hosted REST API.
 
 ## Features
 
-- **667 classes** — 666 car model-generations + background rejection
-- **60 makes** — all major manufacturers covered
+- **897 classes** — 896 car model-generations + 1 background/non-car class
+- **76 makes** — from Acura to Volvo, including BYD, Cupra, Dacia, Koenigsegg, Lada, Lucid, Polestar, and Rivian
 - **Generation-level ID** — tells apart facelifts and redesigns
-- **On-device inference** — TFLite for mobile/edge, ONNX for server
-- **< 50ms latency** — on modern Android devices (GPU delegate)
+- **On-device inference** — TFLite FP16 (44 MB) for mobile/edge, Core ML for iOS, ONNX for server
+- **< 50 ms latency** — on modern Android devices (GPU delegate)
 - **Year range output** — each prediction includes production years
-- **Rarity classification** — Common, Uncommon, Rare, Ultra Rare, Legendary
-- **Background rejection** — OOD detection for non-car images
+- **Rarity classification** — Common, Uncommon, Rare, Ultra Rare, Epic, Legendary
+- **Rejection gating** — non-car, low-confidence, and ambiguous inputs are rejected explicitly, not guessed
+- **Calibrated confidence** — ECE 0.049; scores are usable as probabilities
+- **Versioned responses** — every result carries `engine_version`, `model_version`, and `taxonomy_version`
+
+**Accuracy: 93.85% top-1 / 97.88% top-5** on a clean held-out validation set (21,381 images, 897 classes). See [docs/MODEL_CARD.md](docs/MODEL_CARD.md) for full details and limitations.
 
 ## Quick Start
 
@@ -26,23 +30,32 @@ pip install autovision
 ```python
 from autovision import AutoVision
 
-engine = AutoVision("models/car_classifier.tflite")
-results = engine.classify("photo.jpg", top_k=5)
+engine = AutoVision("models/v5.13.0")
+result = engine.classify("photo.jpg", top_k=5)
 
-for pred in results:
-    print(f"{pred.make} {pred.model} ({pred.year_start}-{pred.year_end}): {pred.confidence:.1%}")
+if result.rejected:
+    print(f"Rejected: {result.rejection_reason}")  # not_a_car | low_confidence | ambiguous
+else:
+    top = result.top1
+    print(f"{top.make} {top.model} ({top.year_start}-{top.year_end}): {top.confidence:.1%}")
+
+for pred in result.predictions:
+    print(f"#{pred.rank} {pred.class_name} [{pred.rarity}] {pred.confidence:.1%}")
 ```
 
 ### Android SDK
 
-Drop `AutoVision.kt` + your `.tflite` model into your project:
+Drop `AutoVision.kt` + the `.tflite` model into your project:
 
 ```kotlin
 val autoVision = AutoVision(context, "car_classifier.tflite")
-val results = autoVision.classify(bitmap, topK = 5)
+val result = autoVision.classify(bitmap, topK = 5)
 
-results.forEach { pred ->
-    Log.d("AutoVision", "${pred.make} ${pred.model}: ${pred.confidence}")
+if (result.rejected) {
+    Log.d("AutoVision", "Rejected: ${result.rejectionReason}")
+} else {
+    val top = result.top1!!
+    Log.d("AutoVision", "${top.make} ${top.model}: ${top.confidence}")
 }
 ```
 
@@ -57,38 +70,54 @@ curl -X POST http://localhost:8000/classify \
   -F "top_k=5"
 ```
 
+Full endpoint reference: [docs/API.md](docs/API.md).
+
 ## SDK vs API
 
 | | SDK | API |
 |---|---|---|
 | **Deployment** | Embedded in your app | Self-hosted server |
-| **Latency** | < 50ms (on-device) | ~100-200ms (network + inference) |
+| **Latency** | < 50 ms (on-device, GPU) | ~100-200 ms (network + inference) |
 | **Privacy** | Images never leave device | Images sent to server |
-| **Platforms** | Android, Python | Any (HTTP) |
+| **Platforms** | Android, iOS (Core ML), Python | Any (HTTP) |
 | **Scaling** | Per-device | Horizontal |
 | **Best for** | Mobile apps, edge devices | Web apps, batch processing |
 
 ## Model
 
+- **Version**: 5.13.0 (taxonomy `5.13.0-897`)
 - **Architecture**: EfficientNet-V2-S
 - **Input**: 384 x 384 RGB, ImageNet normalized
-- **Output**: 666 class logits + background
-- **Format**: TFLite (float32, 83 MB) or ONNX
-- **Accuracy**: ~79% top-1, ~91% top-3 on validation set
+- **Output**: 897 class logits (896 model-generations + background)
+- **Formats**: TFLite FP16 (44 MB, primary — verified 32/32 top-1 parity vs FP32), Core ML mlpackage FP16 (iOS), ONNX (server)
+- **Accuracy**: 93.85% top-1, 97.88% top-5 on the clean held-out validation set
+- **Training data**: ~156k curated, deduplicated images
 
-> Model files are not included in this repo. Download from releases or contact for access.
+Full details, intended use, and honest limitations: [docs/MODEL_CARD.md](docs/MODEL_CARD.md).
+
+> Model weights are not included in this repo (44 MB). Release metadata (`models/v5.13.0/*.json`) is tracked; weights are distributed via GitHub Releases or on request.
 
 ## Project Structure
 
 ```
 AutoVision/
-├── sdk/            # Drop-in SDKs (Android, Python, JS)
-├── api/            # Self-hosted FastAPI server
-├── examples/       # Usage examples
-├── models/         # Model files (gitignored)
-└── docs/           # Documentation
+├── sdk/                # Drop-in SDKs (Android, Python, JS)
+├── api/                # Self-hosted FastAPI server
+├── examples/           # Usage examples
+├── models/
+│   └── v5.13.0/        # Release metadata: manifest, class mapping, confusion pairs
+└── docs/
+    ├── API.md          # REST API reference
+    ├── MODEL_CARD.md   # Model card: capabilities, limitations, evaluation
+    ├── FEATURES.md     # Feature overview
+    └── DEPLOYMENT.md   # Deployment guide
 ```
 
 ## License
 
-Proprietary. See [LICENSE](LICENSE) for details.
+AutoVision is **source-available** under a dual license:
+
+- **Personal, research, and noncommercial use** — free under the [PolyForm Noncommercial License 1.0.0](LICENSE)
+- **Commercial use** (revenue-generating products, or internal use at a for-profit company) — requires a paid license, see [LICENSE-COMMERCIAL.md](LICENSE-COMMERCIAL.md)
+
+This is not an OSI-approved open-source license. Model weights are covered by the same dual terms as the code. Commercial inquiries: **bogdanmoldovan29@gmail.com**.

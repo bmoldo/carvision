@@ -1,0 +1,8972 @@
+[
+  {
+    "index": 0,
+    "class_name": "acura_ilx_2016",
+    "make": "Acura",
+    "model": "ILX",
+    "generation": null,
+    "year_start": 2016,
+    "year_end": 2022,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 1,
+    "class_name": "acura_integra_2023",
+    "make": "Acura",
+    "model": "Integra",
+    "generation": null,
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 2,
+    "class_name": "acura_mdx_3rd_gen",
+    "make": "Acura",
+    "model": "MDX",
+    "generation": "3rd Gen",
+    "year_start": 2013,
+    "year_end": 2020,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 3,
+    "class_name": "acura_mdx_4th_gen",
+    "make": "Acura",
+    "model": "MDX",
+    "generation": "4th Gen",
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 4,
+    "class_name": "acura_nsx_2nd_gen",
+    "make": "Acura",
+    "model": "NSX (2nd Gen)",
+    "generation": "2nd Gen",
+    "year_start": 2016,
+    "year_end": 2022,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 5,
+    "class_name": "acura_nsx_type_s_2022",
+    "make": "Acura",
+    "model": "NSX Type S",
+    "generation": null,
+    "year_start": 2022,
+    "year_end": 2022,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 6,
+    "class_name": "acura_rdx_2nd_gen",
+    "make": "Acura",
+    "model": "RDX",
+    "generation": "2nd Gen",
+    "year_start": 2013,
+    "year_end": 2018,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 7,
+    "class_name": "acura_rdx_3rd_gen",
+    "make": "Acura",
+    "model": "RDX",
+    "generation": "3rd Gen",
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 8,
+    "class_name": "acura_rl_2nd_gen",
+    "make": "Acura",
+    "model": "Rl",
+    "generation": "2nd Gen",
+    "year_start": 2006,
+    "year_end": 2010,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 9,
+    "class_name": "acura_tl_4th_gen",
+    "make": "Acura",
+    "model": "Tl",
+    "generation": "4th Gen",
+    "year_start": 2009,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 10,
+    "class_name": "acura_tlx_1st_gen",
+    "make": "Acura",
+    "model": "TLX",
+    "generation": "1st Gen",
+    "year_start": 2014,
+    "year_end": 2020,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 11,
+    "class_name": "acura_tlx_2nd_gen",
+    "make": "Acura",
+    "model": "TLX",
+    "generation": "2nd Gen",
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 12,
+    "class_name": "acura_zdx_2010",
+    "make": "Acura",
+    "model": "Zdx",
+    "generation": null,
+    "year_start": 2009,
+    "year_end": 2013,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 13,
+    "class_name": "alfa_romeo_4c_2015",
+    "make": "Alfa Romeo",
+    "model": "4C",
+    "generation": null,
+    "year_start": 2013,
+    "year_end": 2020,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 14,
+    "class_name": "alfa_romeo_giulia_2017",
+    "make": "Alfa Romeo",
+    "model": "Giulia",
+    "generation": null,
+    "year_start": 2015,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 15,
+    "class_name": "alfa_romeo_giulia_quadrifoglio_2017",
+    "make": "Alfa Romeo",
+    "model": "Giulia Quadrifoglio",
+    "generation": null,
+    "year_start": 2015,
+    "year_end": 2025,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 16,
+    "class_name": "alfa_romeo_giulietta_2010",
+    "make": "Alfa Romeo",
+    "model": "Giulietta",
+    "generation": null,
+    "year_start": 2011,
+    "year_end": 2015,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 17,
+    "class_name": "alfa_romeo_mito_2009",
+    "make": "Alfa Romeo",
+    "model": "Mito",
+    "generation": null,
+    "year_start": 2009,
+    "year_end": 2015,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 18,
+    "class_name": "alfa_romeo_stelvio_2018",
+    "make": "Alfa Romeo",
+    "model": "Stelvio",
+    "generation": null,
+    "year_start": 2017,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 19,
+    "class_name": "alfa_romeo_stelvio_quadrifoglio_2018",
+    "make": "Alfa Romeo",
+    "model": "Stelvio Quadrifoglio",
+    "generation": null,
+    "year_start": 2017,
+    "year_end": 2025,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 20,
+    "class_name": "alfa_romeo_tonale_2024",
+    "make": "Alfa Romeo",
+    "model": "Tonale",
+    "generation": null,
+    "year_start": 2022,
+    "year_end": 2026,
+    "rarity": "RARE"
+  },
+  {
+    "index": 21,
+    "class_name": "alpine_a110_2nd_gen",
+    "make": "Alpine",
+    "model": "A110",
+    "generation": "2nd Gen",
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 22,
+    "class_name": "alpine_a290_2025",
+    "make": "Alpine",
+    "model": "A290",
+    "generation": null,
+    "year_start": 2024,
+    "year_end": 2026,
+    "rarity": "RARE"
+  },
+  {
+    "index": 23,
+    "class_name": "aston_martin_db11_2017",
+    "make": "Aston Martin",
+    "model": "DB11",
+    "generation": null,
+    "year_start": 2016,
+    "year_end": 2024,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 24,
+    "class_name": "aston_martin_db12_2024",
+    "make": "Aston Martin",
+    "model": "DB12",
+    "generation": null,
+    "year_start": 2023,
+    "year_end": 2026,
+    "rarity": "EPIC"
+  },
+  {
+    "index": 25,
+    "class_name": "aston_martin_dbs_superleggera_2019",
+    "make": "Aston Martin",
+    "model": "DBS Superleggera",
+    "generation": null,
+    "year_start": 2018,
+    "year_end": 2023,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 26,
+    "class_name": "aston_martin_dbx707_2023",
+    "make": "Aston Martin",
+    "model": "DBX707",
+    "generation": null,
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 27,
+    "class_name": "aston_martin_dbx_2021",
+    "make": "Aston Martin",
+    "model": "DBX",
+    "generation": null,
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 28,
+    "class_name": "aston_martin_rapide_2010",
+    "make": "Aston Martin",
+    "model": "Rapide",
+    "generation": null,
+    "year_start": 2010,
+    "year_end": 2015,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 29,
+    "class_name": "aston_martin_valkyrie_2022",
+    "make": "Aston Martin",
+    "model": "Valkyrie",
+    "generation": null,
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 30,
+    "class_name": "aston_martin_vanquish_2013",
+    "make": "Aston Martin",
+    "model": "Vanquish",
+    "generation": null,
+    "year_start": 2013,
+    "year_end": 2015,
+    "rarity": "EPIC"
+  },
+  {
+    "index": 31,
+    "class_name": "aston_martin_vantage_2025",
+    "make": "Aston Martin",
+    "model": "Vantage",
+    "generation": "2025",
+    "year_start": 2024,
+    "year_end": 2026,
+    "rarity": "EPIC"
+  },
+  {
+    "index": 32,
+    "class_name": "aston_martin_vantage_v8_2018",
+    "make": "Aston Martin",
+    "model": "Vantage",
+    "generation": "V8 2018",
+    "year_start": 2017,
+    "year_end": 2024,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 33,
+    "class_name": "audi_a1_gb",
+    "make": "Audi",
+    "model": "A1",
+    "generation": "GB",
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 34,
+    "class_name": "audi_a3_8v",
+    "make": "Audi",
+    "model": "A3",
+    "generation": "8V",
+    "year_start": 2012,
+    "year_end": 2020,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 35,
+    "class_name": "audi_a3_8y",
+    "make": "Audi",
+    "model": "A3",
+    "generation": "8Y",
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 36,
+    "class_name": "audi_a4_b9",
+    "make": "Audi",
+    "model": "A4 (B9)",
+    "generation": "B9",
+    "year_start": 2015,
+    "year_end": 2024,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 37,
+    "class_name": "audi_a5_b9",
+    "make": "Audi",
+    "model": "A5 (B9)",
+    "generation": "B9",
+    "year_start": 2016,
+    "year_end": 2024,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 38,
+    "class_name": "audi_a6_c7_5",
+    "make": "Audi",
+    "model": "A6",
+    "generation": "C7.5",
+    "year_start": 2015,
+    "year_end": 2018,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 39,
+    "class_name": "audi_a6_c8",
+    "make": "Audi",
+    "model": "A6",
+    "generation": "C8",
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 40,
+    "class_name": "audi_a7_4g_2010",
+    "make": "Audi",
+    "model": "A7 4G",
+    "generation": null,
+    "year_start": 2013,
+    "year_end": 2015,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 41,
+    "class_name": "audi_a7_c8",
+    "make": "Audi",
+    "model": "A7",
+    "generation": "C8",
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 42,
+    "class_name": "audi_a8_d4_2010",
+    "make": "Audi",
+    "model": "A8 D4",
+    "generation": null,
+    "year_start": 2009,
+    "year_end": 2015,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 43,
+    "class_name": "audi_a8_d5",
+    "make": "Audi",
+    "model": "A8",
+    "generation": "D5",
+    "year_start": 2017,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 44,
+    "class_name": "audi_e_tron_gt_2022",
+    "make": "Audi",
+    "model": "e-tron GT",
+    "generation": null,
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 45,
+    "class_name": "audi_e_tron_suv_2019",
+    "make": "Audi",
+    "model": "e-tron SUV",
+    "generation": null,
+    "year_start": 2018,
+    "year_end": 2023,
+    "rarity": "RARE"
+  },
+  {
+    "index": 46,
+    "class_name": "audi_q2_2017",
+    "make": "Audi",
+    "model": "Q2",
+    "generation": null,
+    "year_start": 2016,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 47,
+    "class_name": "audi_q3_f3",
+    "make": "Audi",
+    "model": "Q3",
+    "generation": "F3",
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 48,
+    "class_name": "audi_q4_e_tron_2022",
+    "make": "Audi",
+    "model": "Q4 e-tron",
+    "generation": null,
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 49,
+    "class_name": "audi_q5_fy",
+    "make": "Audi",
+    "model": "Q5",
+    "generation": "FY",
+    "year_start": 2017,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 50,
+    "class_name": "audi_q7_4m_5",
+    "make": "Audi",
+    "model": "Q7",
+    "generation": "4M.5",
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 51,
+    "class_name": "audi_q8_2019",
+    "make": "Audi",
+    "model": "Q8",
+    "generation": null,
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 52,
+    "class_name": "audi_q8_e_tron_2024",
+    "make": "Audi",
+    "model": "Q8 e-tron",
+    "generation": null,
+    "year_start": 2023,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 53,
+    "class_name": "audi_r8_2nd_gen",
+    "make": "Audi",
+    "model": "R8",
+    "generation": "Type 4S",
+    "year_start": 2015,
+    "year_end": 2024,
+    "rarity": "EPIC"
+  },
+  {
+    "index": 54,
+    "class_name": "audi_rs3_8y",
+    "make": "Audi",
+    "model": "RS3",
+    "generation": "8Y",
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 55,
+    "class_name": "audi_rs5_b8",
+    "make": "Audi",
+    "model": "Rs5",
+    "generation": "B8",
+    "year_start": 2012,
+    "year_end": 2015,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 56,
+    "class_name": "audi_rs5_b9",
+    "make": "Audi",
+    "model": "RS5",
+    "generation": "B9",
+    "year_start": 2017,
+    "year_end": 2025,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 57,
+    "class_name": "audi_rs6_avant_c8",
+    "make": "Audi",
+    "model": "RS6 Avant",
+    "generation": "C8",
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 58,
+    "class_name": "audi_rs7_c7",
+    "make": "Audi",
+    "model": "Rs7",
+    "generation": "C7",
+    "year_start": 2014,
+    "year_end": 2015,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 59,
+    "class_name": "audi_rs7_c8",
+    "make": "Audi",
+    "model": "RS7",
+    "generation": "C8",
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 60,
+    "class_name": "audi_s3_8y",
+    "make": "Audi",
+    "model": "S3",
+    "generation": "8Y",
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 61,
+    "class_name": "audi_tt_rs_2018",
+    "make": "Audi",
+    "model": "TT RS",
+    "generation": "8S",
+    "year_start": 2016,
+    "year_end": 2023,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 62,
+    "class_name": "bentley_bentayga_1st_gen",
+    "make": "Bentley",
+    "model": "Bentayga",
+    "generation": "1st Gen",
+    "year_start": 2015,
+    "year_end": 2020,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 63,
+    "class_name": "bentley_bentayga_2nd_gen",
+    "make": "Bentley",
+    "model": "Bentayga",
+    "generation": "2nd Gen",
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 64,
+    "class_name": "bentley_continental_gt_2nd_gen",
+    "make": "Bentley",
+    "model": "Continental GT",
+    "generation": "2nd Gen",
+    "year_start": 2011,
+    "year_end": 2018,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 65,
+    "class_name": "bentley_continental_gt_3rd_gen",
+    "make": "Bentley",
+    "model": "Continental GT",
+    "generation": "3rd Gen",
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "EPIC"
+  },
+  {
+    "index": 66,
+    "class_name": "bentley_flying_spur_3rd_gen",
+    "make": "Bentley",
+    "model": "Flying Spur",
+    "generation": "3rd Gen",
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 67,
+    "class_name": "bmw_1_series_f20",
+    "make": "BMW",
+    "model": "1 Series",
+    "generation": "F20",
+    "year_start": 2011,
+    "year_end": 2019,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 68,
+    "class_name": "bmw_1_series_f40",
+    "make": "BMW",
+    "model": "1 Series",
+    "generation": "F40",
+    "year_start": 2019,
+    "year_end": 2024,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 69,
+    "class_name": "bmw_2_series_active_tourer_f45",
+    "make": "BMW",
+    "model": "2 Series Active Tourer",
+    "generation": "F45",
+    "year_start": 2014,
+    "year_end": 2021,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 70,
+    "class_name": "bmw_2_series_active_tourer_u06",
+    "make": "BMW",
+    "model": "2 Series Active Tourer",
+    "generation": "U06",
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 71,
+    "class_name": "bmw_2_series_coupe_f22",
+    "make": "BMW",
+    "model": "2 Series Coupe",
+    "generation": "F22",
+    "year_start": 2014,
+    "year_end": 2021,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 72,
+    "class_name": "bmw_2_series_coupe_g42",
+    "make": "BMW",
+    "model": "2 Series Coupe",
+    "generation": "G42",
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 73,
+    "class_name": "bmw_3_series_e92_e93",
+    "make": "BMW",
+    "model": "3 Series E92",
+    "generation": "E93",
+    "year_start": 2008,
+    "year_end": 2012,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 74,
+    "class_name": "bmw_3_series_f30",
+    "make": "BMW",
+    "model": "3 Series",
+    "generation": "F30",
+    "year_start": 2011,
+    "year_end": 2018,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 75,
+    "class_name": "bmw_3_series_g20",
+    "make": "BMW",
+    "model": "3 Series",
+    "generation": "G20",
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 76,
+    "class_name": "bmw_3_series_gt_f34",
+    "make": "BMW",
+    "model": "3 Series Gt",
+    "generation": "F34",
+    "year_start": 2013,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 77,
+    "class_name": "bmw_4_series_coupe_f32",
+    "make": "BMW",
+    "model": "4 Series Coupe",
+    "generation": "F32",
+    "year_start": 2013,
+    "year_end": 2020,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 78,
+    "class_name": "bmw_4_series_coupe_g22",
+    "make": "BMW",
+    "model": "4 Series Coupe",
+    "generation": "G22",
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 79,
+    "class_name": "bmw_5_series_e39",
+    "make": "BMW",
+    "model": "5 Series",
+    "generation": "E39",
+    "year_start": 1995,
+    "year_end": 2003,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 80,
+    "class_name": "bmw_5_series_e60",
+    "make": "BMW",
+    "model": "5 Series",
+    "generation": "E60",
+    "year_start": 2003,
+    "year_end": 2010,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 81,
+    "class_name": "bmw_5_series_f10",
+    "make": "BMW",
+    "model": "5 Series",
+    "generation": "F10",
+    "year_start": 2010,
+    "year_end": 2017,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 82,
+    "class_name": "bmw_5_series_g30",
+    "make": "BMW",
+    "model": "5 Series",
+    "generation": "G30",
+    "year_start": 2017,
+    "year_end": 2023,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 83,
+    "class_name": "bmw_5_series_g60",
+    "make": "BMW",
+    "model": "5 Series",
+    "generation": "G60",
+    "year_start": 2023,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 84,
+    "class_name": "bmw_6_series_f12_f13_2011",
+    "make": "BMW",
+    "model": "6 Series F12 F13",
+    "generation": null,
+    "year_start": 2008,
+    "year_end": 2013,
+    "rarity": "RARE"
+  },
+  {
+    "index": 85,
+    "class_name": "bmw_7_series_f02",
+    "make": "BMW",
+    "model": "7 Series",
+    "generation": "F02",
+    "year_start": 2009,
+    "year_end": 2015,
+    "rarity": "RARE"
+  },
+  {
+    "index": 86,
+    "class_name": "bmw_7_series_g11",
+    "make": "BMW",
+    "model": "7 Series",
+    "generation": "G11",
+    "year_start": 2015,
+    "year_end": 2022,
+    "rarity": "RARE"
+  },
+  {
+    "index": 87,
+    "class_name": "bmw_7_series_g70",
+    "make": "BMW",
+    "model": "7 Series",
+    "generation": "G70",
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 88,
+    "class_name": "bmw_8_series_g15",
+    "make": "BMW",
+    "model": "8 Series",
+    "generation": "G15",
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 89,
+    "class_name": "bmw_i3_2014",
+    "make": "BMW",
+    "model": "I3",
+    "generation": null,
+    "year_start": 2012,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 90,
+    "class_name": "bmw_i4_2022",
+    "make": "BMW",
+    "model": "i4",
+    "generation": null,
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 91,
+    "class_name": "bmw_i8_2014",
+    "make": "BMW",
+    "model": "I8",
+    "generation": null,
+    "year_start": 2011,
+    "year_end": 2015,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 92,
+    "class_name": "bmw_ix_2022",
+    "make": "BMW",
+    "model": "iX",
+    "generation": null,
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 93,
+    "class_name": "bmw_m2_f87",
+    "make": "BMW",
+    "model": "M2",
+    "generation": "F87",
+    "year_start": 2015,
+    "year_end": 2021,
+    "rarity": "RARE"
+  },
+  {
+    "index": 94,
+    "class_name": "bmw_m2_g87",
+    "make": "BMW",
+    "model": "M2",
+    "generation": "G87",
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 95,
+    "class_name": "bmw_m3_f80",
+    "make": "BMW",
+    "model": "M3",
+    "generation": "F80",
+    "year_start": 2014,
+    "year_end": 2018,
+    "rarity": "RARE"
+  },
+  {
+    "index": 96,
+    "class_name": "bmw_m3_g80",
+    "make": "BMW",
+    "model": "M3",
+    "generation": "G80",
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 97,
+    "class_name": "bmw_m4_f82",
+    "make": "BMW",
+    "model": "M4",
+    "generation": "F82",
+    "year_start": 2014,
+    "year_end": 2020,
+    "rarity": "RARE"
+  },
+  {
+    "index": 98,
+    "class_name": "bmw_m4_g82",
+    "make": "BMW",
+    "model": "M4",
+    "generation": "G82",
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 99,
+    "class_name": "bmw_m5_f10",
+    "make": "BMW",
+    "model": "M5",
+    "generation": "F10",
+    "year_start": 2005,
+    "year_end": 2014,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 100,
+    "class_name": "bmw_m5_f90",
+    "make": "BMW",
+    "model": "M5",
+    "generation": "F90",
+    "year_start": 2017,
+    "year_end": 2023,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 101,
+    "class_name": "bmw_m8_f91",
+    "make": "BMW",
+    "model": "M8",
+    "generation": "F91",
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 102,
+    "class_name": "bmw_x1_f48",
+    "make": "BMW",
+    "model": "X1",
+    "generation": "F48",
+    "year_start": 2015,
+    "year_end": 2022,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 103,
+    "class_name": "bmw_x1_u11",
+    "make": "BMW",
+    "model": "X1",
+    "generation": "U11",
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 104,
+    "class_name": "bmw_x2_f39",
+    "make": "BMW",
+    "model": "X2",
+    "generation": "F39",
+    "year_start": 2018,
+    "year_end": 2023,
+    "rarity": "RARE"
+  },
+  {
+    "index": 105,
+    "class_name": "bmw_x2_u10",
+    "make": "BMW",
+    "model": "X2",
+    "generation": "U10",
+    "year_start": 2024,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 106,
+    "class_name": "bmw_x3_f25",
+    "make": "BMW",
+    "model": "X3",
+    "generation": "F25",
+    "year_start": 2010,
+    "year_end": 2017,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 107,
+    "class_name": "bmw_x3_g01",
+    "make": "BMW",
+    "model": "X3",
+    "generation": "G01",
+    "year_start": 2017,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 108,
+    "class_name": "bmw_x5_f15",
+    "make": "BMW",
+    "model": "X5",
+    "generation": "F15",
+    "year_start": 2013,
+    "year_end": 2018,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 109,
+    "class_name": "bmw_x5_g05",
+    "make": "BMW",
+    "model": "X5",
+    "generation": "G05",
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 110,
+    "class_name": "bmw_x6_f16",
+    "make": "BMW",
+    "model": "X6",
+    "generation": "F16",
+    "year_start": 2010,
+    "year_end": 2015,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 111,
+    "class_name": "bmw_x6m_f86",
+    "make": "BMW",
+    "model": "X6M",
+    "generation": "F86",
+    "year_start": 2010,
+    "year_end": 2016,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 112,
+    "class_name": "bmw_x7_g07",
+    "make": "BMW",
+    "model": "X7",
+    "generation": "G07",
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 113,
+    "class_name": "bmw_xm_2023",
+    "make": "BMW",
+    "model": "XM",
+    "generation": null,
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 114,
+    "class_name": "bmw_z4_g29",
+    "make": "BMW",
+    "model": "Z4",
+    "generation": "G29",
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 115,
+    "class_name": "bugatti_chiron_2017",
+    "make": "Bugatti",
+    "model": "Chiron",
+    "generation": null,
+    "year_start": 2016,
+    "year_end": 2023,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 116,
+    "class_name": "bugatti_divo_2020",
+    "make": "Bugatti",
+    "model": "Divo",
+    "generation": null,
+    "year_start": 2020,
+    "year_end": 2021,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 117,
+    "class_name": "bugatti_mistral_2024",
+    "make": "Bugatti",
+    "model": "Mistral",
+    "generation": null,
+    "year_start": 2024,
+    "year_end": 2025,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 118,
+    "class_name": "buick_enclave_2nd_gen",
+    "make": "Buick",
+    "model": "Enclave",
+    "generation": "2nd Gen",
+    "year_start": 2017,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 119,
+    "class_name": "buick_encore_2015",
+    "make": "Buick",
+    "model": "Encore",
+    "generation": null,
+    "year_start": 2012,
+    "year_end": 2022,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 120,
+    "class_name": "buick_encore_gx_2020",
+    "make": "Buick",
+    "model": "Encore GX",
+    "generation": null,
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 121,
+    "class_name": "buick_envision_2021",
+    "make": "Buick",
+    "model": "Envision",
+    "generation": null,
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 122,
+    "class_name": "buick_envista_2024",
+    "make": "Buick",
+    "model": "Envista",
+    "generation": null,
+    "year_start": 2023,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 123,
+    "class_name": "buick_excelle_gt_2011",
+    "make": "Buick",
+    "model": "Excelle Gt",
+    "generation": null,
+    "year_start": 2011,
+    "year_end": 2013,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 124,
+    "class_name": "buick_gl8_2nd_gen",
+    "make": "Buick",
+    "model": "Gl8",
+    "generation": "2nd Gen",
+    "year_start": 2008,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 125,
+    "class_name": "buick_lacrosse_2nd_gen",
+    "make": "Buick",
+    "model": "Lacrosse",
+    "generation": "2nd Gen",
+    "year_start": 2008,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 126,
+    "class_name": "buick_verano_2012",
+    "make": "Buick",
+    "model": "Verano",
+    "generation": null,
+    "year_start": 2010,
+    "year_end": 2015,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 127,
+    "class_name": "byd_e6_1st_gen",
+    "make": "BYD",
+    "model": "E6",
+    "generation": "1st Gen",
+    "year_start": 2009,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 128,
+    "class_name": "byd_f0_1st_gen",
+    "make": "BYD",
+    "model": "F0",
+    "generation": "1st Gen",
+    "year_start": 2009,
+    "year_end": 2015,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 129,
+    "class_name": "byd_f3_2012",
+    "make": "BYD",
+    "model": "F3",
+    "generation": null,
+    "year_start": 2012,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 130,
+    "class_name": "byd_f3r_1st_gen",
+    "make": "BYD",
+    "model": "F3R",
+    "generation": "1st Gen",
+    "year_start": 2007,
+    "year_end": 2011,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 131,
+    "class_name": "byd_f6_2008",
+    "make": "BYD",
+    "model": "F6",
+    "generation": null,
+    "year_start": 2008,
+    "year_end": 2011,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 132,
+    "class_name": "byd_g5_2014",
+    "make": "BYD",
+    "model": "G5",
+    "generation": null,
+    "year_start": 2014,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 133,
+    "class_name": "byd_g6_2011",
+    "make": "BYD",
+    "model": "G6",
+    "generation": null,
+    "year_start": 2011,
+    "year_end": 2013,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 134,
+    "class_name": "byd_m6_2010",
+    "make": "BYD",
+    "model": "M6",
+    "generation": null,
+    "year_start": 2010,
+    "year_end": 2015,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 135,
+    "class_name": "byd_qin_1st_gen",
+    "make": "BYD",
+    "model": "Qin",
+    "generation": "1st Gen",
+    "year_start": 2012,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 136,
+    "class_name": "byd_s6_2011",
+    "make": "BYD",
+    "model": "S6",
+    "generation": null,
+    "year_start": 2011,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 137,
+    "class_name": "byd_song_s7_2015",
+    "make": "BYD",
+    "model": "Song S7",
+    "generation": null,
+    "year_start": 2013,
+    "year_end": 2015,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 138,
+    "class_name": "cadillac_celestiq_2024",
+    "make": "Cadillac",
+    "model": "Celestiq",
+    "generation": null,
+    "year_start": 2024,
+    "year_end": 2025,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 139,
+    "class_name": "cadillac_ct4_2020",
+    "make": "Cadillac",
+    "model": "CT4",
+    "generation": null,
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 140,
+    "class_name": "cadillac_ct4_v_blackwing_2022",
+    "make": "Cadillac",
+    "model": "CT4-V Blackwing",
+    "generation": null,
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 141,
+    "class_name": "cadillac_ct5_2020",
+    "make": "Cadillac",
+    "model": "CT5",
+    "generation": null,
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 142,
+    "class_name": "cadillac_ct5_v_blackwing_2022",
+    "make": "Cadillac",
+    "model": "CT5-V Blackwing",
+    "generation": null,
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 143,
+    "class_name": "cadillac_cts_v_3rd_gen",
+    "make": "Cadillac",
+    "model": "CTS-V",
+    "generation": "3rd Gen",
+    "year_start": 2015,
+    "year_end": 2019,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 144,
+    "class_name": "cadillac_escalade_4th_gen",
+    "make": "Cadillac",
+    "model": "Escalade",
+    "generation": "4th Gen",
+    "year_start": 2014,
+    "year_end": 2020,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 145,
+    "class_name": "cadillac_escalade_5th_gen",
+    "make": "Cadillac",
+    "model": "Escalade",
+    "generation": "5th Gen",
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 146,
+    "class_name": "cadillac_lyriq_2023",
+    "make": "Cadillac",
+    "model": "Lyriq",
+    "generation": null,
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 147,
+    "class_name": "cadillac_sls_2nd_gen",
+    "make": "Cadillac",
+    "model": "Sls",
+    "generation": "2nd Gen",
+    "year_start": 2009,
+    "year_end": 2012,
+    "rarity": "RARE"
+  },
+  {
+    "index": 148,
+    "class_name": "cadillac_srx_2nd_gen",
+    "make": "Cadillac",
+    "model": "Srx",
+    "generation": "2nd Gen",
+    "year_start": 2010,
+    "year_end": 2015,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 149,
+    "class_name": "cadillac_xt4_2019",
+    "make": "Cadillac",
+    "model": "XT4",
+    "generation": null,
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 150,
+    "class_name": "cadillac_xt5_2017",
+    "make": "Cadillac",
+    "model": "XT5",
+    "generation": null,
+    "year_start": 2016,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 151,
+    "class_name": "cadillac_xt6_2020",
+    "make": "Cadillac",
+    "model": "XT6",
+    "generation": null,
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 152,
+    "class_name": "cadillac_xts_1st_gen",
+    "make": "Cadillac",
+    "model": "Xts",
+    "generation": "1st Gen",
+    "year_start": 2011,
+    "year_end": 2015,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 153,
+    "class_name": "chevrolet_aveo_sedan_2011",
+    "make": "Chevrolet",
+    "model": "Aveo Sedan",
+    "generation": null,
+    "year_start": 2011,
+    "year_end": 2014,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 154,
+    "class_name": "chevrolet_aveo_t250_hatchback",
+    "make": "Chevrolet",
+    "model": "Aveo T250 Hatchback",
+    "generation": null,
+    "year_start": 2008,
+    "year_end": 2010,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 155,
+    "class_name": "chevrolet_blazer_2019",
+    "make": "Chevrolet",
+    "model": "Blazer",
+    "generation": null,
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 156,
+    "class_name": "chevrolet_blazer_ev_2024",
+    "make": "Chevrolet",
+    "model": "Blazer EV",
+    "generation": null,
+    "year_start": 2023,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 157,
+    "class_name": "chevrolet_bolt_euv_2022",
+    "make": "Chevrolet",
+    "model": "Bolt EUV",
+    "generation": null,
+    "year_start": 2021,
+    "year_end": 2023,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 158,
+    "class_name": "chevrolet_bolt_ev_2017",
+    "make": "Chevrolet",
+    "model": "Bolt EV",
+    "generation": null,
+    "year_start": 2016,
+    "year_end": 2023,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 159,
+    "class_name": "chevrolet_camaro_6th_gen",
+    "make": "Chevrolet",
+    "model": "Camaro",
+    "generation": "6th Gen",
+    "year_start": 2015,
+    "year_end": 2024,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 160,
+    "class_name": "chevrolet_camaro_zl1_6th_gen",
+    "make": "Chevrolet",
+    "model": "Camaro ZL1",
+    "generation": "6th Gen",
+    "year_start": 2017,
+    "year_end": 2024,
+    "rarity": "RARE"
+  },
+  {
+    "index": 161,
+    "class_name": "chevrolet_colorado_2nd_gen",
+    "make": "Chevrolet",
+    "model": "Colorado",
+    "generation": "2nd Gen",
+    "year_start": 2012,
+    "year_end": 2022,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 162,
+    "class_name": "chevrolet_colorado_3rd_gen",
+    "make": "Chevrolet",
+    "model": "Colorado",
+    "generation": "3rd Gen",
+    "year_start": 2023,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 163,
+    "class_name": "chevrolet_corvette_c7",
+    "make": "Chevrolet",
+    "model": "Corvette",
+    "generation": "C7",
+    "year_start": 2014,
+    "year_end": 2019,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 164,
+    "class_name": "chevrolet_corvette_c8",
+    "make": "Chevrolet",
+    "model": "Corvette",
+    "generation": "C8",
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 165,
+    "class_name": "chevrolet_corvette_e_ray_2024",
+    "make": "Chevrolet",
+    "model": "Corvette E-Ray",
+    "generation": null,
+    "year_start": 2024,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 166,
+    "class_name": "chevrolet_corvette_z06_c8",
+    "make": "Chevrolet",
+    "model": "Corvette Z06",
+    "generation": "C8",
+    "year_start": 2023,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 167,
+    "class_name": "chevrolet_corvette_zr1_c8",
+    "make": "Chevrolet",
+    "model": "Corvette ZR1",
+    "generation": "C8",
+    "year_start": 2025,
+    "year_end": 2026,
+    "rarity": "EPIC"
+  },
+  {
+    "index": 168,
+    "class_name": "chevrolet_cruze_1st_gen",
+    "make": "Chevrolet",
+    "model": "Cruze",
+    "generation": "1st Gen",
+    "year_start": 2011,
+    "year_end": 2015,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 169,
+    "class_name": "chevrolet_equinox_3rd_gen",
+    "make": "Chevrolet",
+    "model": "Equinox",
+    "generation": "3rd Gen",
+    "year_start": 2018,
+    "year_end": 2023,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 170,
+    "class_name": "chevrolet_equinox_4th_gen",
+    "make": "Chevrolet",
+    "model": "Equinox",
+    "generation": "4th Gen",
+    "year_start": 2024,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 171,
+    "class_name": "chevrolet_lova_2009",
+    "make": "Chevrolet",
+    "model": "Lova",
+    "generation": null,
+    "year_start": 2009,
+    "year_end": 2010,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 172,
+    "class_name": "chevrolet_malibu_9th_gen",
+    "make": "Chevrolet",
+    "model": "Malibu",
+    "generation": "9th Gen",
+    "year_start": 2016,
+    "year_end": 2024,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 173,
+    "class_name": "chevrolet_sail_3rd_gen",
+    "make": "Chevrolet",
+    "model": "Sail",
+    "generation": "3rd Gen",
+    "year_start": 2010,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 174,
+    "class_name": "chevrolet_sail_hatchback_2010",
+    "make": "Chevrolet",
+    "model": "Sail Hatchback",
+    "generation": null,
+    "year_start": 2010,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 175,
+    "class_name": "chevrolet_silverado_3rd_gen",
+    "make": "Chevrolet",
+    "model": "Silverado",
+    "generation": "3rd Gen",
+    "year_start": 2014,
+    "year_end": 2018,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 176,
+    "class_name": "chevrolet_silverado_4th_gen",
+    "make": "Chevrolet",
+    "model": "Silverado",
+    "generation": "4th Gen",
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 177,
+    "class_name": "chevrolet_silverado_ev_2024",
+    "make": "Chevrolet",
+    "model": "Silverado EV",
+    "generation": null,
+    "year_start": 2023,
+    "year_end": 2026,
+    "rarity": "RARE"
+  },
+  {
+    "index": 178,
+    "class_name": "chevrolet_spark_1st_gen_china",
+    "make": "Chevrolet",
+    "model": "Spark 1St Gen China",
+    "generation": null,
+    "year_start": 2008,
+    "year_end": 2012,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 179,
+    "class_name": "chevrolet_spark_2016",
+    "make": "Chevrolet",
+    "model": "Spark",
+    "generation": null,
+    "year_start": 2015,
+    "year_end": 2022,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 180,
+    "class_name": "chevrolet_suburban_12th_gen",
+    "make": "Chevrolet",
+    "model": "Suburban",
+    "generation": "12th Gen",
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 181,
+    "class_name": "chevrolet_tahoe_4th_gen",
+    "make": "Chevrolet",
+    "model": "Tahoe",
+    "generation": "4th Gen",
+    "year_start": 2014,
+    "year_end": 2020,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 182,
+    "class_name": "chevrolet_tahoe_5th_gen",
+    "make": "Chevrolet",
+    "model": "Tahoe",
+    "generation": "5th Gen",
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 183,
+    "class_name": "chevrolet_trailblazer_2021",
+    "make": "Chevrolet",
+    "model": "Trailblazer",
+    "generation": null,
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 184,
+    "class_name": "chevrolet_traverse_2nd_gen",
+    "make": "Chevrolet",
+    "model": "Traverse",
+    "generation": "2nd Gen",
+    "year_start": 2017,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 185,
+    "class_name": "chevrolet_trax_1st_gen",
+    "make": "Chevrolet",
+    "model": "Trax",
+    "generation": "1st Gen",
+    "year_start": 2013,
+    "year_end": 2022,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 186,
+    "class_name": "chevrolet_trax_2nd_gen",
+    "make": "Chevrolet",
+    "model": "Trax",
+    "generation": "2nd Gen",
+    "year_start": 2023,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 187,
+    "class_name": "chevrolet_volt_1st_gen",
+    "make": "Chevrolet",
+    "model": "Volt",
+    "generation": "1st Gen",
+    "year_start": 2011,
+    "year_end": 2015,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 188,
+    "class_name": "chrysler_300_2015",
+    "make": "Chrysler",
+    "model": "300",
+    "generation": null,
+    "year_start": 2011,
+    "year_end": 2023,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 189,
+    "class_name": "chrysler_pacifica_2017",
+    "make": "Chrysler",
+    "model": "Pacifica",
+    "generation": null,
+    "year_start": 2016,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 190,
+    "class_name": "citroen_berlingo_3rd_gen",
+    "make": "Citroen",
+    "model": "Berlingo",
+    "generation": "3rd Gen",
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 191,
+    "class_name": "citroen_c1_2nd_gen",
+    "make": "Citroen",
+    "model": "C1",
+    "generation": "2nd Gen",
+    "year_start": 2013,
+    "year_end": 2015,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 192,
+    "class_name": "citroen_c3_3rd_gen",
+    "make": "Citroen",
+    "model": "C3",
+    "generation": "3rd Gen",
+    "year_start": 2016,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 193,
+    "class_name": "citroen_c3_aircross_2017",
+    "make": "Citroen",
+    "model": "C3 Aircross",
+    "generation": null,
+    "year_start": 2017,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 194,
+    "class_name": "citroen_c4_3rd_gen",
+    "make": "Citroen",
+    "model": "C4",
+    "generation": "3rd Gen",
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 195,
+    "class_name": "citroen_c4_cactus_2015",
+    "make": "Citroen",
+    "model": "C4 Cactus",
+    "generation": null,
+    "year_start": 2014,
+    "year_end": 2020,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 196,
+    "class_name": "citroen_c4_picasso_2nd_gen",
+    "make": "Citroen",
+    "model": "C4 Picasso",
+    "generation": "2nd Gen",
+    "year_start": 2009,
+    "year_end": 2014,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 197,
+    "class_name": "citroen_c4l_1st_gen",
+    "make": "Citroen",
+    "model": "C4L",
+    "generation": "1st Gen",
+    "year_start": 2009,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 198,
+    "class_name": "citroen_c4l_2013",
+    "make": "Citroen",
+    "model": "C4L",
+    "generation": null,
+    "year_start": 2013,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 199,
+    "class_name": "citroen_c5_2nd_gen",
+    "make": "Citroen",
+    "model": "C5",
+    "generation": "2nd Gen",
+    "year_start": 2009,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 200,
+    "class_name": "citroen_c5_aircross_2019",
+    "make": "Citroen",
+    "model": "C5 Aircross",
+    "generation": null,
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 201,
+    "class_name": "citroen_c5_x_2022",
+    "make": "Citroen",
+    "model": "C5 X",
+    "generation": null,
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 202,
+    "class_name": "citroen_ds3_2010",
+    "make": "Citroen",
+    "model": "Ds3",
+    "generation": null,
+    "year_start": 2012,
+    "year_end": 2015,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 203,
+    "class_name": "citroen_ds5_2012",
+    "make": "Citroen",
+    "model": "Ds5",
+    "generation": null,
+    "year_start": 2012,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 204,
+    "class_name": "citroen_elysee_1st_gen",
+    "make": "Citroen",
+    "model": "Elysee",
+    "generation": "1st Gen",
+    "year_start": 2008,
+    "year_end": 2013,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 205,
+    "class_name": "citroen_elysee_2013",
+    "make": "Citroen",
+    "model": "Elysee",
+    "generation": null,
+    "year_start": 2013,
+    "year_end": 2014,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 206,
+    "class_name": "cupra_ateca_2020",
+    "make": "Cupra",
+    "model": "Ateca",
+    "generation": null,
+    "year_start": 2018,
+    "year_end": 2024,
+    "rarity": "RARE"
+  },
+  {
+    "index": 207,
+    "class_name": "cupra_born_2021",
+    "make": "Cupra",
+    "model": "Born",
+    "generation": null,
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 208,
+    "class_name": "cupra_formentor_2020",
+    "make": "Cupra",
+    "model": "Formentor",
+    "generation": null,
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 209,
+    "class_name": "cupra_leon_2020",
+    "make": "Cupra",
+    "model": "Leon",
+    "generation": null,
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 210,
+    "class_name": "cupra_tavascan_2024",
+    "make": "Cupra",
+    "model": "Tavascan",
+    "generation": null,
+    "year_start": 2024,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 211,
+    "class_name": "dacia_duster_2nd_gen",
+    "make": "Dacia",
+    "model": "Duster",
+    "generation": "2nd Gen",
+    "year_start": 2017,
+    "year_end": 2023,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 212,
+    "class_name": "dacia_duster_3rd_gen",
+    "make": "Dacia",
+    "model": "Duster",
+    "generation": "3rd Gen",
+    "year_start": 2024,
+    "year_end": 2026,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 213,
+    "class_name": "dacia_jogger_2022",
+    "make": "Dacia",
+    "model": "Jogger",
+    "generation": null,
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 214,
+    "class_name": "dacia_logan_3rd_gen",
+    "make": "Dacia",
+    "model": "Logan",
+    "generation": "3rd Gen",
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 215,
+    "class_name": "dacia_sandero_2nd_gen",
+    "make": "Dacia",
+    "model": "Sandero",
+    "generation": "2nd Gen",
+    "year_start": 2012,
+    "year_end": 2020,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 216,
+    "class_name": "dacia_sandero_3rd_gen",
+    "make": "Dacia",
+    "model": "Sandero",
+    "generation": "3rd Gen",
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 217,
+    "class_name": "dacia_spring_2021",
+    "make": "Dacia",
+    "model": "Spring",
+    "generation": null,
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 218,
+    "class_name": "dodge_caliber_2007",
+    "make": "Dodge",
+    "model": "Caliber",
+    "generation": null,
+    "year_start": 2008,
+    "year_end": 2011,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 219,
+    "class_name": "dodge_challenger_3rd_gen",
+    "make": "Dodge",
+    "model": "Challenger",
+    "generation": "3rd Gen",
+    "year_start": 2008,
+    "year_end": 2023,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 220,
+    "class_name": "dodge_challenger_srt_demon_2018",
+    "make": "Dodge",
+    "model": "Challenger SRT Demon",
+    "generation": null,
+    "year_start": 2018,
+    "year_end": 2023,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 221,
+    "class_name": "dodge_challenger_srt_hellcat_2015",
+    "make": "Dodge",
+    "model": "Challenger SRT Hellcat",
+    "generation": null,
+    "year_start": 2014,
+    "year_end": 2023,
+    "rarity": "RARE"
+  },
+  {
+    "index": 222,
+    "class_name": "dodge_charger_7th_gen",
+    "make": "Dodge",
+    "model": "Charger",
+    "generation": "7th Gen",
+    "year_start": 2011,
+    "year_end": 2023,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 223,
+    "class_name": "dodge_charger_8th_gen",
+    "make": "Dodge",
+    "model": "Charger",
+    "generation": "8th Gen",
+    "year_start": 2024,
+    "year_end": 2026,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 224,
+    "class_name": "dodge_charger_srt_hellcat_2015",
+    "make": "Dodge",
+    "model": "Charger SRT Hellcat",
+    "generation": null,
+    "year_start": 2014,
+    "year_end": 2023,
+    "rarity": "RARE"
+  },
+  {
+    "index": 225,
+    "class_name": "dodge_dart_2013",
+    "make": "Dodge",
+    "model": "Dart",
+    "generation": null,
+    "year_start": 2013,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 226,
+    "class_name": "dodge_durango_3rd_gen_fl",
+    "make": "Dodge",
+    "model": "Durango",
+    "generation": "3rd Gen FL",
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 227,
+    "class_name": "dodge_durango_srt_hellcat_2021",
+    "make": "Dodge",
+    "model": "Durango SRT Hellcat",
+    "generation": null,
+    "year_start": 2021,
+    "year_end": 2023,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 228,
+    "class_name": "dodge_hornet_2023",
+    "make": "Dodge",
+    "model": "Hornet",
+    "generation": null,
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 229,
+    "class_name": "dodge_journey_2009",
+    "make": "Dodge",
+    "model": "Journey",
+    "generation": null,
+    "year_start": 2009,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 230,
+    "class_name": "dodge_journey_2nd_gen",
+    "make": "Dodge",
+    "model": "Journey",
+    "generation": "2nd Gen",
+    "year_start": 2012,
+    "year_end": 2015,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 231,
+    "class_name": "dodge_viper_5th_gen",
+    "make": "Dodge",
+    "model": "Viper",
+    "generation": "5th Gen",
+    "year_start": 2013,
+    "year_end": 2017,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 232,
+    "class_name": "ds_ds6_2014",
+    "make": "DS",
+    "model": "Ds6",
+    "generation": null,
+    "year_start": 2014,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 233,
+    "class_name": "ds_ds_3_crossback_2019",
+    "make": "DS",
+    "model": "DS 3 Crossback",
+    "generation": null,
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 234,
+    "class_name": "ds_ds_4_2nd_gen",
+    "make": "DS",
+    "model": "DS 4",
+    "generation": "2nd Gen",
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 235,
+    "class_name": "ds_ds_5ls_2014",
+    "make": "DS",
+    "model": "Ds 5Ls",
+    "generation": null,
+    "year_start": 2014,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 236,
+    "class_name": "ds_ds_7_2018",
+    "make": "DS",
+    "model": "DS 7",
+    "generation": null,
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 237,
+    "class_name": "ds_ds_9_2021",
+    "make": "DS",
+    "model": "DS 9",
+    "generation": null,
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 238,
+    "class_name": "ferrari_296_gtb_2022",
+    "make": "Ferrari",
+    "model": "296 GTB",
+    "generation": null,
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "EPIC"
+  },
+  {
+    "index": 239,
+    "class_name": "ferrari_488_gtb_2016",
+    "make": "Ferrari",
+    "model": "488 GTB",
+    "generation": null,
+    "year_start": 2015,
+    "year_end": 2019,
+    "rarity": "EPIC"
+  },
+  {
+    "index": 240,
+    "class_name": "ferrari_488_pista_2019",
+    "make": "Ferrari",
+    "model": "488 Pista",
+    "generation": null,
+    "year_start": 2018,
+    "year_end": 2020,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 241,
+    "class_name": "ferrari_812_competizione_2022",
+    "make": "Ferrari",
+    "model": "812 Competizione",
+    "generation": null,
+    "year_start": 2021,
+    "year_end": 2023,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 242,
+    "class_name": "ferrari_812_superfast_2018",
+    "make": "Ferrari",
+    "model": "812 Superfast",
+    "generation": null,
+    "year_start": 2017,
+    "year_end": 2020,
+    "rarity": "EPIC"
+  },
+  {
+    "index": 243,
+    "class_name": "ferrari_california_t_2015",
+    "make": "Ferrari",
+    "model": "California T",
+    "generation": null,
+    "year_start": 2014,
+    "year_end": 2017,
+    "rarity": "EPIC"
+  },
+  {
+    "index": 244,
+    "class_name": "ferrari_f12berlinetta_2015",
+    "make": "Ferrari",
+    "model": "F12berlinetta",
+    "generation": null,
+    "year_start": 2012,
+    "year_end": 2017,
+    "rarity": "EPIC"
+  },
+  {
+    "index": 245,
+    "class_name": "ferrari_f8_tributo_2020",
+    "make": "Ferrari",
+    "model": "F8 Tributo",
+    "generation": null,
+    "year_start": 2019,
+    "year_end": 2022,
+    "rarity": "EPIC"
+  },
+  {
+    "index": 246,
+    "class_name": "ferrari_gtc4lusso_2017",
+    "make": "Ferrari",
+    "model": "GTC4Lusso",
+    "generation": null,
+    "year_start": 2016,
+    "year_end": 2020,
+    "rarity": "EPIC"
+  },
+  {
+    "index": 247,
+    "class_name": "ferrari_laferrari_2013",
+    "make": "Ferrari",
+    "model": "LaFerrari",
+    "generation": null,
+    "year_start": 2013,
+    "year_end": 2016,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 248,
+    "class_name": "ferrari_portofino_2018",
+    "make": "Ferrari",
+    "model": "Portofino",
+    "generation": null,
+    "year_start": 2017,
+    "year_end": 2023,
+    "rarity": "EPIC"
+  },
+  {
+    "index": 249,
+    "class_name": "ferrari_purosangue_2023",
+    "make": "Ferrari",
+    "model": "Purosangue",
+    "generation": null,
+    "year_start": 2023,
+    "year_end": 2025,
+    "rarity": "EPIC"
+  },
+  {
+    "index": 250,
+    "class_name": "ferrari_roma_2021",
+    "make": "Ferrari",
+    "model": "Roma",
+    "generation": null,
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "EPIC"
+  },
+  {
+    "index": 251,
+    "class_name": "ferrari_sf90_stradale_2020",
+    "make": "Ferrari",
+    "model": "SF90 Stradale",
+    "generation": null,
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "EPIC"
+  },
+  {
+    "index": 252,
+    "class_name": "fiat_124_spider_2017",
+    "make": "Fiat",
+    "model": "124 Spider",
+    "generation": null,
+    "year_start": 2016,
+    "year_end": 2020,
+    "rarity": "RARE"
+  },
+  {
+    "index": 253,
+    "class_name": "fiat_500_2015",
+    "make": "Fiat",
+    "model": "500",
+    "generation": null,
+    "year_start": 2015,
+    "year_end": 2019,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 254,
+    "class_name": "fiat_500e_2021",
+    "make": "Fiat",
+    "model": "500e",
+    "generation": null,
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 255,
+    "class_name": "fiat_500l_2013",
+    "make": "Fiat",
+    "model": "500L",
+    "generation": null,
+    "year_start": 2013,
+    "year_end": 2014,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 256,
+    "class_name": "fiat_500x_2016",
+    "make": "Fiat",
+    "model": "500X",
+    "generation": null,
+    "year_start": 2014,
+    "year_end": 2023,
+    "rarity": "RARE"
+  },
+  {
+    "index": 257,
+    "class_name": "fiat_bravo_2nd_gen",
+    "make": "Fiat",
+    "model": "Bravo",
+    "generation": "2nd Gen",
+    "year_start": 2008,
+    "year_end": 2013,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 258,
+    "class_name": "fiat_ottimo_2014",
+    "make": "Fiat",
+    "model": "Ottimo",
+    "generation": null,
+    "year_start": 2014,
+    "year_end": 2015,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 259,
+    "class_name": "fiat_panda_3rd_gen",
+    "make": "Fiat",
+    "model": "Panda",
+    "generation": "3rd Gen",
+    "year_start": 2011,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 260,
+    "class_name": "fiat_punto_evo_2010",
+    "make": "Fiat",
+    "model": "Punto Evo",
+    "generation": null,
+    "year_start": 2008,
+    "year_end": 2012,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 261,
+    "class_name": "fiat_tipo_2016",
+    "make": "Fiat",
+    "model": "Tipo",
+    "generation": null,
+    "year_start": 2015,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 262,
+    "class_name": "fiat_viaggio_2012",
+    "make": "Fiat",
+    "model": "Viaggio",
+    "generation": null,
+    "year_start": 2012,
+    "year_end": 2015,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 263,
+    "class_name": "fisker_karma_2012",
+    "make": "Fisker",
+    "model": "Karma",
+    "generation": null,
+    "year_start": 2013,
+    "year_end": 2013,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 264,
+    "class_name": "ford_bronco_6th_gen",
+    "make": "Ford",
+    "model": "Bronco",
+    "generation": "6th Gen",
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 265,
+    "class_name": "ford_bronco_sport_2021",
+    "make": "Ford",
+    "model": "Bronco Sport",
+    "generation": null,
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 266,
+    "class_name": "ford_ecosport_2018",
+    "make": "Ford",
+    "model": "EcoSport",
+    "generation": null,
+    "year_start": 2013,
+    "year_end": 2022,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 267,
+    "class_name": "ford_edge_2015",
+    "make": "Ford",
+    "model": "Edge",
+    "generation": null,
+    "year_start": 2014,
+    "year_end": 2024,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 268,
+    "class_name": "ford_escape_4th_gen",
+    "make": "Ford",
+    "model": "Escape",
+    "generation": "4th Gen",
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 269,
+    "class_name": "ford_escort_2015",
+    "make": "Ford",
+    "model": "Escort",
+    "generation": null,
+    "year_start": 2014,
+    "year_end": 2015,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 270,
+    "class_name": "ford_expedition_4th_gen",
+    "make": "Ford",
+    "model": "Expedition",
+    "generation": "4th Gen",
+    "year_start": 2017,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 271,
+    "class_name": "ford_explorer_5th_gen_fl",
+    "make": "Ford",
+    "model": "Explorer",
+    "generation": "5th Gen FL",
+    "year_start": 2016,
+    "year_end": 2019,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 272,
+    "class_name": "ford_explorer_6th_gen",
+    "make": "Ford",
+    "model": "Explorer",
+    "generation": "6th Gen",
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 273,
+    "class_name": "ford_f_150_13th_gen",
+    "make": "Ford",
+    "model": "F-150",
+    "generation": "13th Gen",
+    "year_start": 2014,
+    "year_end": 2020,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 274,
+    "class_name": "ford_f_150_14th_gen",
+    "make": "Ford",
+    "model": "F-150",
+    "generation": "14th Gen",
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 275,
+    "class_name": "ford_f_150_lightning_2022",
+    "make": "Ford",
+    "model": "F-150 Lightning",
+    "generation": null,
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 276,
+    "class_name": "ford_f_150_raptor_2nd_gen",
+    "make": "Ford",
+    "model": "F-150 Raptor",
+    "generation": "2nd Gen",
+    "year_start": 2016,
+    "year_end": 2020,
+    "rarity": "RARE"
+  },
+  {
+    "index": 277,
+    "class_name": "ford_f_150_raptor_3rd_gen",
+    "make": "Ford",
+    "model": "F-150 Raptor",
+    "generation": "3rd Gen",
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 278,
+    "class_name": "ford_fiesta_6th_gen",
+    "make": "Ford",
+    "model": "Fiesta",
+    "generation": "6th Gen",
+    "year_start": 2009,
+    "year_end": 2014,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 279,
+    "class_name": "ford_flex_1st_gen",
+    "make": "Ford",
+    "model": "Flex",
+    "generation": "1st Gen",
+    "year_start": 2004,
+    "year_end": 2013,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 280,
+    "class_name": "ford_focus_4th_gen",
+    "make": "Ford",
+    "model": "Focus",
+    "generation": "4th Gen",
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 281,
+    "class_name": "ford_fusion_2015",
+    "make": "Ford",
+    "model": "Fusion",
+    "generation": null,
+    "year_start": 2013,
+    "year_end": 2020,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 282,
+    "class_name": "ford_gt_2nd_gen",
+    "make": "Ford",
+    "model": "GT",
+    "generation": "2nd Gen",
+    "year_start": 2017,
+    "year_end": 2022,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 283,
+    "class_name": "ford_maverick_2022",
+    "make": "Ford",
+    "model": "Maverick",
+    "generation": null,
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 284,
+    "class_name": "ford_mustang_mach_e_2021",
+    "make": "Ford",
+    "model": "Mustang Mach-E",
+    "generation": null,
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 285,
+    "class_name": "ford_mustang_s550",
+    "make": "Ford",
+    "model": "Mustang",
+    "generation": "S550",
+    "year_start": 2014,
+    "year_end": 2023,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 286,
+    "class_name": "ford_mustang_s650",
+    "make": "Ford",
+    "model": "Mustang",
+    "generation": "S650",
+    "year_start": 2023,
+    "year_end": 2026,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 287,
+    "class_name": "ford_mustang_shelby_gt500_s550",
+    "make": "Ford",
+    "model": "Mustang Shelby GT500",
+    "generation": "S550",
+    "year_start": 2019,
+    "year_end": 2022,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 288,
+    "class_name": "ford_ranger_3rd_gen",
+    "make": "Ford",
+    "model": "Ranger",
+    "generation": "T6",
+    "year_start": 2011,
+    "year_end": 2022,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 289,
+    "class_name": "ford_ranger_4th_gen",
+    "make": "Ford",
+    "model": "Ranger",
+    "generation": "4th Gen",
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 290,
+    "class_name": "ford_s_max_2nd_gen",
+    "make": "Ford",
+    "model": "S Max",
+    "generation": "2nd Gen",
+    "year_start": 2007,
+    "year_end": 2015,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 291,
+    "class_name": "ford_super_duty_4th_gen",
+    "make": "Ford",
+    "model": "Super Duty",
+    "generation": "4th Gen",
+    "year_start": 2016,
+    "year_end": 2022,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 292,
+    "class_name": "ford_super_duty_5th_gen",
+    "make": "Ford",
+    "model": "Super Duty",
+    "generation": "5th Gen",
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 293,
+    "class_name": "ford_transit_2015",
+    "make": "Ford",
+    "model": "Transit",
+    "generation": null,
+    "year_start": 2013,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 294,
+    "class_name": "geely_ec7_rv_2009",
+    "make": "Geely",
+    "model": "Ec7 Rv",
+    "generation": null,
+    "year_start": 2009,
+    "year_end": 2013,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 295,
+    "class_name": "geely_emgrand_ec7_2012",
+    "make": "Geely",
+    "model": "Emgrand Ec7",
+    "generation": null,
+    "year_start": 2010,
+    "year_end": 2015,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 296,
+    "class_name": "geely_emgrand_ec8_2010",
+    "make": "Geely",
+    "model": "Emgrand Ec8",
+    "generation": null,
+    "year_start": 2010,
+    "year_end": 2015,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 297,
+    "class_name": "geely_emgrand_x7_1st_gen",
+    "make": "Geely",
+    "model": "Emgrand X7",
+    "generation": "1st Gen",
+    "year_start": 2013,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 298,
+    "class_name": "geely_gc7_2012",
+    "make": "Geely",
+    "model": "Gc7",
+    "generation": null,
+    "year_start": 2006,
+    "year_end": 2015,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 299,
+    "class_name": "geely_gx7_2012",
+    "make": "Geely",
+    "model": "Gx7",
+    "generation": null,
+    "year_start": 2012,
+    "year_end": 2015,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 300,
+    "class_name": "geely_jinying_2007",
+    "make": "Geely",
+    "model": "Jinying",
+    "generation": null,
+    "year_start": 2007,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 301,
+    "class_name": "geely_panda_1st_gen",
+    "make": "Geely",
+    "model": "Panda",
+    "generation": "1st Gen",
+    "year_start": 2009,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 302,
+    "class_name": "geely_sc3_2012",
+    "make": "Geely",
+    "model": "Sc3",
+    "generation": null,
+    "year_start": 2012,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 303,
+    "class_name": "genesis_electrified_g80_2023",
+    "make": "Genesis",
+    "model": "Electrified G80",
+    "generation": null,
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 304,
+    "class_name": "genesis_g70_2019",
+    "make": "Genesis",
+    "model": "G70",
+    "generation": null,
+    "year_start": 2017,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 305,
+    "class_name": "genesis_g80_2015",
+    "make": "Genesis",
+    "model": "G80",
+    "generation": null,
+    "year_start": 2015,
+    "year_end": 2015,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 306,
+    "class_name": "genesis_g80_2021",
+    "make": "Genesis",
+    "model": "G80",
+    "generation": null,
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 307,
+    "class_name": "genesis_g90_2023",
+    "make": "Genesis",
+    "model": "G90",
+    "generation": null,
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 308,
+    "class_name": "genesis_gv60_2023",
+    "make": "Genesis",
+    "model": "GV60",
+    "generation": null,
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 309,
+    "class_name": "genesis_gv70_2022",
+    "make": "Genesis",
+    "model": "GV70",
+    "generation": null,
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 310,
+    "class_name": "genesis_gv80_2021",
+    "make": "Genesis",
+    "model": "GV80",
+    "generation": null,
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 311,
+    "class_name": "gmc_acadia_2nd_gen",
+    "make": "GMC",
+    "model": "Acadia",
+    "generation": "2nd Gen",
+    "year_start": 2017,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 312,
+    "class_name": "gmc_canyon_2nd_gen",
+    "make": "GMC",
+    "model": "Canyon",
+    "generation": "2nd Gen",
+    "year_start": 2014,
+    "year_end": 2022,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 313,
+    "class_name": "gmc_canyon_3rd_gen",
+    "make": "GMC",
+    "model": "Canyon",
+    "generation": "3rd Gen",
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 314,
+    "class_name": "gmc_hummer_ev_pickup",
+    "make": "GMC",
+    "model": "Hummer EV",
+    "generation": "Pickup",
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 315,
+    "class_name": "gmc_hummer_ev_suv",
+    "make": "GMC",
+    "model": "Hummer EV",
+    "generation": "SUV",
+    "year_start": 2023,
+    "year_end": 2025,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 316,
+    "class_name": "gmc_sierra_4th_gen",
+    "make": "GMC",
+    "model": "Sierra",
+    "generation": "4th Gen",
+    "year_start": 2014,
+    "year_end": 2018,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 317,
+    "class_name": "gmc_sierra_5th_gen",
+    "make": "GMC",
+    "model": "Sierra",
+    "generation": "5th Gen",
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 318,
+    "class_name": "gmc_terrain_2nd_gen",
+    "make": "GMC",
+    "model": "Terrain",
+    "generation": "2nd Gen",
+    "year_start": 2017,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 319,
+    "class_name": "gmc_yukon_4th_gen",
+    "make": "GMC",
+    "model": "Yukon",
+    "generation": "4th Gen",
+    "year_start": 2014,
+    "year_end": 2020,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 320,
+    "class_name": "gmc_yukon_5th_gen",
+    "make": "GMC",
+    "model": "Yukon",
+    "generation": "5th Gen",
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 321,
+    "class_name": "great_wall_fengjun_6_2014",
+    "make": "Great Wall",
+    "model": "Fengjun 6",
+    "generation": null,
+    "year_start": 2014,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 322,
+    "class_name": "great_wall_haval_h3_2010",
+    "make": "Great Wall",
+    "model": "Haval H3",
+    "generation": null,
+    "year_start": 2010,
+    "year_end": 2013,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 323,
+    "class_name": "great_wall_haval_h5_2010",
+    "make": "Great Wall",
+    "model": "Haval H5",
+    "generation": null,
+    "year_start": 2007,
+    "year_end": 2012,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 324,
+    "class_name": "great_wall_hover_m2_2010",
+    "make": "Great Wall",
+    "model": "Hover M2",
+    "generation": null,
+    "year_start": 2010,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 325,
+    "class_name": "great_wall_m4_2012",
+    "make": "Great Wall",
+    "model": "M4",
+    "generation": null,
+    "year_start": 2012,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 326,
+    "class_name": "great_wall_voleex_c30_2011",
+    "make": "Great Wall",
+    "model": "Voleex C30",
+    "generation": null,
+    "year_start": 2011,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 327,
+    "class_name": "great_wall_wingle_5_2011",
+    "make": "Great Wall",
+    "model": "Wingle 5",
+    "generation": null,
+    "year_start": 2011,
+    "year_end": 2013,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 328,
+    "class_name": "haval_h2_1st_gen",
+    "make": "Haval",
+    "model": "H2",
+    "generation": "1st Gen",
+    "year_start": 2012,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 329,
+    "class_name": "haval_h2_2014",
+    "make": "Haval",
+    "model": "H2",
+    "generation": null,
+    "year_start": 2014,
+    "year_end": 2015,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 330,
+    "class_name": "haval_h6_1st_gen",
+    "make": "Haval",
+    "model": "H6",
+    "generation": "1st Gen",
+    "year_start": 2011,
+    "year_end": 2015,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 331,
+    "class_name": "haval_h8_1st_gen",
+    "make": "Haval",
+    "model": "H8",
+    "generation": "1st Gen",
+    "year_start": 2012,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 332,
+    "class_name": "honda_accord_10th_gen",
+    "make": "Honda",
+    "model": "Accord",
+    "generation": "10th Gen",
+    "year_start": 2017,
+    "year_end": 2022,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 333,
+    "class_name": "honda_accord_11th_gen",
+    "make": "Honda",
+    "model": "Accord",
+    "generation": "11th Gen",
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 334,
+    "class_name": "honda_city_4th_gen",
+    "make": "Honda",
+    "model": "City",
+    "generation": "4th Gen",
+    "year_start": 2009,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 335,
+    "class_name": "honda_civic_10th_gen",
+    "make": "Honda",
+    "model": "Civic",
+    "generation": "10th Gen",
+    "year_start": 2015,
+    "year_end": 2021,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 336,
+    "class_name": "honda_civic_11th_gen",
+    "make": "Honda",
+    "model": "Civic",
+    "generation": "11th Gen",
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 337,
+    "class_name": "honda_civic_8th_gen_china",
+    "make": "Honda",
+    "model": "Civic 8Th Gen China",
+    "generation": null,
+    "year_start": 2012,
+    "year_end": 2015,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 338,
+    "class_name": "honda_civic_9th_gen",
+    "make": "Honda",
+    "model": "Civic",
+    "generation": "9th Gen",
+    "year_start": 2009,
+    "year_end": 2015,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 339,
+    "class_name": "honda_civic_si_11th_gen",
+    "make": "Honda",
+    "model": "Civic Si",
+    "generation": "11th Gen",
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 340,
+    "class_name": "honda_civic_type_r_fk8",
+    "make": "Honda",
+    "model": "Civic Type R",
+    "generation": "FK8",
+    "year_start": 2017,
+    "year_end": 2021,
+    "rarity": "RARE"
+  },
+  {
+    "index": 341,
+    "class_name": "honda_civic_type_r_fl5",
+    "make": "Honda",
+    "model": "Civic Type R",
+    "generation": "FL5",
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 342,
+    "class_name": "honda_cr-z_2010",
+    "make": "Honda",
+    "model": "Cr-Z",
+    "generation": null,
+    "year_start": 2010,
+    "year_end": 2013,
+    "rarity": "RARE"
+  },
+  {
+    "index": 343,
+    "class_name": "honda_cr_v_5th_gen",
+    "make": "Honda",
+    "model": "CR-V",
+    "generation": "5th Gen",
+    "year_start": 2016,
+    "year_end": 2022,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 344,
+    "class_name": "honda_cr_v_6th_gen",
+    "make": "Honda",
+    "model": "CR-V",
+    "generation": "6th Gen",
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 345,
+    "class_name": "honda_crosstour_2nd_gen",
+    "make": "Honda",
+    "model": "Crosstour",
+    "generation": "2nd Gen",
+    "year_start": 2011,
+    "year_end": 2014,
+    "rarity": "RARE"
+  },
+  {
+    "index": 346,
+    "class_name": "honda_fit_3rd_gen",
+    "make": "Honda",
+    "model": "Fit",
+    "generation": "3rd Gen",
+    "year_start": 2013,
+    "year_end": 2020,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 347,
+    "class_name": "honda_hr_v_2nd_gen",
+    "make": "Honda",
+    "model": "HR-V",
+    "generation": "2nd Gen",
+    "year_start": 2015,
+    "year_end": 2022,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 348,
+    "class_name": "honda_hr_v_3rd_gen",
+    "make": "Honda",
+    "model": "HR-V",
+    "generation": "3rd Gen",
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 349,
+    "class_name": "honda_insight_2nd_gen",
+    "make": "Honda",
+    "model": "Insight",
+    "generation": "2nd Gen",
+    "year_start": 2010,
+    "year_end": 2013,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 350,
+    "class_name": "honda_jade_1st_gen",
+    "make": "Honda",
+    "model": "Jade",
+    "generation": "1st Gen",
+    "year_start": 2013,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 351,
+    "class_name": "honda_odyssey_5th_gen",
+    "make": "Honda",
+    "model": "Odyssey",
+    "generation": "5th Gen",
+    "year_start": 2017,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 352,
+    "class_name": "honda_passport_2019",
+    "make": "Honda",
+    "model": "Passport",
+    "generation": null,
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 353,
+    "class_name": "honda_pilot_3rd_gen",
+    "make": "Honda",
+    "model": "Pilot",
+    "generation": "3rd Gen",
+    "year_start": 2015,
+    "year_end": 2022,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 354,
+    "class_name": "honda_pilot_4th_gen",
+    "make": "Honda",
+    "model": "Pilot",
+    "generation": "4th Gen",
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 355,
+    "class_name": "honda_prologue_2024",
+    "make": "Honda",
+    "model": "Prologue",
+    "generation": null,
+    "year_start": 2023,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 356,
+    "class_name": "honda_ridgeline_2nd_gen",
+    "make": "Honda",
+    "model": "Ridgeline",
+    "generation": "2nd Gen",
+    "year_start": 2016,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 357,
+    "class_name": "honda_s2000_ap2",
+    "make": "Honda",
+    "model": "S2000",
+    "generation": "AP2",
+    "year_start": 2004,
+    "year_end": 2009,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 358,
+    "class_name": "hyundai_elantra_6th_gen",
+    "make": "Hyundai",
+    "model": "Elantra",
+    "generation": "6th Gen",
+    "year_start": 2015,
+    "year_end": 2020,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 359,
+    "class_name": "hyundai_elantra_7th_gen",
+    "make": "Hyundai",
+    "model": "Elantra",
+    "generation": "7th Gen",
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 360,
+    "class_name": "hyundai_elantra_avante_hd_2006",
+    "make": "Hyundai",
+    "model": "Elantra Avante Hd",
+    "generation": null,
+    "year_start": 2004,
+    "year_end": 2011,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 361,
+    "class_name": "hyundai_elantra_n_2022",
+    "make": "Hyundai",
+    "model": "Elantra N",
+    "generation": null,
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 362,
+    "class_name": "hyundai_equus_2009",
+    "make": "Hyundai",
+    "model": "Equus",
+    "generation": null,
+    "year_start": 2009,
+    "year_end": 2014,
+    "rarity": "RARE"
+  },
+  {
+    "index": 363,
+    "class_name": "hyundai_genesis_coupe_1st_gen",
+    "make": "Hyundai",
+    "model": "Genesis Coupe",
+    "generation": "1st Gen",
+    "year_start": 2009,
+    "year_end": 2012,
+    "rarity": "RARE"
+  },
+  {
+    "index": 364,
+    "class_name": "hyundai_i10_2nd_gen",
+    "make": "Hyundai",
+    "model": "I10",
+    "generation": "2nd Gen",
+    "year_start": 2011,
+    "year_end": 2014,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 365,
+    "class_name": "hyundai_i20_2008_2014",
+    "make": "Hyundai",
+    "model": "I20 2008",
+    "generation": null,
+    "year_start": 2009,
+    "year_end": 2015,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 366,
+    "class_name": "hyundai_ioniq_5_2022",
+    "make": "Hyundai",
+    "model": "Ioniq 5",
+    "generation": null,
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 367,
+    "class_name": "hyundai_ioniq_5_n_2025",
+    "make": "Hyundai",
+    "model": "Ioniq 5 N",
+    "generation": null,
+    "year_start": 2023,
+    "year_end": 2026,
+    "rarity": "RARE"
+  },
+  {
+    "index": 368,
+    "class_name": "hyundai_ioniq_6_2023",
+    "make": "Hyundai",
+    "model": "Ioniq 6",
+    "generation": null,
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 369,
+    "class_name": "hyundai_kona_1st_gen",
+    "make": "Hyundai",
+    "model": "Kona",
+    "generation": "1st Gen",
+    "year_start": 2017,
+    "year_end": 2023,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 370,
+    "class_name": "hyundai_kona_2nd_gen",
+    "make": "Hyundai",
+    "model": "Kona",
+    "generation": "2nd Gen",
+    "year_start": 2023,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 371,
+    "class_name": "hyundai_kona_n_2022",
+    "make": "Hyundai",
+    "model": "Kona N",
+    "generation": null,
+    "year_start": 2021,
+    "year_end": 2023,
+    "rarity": "RARE"
+  },
+  {
+    "index": 372,
+    "class_name": "hyundai_palisade_2020",
+    "make": "Hyundai",
+    "model": "Palisade",
+    "generation": null,
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 373,
+    "class_name": "hyundai_santa_cruz_2022",
+    "make": "Hyundai",
+    "model": "Santa Cruz",
+    "generation": null,
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 374,
+    "class_name": "hyundai_santa_fe_4th_gen",
+    "make": "Hyundai",
+    "model": "Santa Fe",
+    "generation": "4th Gen",
+    "year_start": 2018,
+    "year_end": 2023,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 375,
+    "class_name": "hyundai_santa_fe_5th_gen",
+    "make": "Hyundai",
+    "model": "Santa Fe",
+    "generation": "5th Gen",
+    "year_start": 2023,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 376,
+    "class_name": "hyundai_sonata_7th_gen",
+    "make": "Hyundai",
+    "model": "Sonata",
+    "generation": "7th Gen",
+    "year_start": 2014,
+    "year_end": 2019,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 377,
+    "class_name": "hyundai_sonata_8th_gen",
+    "make": "Hyundai",
+    "model": "Sonata",
+    "generation": "8th Gen",
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 378,
+    "class_name": "hyundai_tucson_1st_gen",
+    "make": "Hyundai",
+    "model": "Tucson",
+    "generation": "1st Gen",
+    "year_start": 2006,
+    "year_end": 2013,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 379,
+    "class_name": "hyundai_tucson_3rd_gen",
+    "make": "Hyundai",
+    "model": "Tucson",
+    "generation": "3rd Gen",
+    "year_start": 2015,
+    "year_end": 2021,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 380,
+    "class_name": "hyundai_tucson_4th_gen",
+    "make": "Hyundai",
+    "model": "Tucson",
+    "generation": "4th Gen",
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 381,
+    "class_name": "hyundai_veloster_1st_gen",
+    "make": "Hyundai",
+    "model": "Veloster",
+    "generation": "1st Gen",
+    "year_start": 2011,
+    "year_end": 2016,
+    "rarity": "RARE"
+  },
+  {
+    "index": 382,
+    "class_name": "hyundai_veloster_n_2019",
+    "make": "Hyundai",
+    "model": "Veloster N",
+    "generation": null,
+    "year_start": 2018,
+    "year_end": 2022,
+    "rarity": "RARE"
+  },
+  {
+    "index": 383,
+    "class_name": "hyundai_venue_2020",
+    "make": "Hyundai",
+    "model": "Venue",
+    "generation": null,
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 384,
+    "class_name": "hyundai_verna_4th_gen",
+    "make": "Hyundai",
+    "model": "Verna",
+    "generation": "4th Gen",
+    "year_start": 2010,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 385,
+    "class_name": "hyundai_verna_hatchback_2011",
+    "make": "Hyundai",
+    "model": "Verna Hatchback",
+    "generation": null,
+    "year_start": 2011,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 386,
+    "class_name": "infiniti_esq_2014",
+    "make": "Infiniti",
+    "model": "Esq",
+    "generation": null,
+    "year_start": 2014,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 387,
+    "class_name": "infiniti_fx35_fx50_2nd_gen",
+    "make": "Infiniti",
+    "model": "Fx35 Fx50",
+    "generation": "2nd Gen",
+    "year_start": 2009,
+    "year_end": 2015,
+    "rarity": "RARE"
+  },
+  {
+    "index": 388,
+    "class_name": "infiniti_g25_g37_4th_gen",
+    "make": "Infiniti",
+    "model": "G25 G37",
+    "generation": "4th Gen",
+    "year_start": 2009,
+    "year_end": 2013,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 389,
+    "class_name": "infiniti_m_4th_gen",
+    "make": "Infiniti",
+    "model": "M",
+    "generation": "4th Gen",
+    "year_start": 2009,
+    "year_end": 2014,
+    "rarity": "RARE"
+  },
+  {
+    "index": 390,
+    "class_name": "infiniti_q50_2015",
+    "make": "Infiniti",
+    "model": "Q50",
+    "generation": null,
+    "year_start": 2013,
+    "year_end": 2024,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 391,
+    "class_name": "infiniti_q60_2017",
+    "make": "Infiniti",
+    "model": "Q60",
+    "generation": null,
+    "year_start": 2016,
+    "year_end": 2022,
+    "rarity": "RARE"
+  },
+  {
+    "index": 392,
+    "class_name": "infiniti_qx50_2nd_gen",
+    "make": "Infiniti",
+    "model": "QX50",
+    "generation": "2nd Gen",
+    "year_start": 2018,
+    "year_end": 2024,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 393,
+    "class_name": "infiniti_qx55_2022",
+    "make": "Infiniti",
+    "model": "QX55",
+    "generation": null,
+    "year_start": 2021,
+    "year_end": 2024,
+    "rarity": "RARE"
+  },
+  {
+    "index": 394,
+    "class_name": "infiniti_qx60_2nd_gen",
+    "make": "Infiniti",
+    "model": "QX60",
+    "generation": "2nd Gen",
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 395,
+    "class_name": "infiniti_qx80_2015",
+    "make": "Infiniti",
+    "model": "QX80",
+    "generation": null,
+    "year_start": 2015,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 396,
+    "class_name": "jaguar_e_pace_2018",
+    "make": "Jaguar",
+    "model": "E-Pace",
+    "generation": null,
+    "year_start": 2017,
+    "year_end": 2024,
+    "rarity": "RARE"
+  },
+  {
+    "index": 397,
+    "class_name": "jaguar_f_pace_2017",
+    "make": "Jaguar",
+    "model": "F-Pace",
+    "generation": null,
+    "year_start": 2016,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 398,
+    "class_name": "jaguar_f_type_2015",
+    "make": "Jaguar",
+    "model": "F-Type",
+    "generation": null,
+    "year_start": 2013,
+    "year_end": 2024,
+    "rarity": "RARE"
+  },
+  {
+    "index": 399,
+    "class_name": "jaguar_i_pace_2019",
+    "make": "Jaguar",
+    "model": "I-Pace",
+    "generation": null,
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 400,
+    "class_name": "jaguar_xe_2017",
+    "make": "Jaguar",
+    "model": "XE",
+    "generation": null,
+    "year_start": 2015,
+    "year_end": 2020,
+    "rarity": "RARE"
+  },
+  {
+    "index": 401,
+    "class_name": "jaguar_xf_2016",
+    "make": "Jaguar",
+    "model": "XF",
+    "generation": null,
+    "year_start": 2015,
+    "year_end": 2023,
+    "rarity": "RARE"
+  },
+  {
+    "index": 402,
+    "class_name": "jaguar_xk_2006_2014",
+    "make": "Jaguar",
+    "model": "Xk 2006",
+    "generation": null,
+    "year_start": 2006,
+    "year_end": 2014,
+    "rarity": "RARE"
+  },
+  {
+    "index": 403,
+    "class_name": "jeep_cherokee_kl",
+    "make": "Jeep",
+    "model": "Cherokee",
+    "generation": "KL",
+    "year_start": 2013,
+    "year_end": 2023,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 404,
+    "class_name": "jeep_compass_mp",
+    "make": "Jeep",
+    "model": "Compass",
+    "generation": "MP",
+    "year_start": 2016,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 405,
+    "class_name": "jeep_gladiator_2020",
+    "make": "Jeep",
+    "model": "Gladiator",
+    "generation": null,
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 406,
+    "class_name": "jeep_grand_cherokee_trackhawk_2018",
+    "make": "Jeep",
+    "model": "Grand Cherokee Trackhawk",
+    "generation": null,
+    "year_start": 2018,
+    "year_end": 2021,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 407,
+    "class_name": "jeep_grand_cherokee_wk2",
+    "make": "Jeep",
+    "model": "Grand Cherokee",
+    "generation": "WK2",
+    "year_start": 2010,
+    "year_end": 2021,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 408,
+    "class_name": "jeep_grand_cherokee_wl",
+    "make": "Jeep",
+    "model": "Grand Cherokee",
+    "generation": "WL",
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 409,
+    "class_name": "jeep_grand_wagoneer_2022",
+    "make": "Jeep",
+    "model": "Grand Wagoneer",
+    "generation": null,
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 410,
+    "class_name": "jeep_patriot_2007",
+    "make": "Jeep",
+    "model": "Patriot",
+    "generation": null,
+    "year_start": 2009,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 411,
+    "class_name": "jeep_renegade_2015",
+    "make": "Jeep",
+    "model": "Renegade",
+    "generation": null,
+    "year_start": 2014,
+    "year_end": 2023,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 412,
+    "class_name": "jeep_wagoneer_2022",
+    "make": "Jeep",
+    "model": "Wagoneer",
+    "generation": null,
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 413,
+    "class_name": "jeep_wrangler_jk",
+    "make": "Jeep",
+    "model": "Wrangler",
+    "generation": "JK",
+    "year_start": 2006,
+    "year_end": 2018,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 414,
+    "class_name": "jeep_wrangler_jl",
+    "make": "Jeep",
+    "model": "Wrangler",
+    "generation": "JL",
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 415,
+    "class_name": "jeep_wrangler_rubicon_392_2021",
+    "make": "Jeep",
+    "model": "Wrangler Rubicon 392",
+    "generation": null,
+    "year_start": 2020,
+    "year_end": 2024,
+    "rarity": "RARE"
+  },
+  {
+    "index": 416,
+    "class_name": "kia_borrego_1st_gen",
+    "make": "Kia",
+    "model": "Borrego",
+    "generation": "1st Gen",
+    "year_start": 2008,
+    "year_end": 2015,
+    "rarity": "RARE"
+  },
+  {
+    "index": 417,
+    "class_name": "kia_cadenza_1st_gen",
+    "make": "Kia",
+    "model": "Cadenza",
+    "generation": "1st Gen",
+    "year_start": 2010,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 418,
+    "class_name": "kia_carnival_2022",
+    "make": "Kia",
+    "model": "Carnival",
+    "generation": null,
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 419,
+    "class_name": "kia_carnival_2nd_gen",
+    "make": "Kia",
+    "model": "Carnival",
+    "generation": "2nd Gen",
+    "year_start": 2006,
+    "year_end": 2013,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 420,
+    "class_name": "kia_ceed_2nd_gen",
+    "make": "Kia",
+    "model": "Ceed",
+    "generation": "2nd Gen",
+    "year_start": 2010,
+    "year_end": 2015,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 421,
+    "class_name": "kia_ev6_2022",
+    "make": "Kia",
+    "model": "EV6",
+    "generation": null,
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 422,
+    "class_name": "kia_ev9_2024",
+    "make": "Kia",
+    "model": "EV9",
+    "generation": null,
+    "year_start": 2023,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 423,
+    "class_name": "kia_forte_3rd_gen",
+    "make": "Kia",
+    "model": "Forte",
+    "generation": "3rd Gen",
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 424,
+    "class_name": "kia_k4_2014",
+    "make": "Kia",
+    "model": "K4",
+    "generation": null,
+    "year_start": 2014,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 425,
+    "class_name": "kia_k5_2021",
+    "make": "Kia",
+    "model": "K5",
+    "generation": null,
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 426,
+    "class_name": "kia_niro_2nd_gen",
+    "make": "Kia",
+    "model": "Niro",
+    "generation": "2nd Gen",
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 427,
+    "class_name": "kia_optima_2016",
+    "make": "Kia",
+    "model": "Optima",
+    "generation": null,
+    "year_start": 2015,
+    "year_end": 2020,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 428,
+    "class_name": "kia_picanto_2nd_gen",
+    "make": "Kia",
+    "model": "Picanto",
+    "generation": "2nd Gen",
+    "year_start": 2012,
+    "year_end": 2015,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 429,
+    "class_name": "kia_seltos_2021",
+    "make": "Kia",
+    "model": "Seltos",
+    "generation": null,
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 430,
+    "class_name": "kia_sorento_2nd_gen",
+    "make": "Kia",
+    "model": "Sorento",
+    "generation": "2nd Gen",
+    "year_start": 2009,
+    "year_end": 2015,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 431,
+    "class_name": "kia_sorento_4th_gen",
+    "make": "Kia",
+    "model": "Sorento",
+    "generation": "4th Gen",
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 432,
+    "class_name": "kia_soul_3rd_gen",
+    "make": "Kia",
+    "model": "Soul",
+    "generation": "3rd Gen",
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 433,
+    "class_name": "kia_sportage_2nd_gen",
+    "make": "Kia",
+    "model": "Sportage",
+    "generation": "2nd Gen",
+    "year_start": 2009,
+    "year_end": 2013,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 434,
+    "class_name": "kia_sportage_4th_gen",
+    "make": "Kia",
+    "model": "Sportage",
+    "generation": "4th Gen",
+    "year_start": 2015,
+    "year_end": 2022,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 435,
+    "class_name": "kia_sportage_5th_gen",
+    "make": "Kia",
+    "model": "Sportage",
+    "generation": "5th Gen",
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 436,
+    "class_name": "kia_stinger_2018",
+    "make": "Kia",
+    "model": "Stinger",
+    "generation": null,
+    "year_start": 2017,
+    "year_end": 2023,
+    "rarity": "RARE"
+  },
+  {
+    "index": 437,
+    "class_name": "kia_telluride_2020",
+    "make": "Kia",
+    "model": "Telluride",
+    "generation": null,
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 438,
+    "class_name": "kia_venga_2010",
+    "make": "Kia",
+    "model": "Venga",
+    "generation": null,
+    "year_start": 2010,
+    "year_end": 2015,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 439,
+    "class_name": "koenigsegg_agera_2011",
+    "make": "Koenigsegg",
+    "model": "Agera",
+    "generation": null,
+    "year_start": 2011,
+    "year_end": 2015,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 440,
+    "class_name": "ktm_x_bow_2008",
+    "make": "KTM",
+    "model": "X Bow",
+    "generation": null,
+    "year_start": 2008,
+    "year_end": 2014,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 441,
+    "class_name": "lada_granta_2015",
+    "make": "Lada",
+    "model": "Granta",
+    "generation": null,
+    "year_start": 2015,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 442,
+    "class_name": "lada_niva_legend_2015",
+    "make": "Lada",
+    "model": "Niva Legend",
+    "generation": null,
+    "year_start": 2015,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 443,
+    "class_name": "lada_niva_travel_2021",
+    "make": "Lada",
+    "model": "Niva Travel",
+    "generation": null,
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 444,
+    "class_name": "lada_vesta_2015",
+    "make": "Lada",
+    "model": "Vesta",
+    "generation": null,
+    "year_start": 2015,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 445,
+    "class_name": "lamborghini_aventador_lp700",
+    "make": "Lamborghini",
+    "model": "Aventador",
+    "generation": "LP700",
+    "year_start": 2011,
+    "year_end": 2017,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 446,
+    "class_name": "lamborghini_aventador_svj",
+    "make": "Lamborghini",
+    "model": "Aventador",
+    "generation": "SVJ",
+    "year_start": 2018,
+    "year_end": 2022,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 447,
+    "class_name": "lamborghini_huracan_lp610",
+    "make": "Lamborghini",
+    "model": "Huracan",
+    "generation": "LP610",
+    "year_start": 2014,
+    "year_end": 2019,
+    "rarity": "EPIC"
+  },
+  {
+    "index": 448,
+    "class_name": "lamborghini_huracan_sto_2021",
+    "make": "Lamborghini",
+    "model": "Huracan STO",
+    "generation": null,
+    "year_start": 2020,
+    "year_end": 2024,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 449,
+    "class_name": "lamborghini_huracan_tecnica_2023",
+    "make": "Lamborghini",
+    "model": "Huracan Tecnica",
+    "generation": null,
+    "year_start": 2022,
+    "year_end": 2024,
+    "rarity": "EPIC"
+  },
+  {
+    "index": 450,
+    "class_name": "lamborghini_revuelto_2024",
+    "make": "Lamborghini",
+    "model": "Revuelto",
+    "generation": null,
+    "year_start": 2023,
+    "year_end": 2026,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 451,
+    "class_name": "lamborghini_temerario_2025",
+    "make": "Lamborghini",
+    "model": "Temerario",
+    "generation": null,
+    "year_start": 2025,
+    "year_end": 2026,
+    "rarity": "EPIC"
+  },
+  {
+    "index": 452,
+    "class_name": "lamborghini_urus_2019",
+    "make": "Lamborghini",
+    "model": "Urus",
+    "generation": null,
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 453,
+    "class_name": "lamborghini_urus_performante_2023",
+    "make": "Lamborghini",
+    "model": "Urus Performante",
+    "generation": null,
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "EPIC"
+  },
+  {
+    "index": 454,
+    "class_name": "lamborghini_veneno_2013",
+    "make": "Lamborghini",
+    "model": "Veneno",
+    "generation": null,
+    "year_start": 2013,
+    "year_end": 2014,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 455,
+    "class_name": "lancia_delta_3rd_gen",
+    "make": "Lancia",
+    "model": "Delta",
+    "generation": "3rd Gen",
+    "year_start": 2009,
+    "year_end": 2009,
+    "rarity": "RARE"
+  },
+  {
+    "index": 456,
+    "class_name": "lancia_ypsilon_3rd_gen",
+    "make": "Lancia",
+    "model": "Ypsilon",
+    "generation": "3rd Gen",
+    "year_start": 2006,
+    "year_end": 2012,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 457,
+    "class_name": "land_rover_defender_l663",
+    "make": "Land Rover",
+    "model": "Defender",
+    "generation": "L663",
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 458,
+    "class_name": "land_rover_discovery_4th_gen",
+    "make": "Land Rover",
+    "model": "Discovery",
+    "generation": "4th Gen",
+    "year_start": 2010,
+    "year_end": 2015,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 459,
+    "class_name": "land_rover_discovery_5th_gen",
+    "make": "Land Rover",
+    "model": "Discovery",
+    "generation": "5th Gen",
+    "year_start": 2016,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 460,
+    "class_name": "land_rover_discovery_sport_2015",
+    "make": "Land Rover",
+    "model": "Discovery Sport",
+    "generation": null,
+    "year_start": 2014,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 461,
+    "class_name": "land_rover_freelander_2nd_gen",
+    "make": "Land Rover",
+    "model": "Freelander",
+    "generation": "2nd Gen",
+    "year_start": 2010,
+    "year_end": 2015,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 462,
+    "class_name": "land_rover_range_rover_4th_gen",
+    "make": "Land Rover",
+    "model": "Range Rover",
+    "generation": "4th Gen",
+    "year_start": 2012,
+    "year_end": 2021,
+    "rarity": "RARE"
+  },
+  {
+    "index": 463,
+    "class_name": "land_rover_range_rover_5th_gen",
+    "make": "Land Rover",
+    "model": "Range Rover",
+    "generation": "5th Gen",
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 464,
+    "class_name": "land_rover_range_rover_evoque_2nd_gen",
+    "make": "Land Rover",
+    "model": "Range Rover Evoque",
+    "generation": "2nd Gen",
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 465,
+    "class_name": "land_rover_range_rover_sport_2nd_gen",
+    "make": "Land Rover",
+    "model": "Range Rover Sport",
+    "generation": "2nd Gen",
+    "year_start": 2013,
+    "year_end": 2022,
+    "rarity": "RARE"
+  },
+  {
+    "index": 466,
+    "class_name": "land_rover_range_rover_sport_3rd_gen",
+    "make": "Land Rover",
+    "model": "Range Rover Sport",
+    "generation": "3rd Gen",
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 467,
+    "class_name": "land_rover_range_rover_velar_2018",
+    "make": "Land Rover",
+    "model": "Range Rover Velar",
+    "generation": null,
+    "year_start": 2017,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 468,
+    "class_name": "lexus_ct200h_2011",
+    "make": "Lexus",
+    "model": "Ct200H",
+    "generation": null,
+    "year_start": 2012,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 469,
+    "class_name": "lexus_es_7th_gen",
+    "make": "Lexus",
+    "model": "ES",
+    "generation": "7th Gen",
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 470,
+    "class_name": "lexus_gs_2016",
+    "make": "Lexus",
+    "model": "GS",
+    "generation": null,
+    "year_start": 2016,
+    "year_end": 2020,
+    "rarity": "RARE"
+  },
+  {
+    "index": 471,
+    "class_name": "lexus_gx_2nd_gen",
+    "make": "Lexus",
+    "model": "GX",
+    "generation": "2nd Gen",
+    "year_start": 2010,
+    "year_end": 2023,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 472,
+    "class_name": "lexus_gx_3rd_gen",
+    "make": "Lexus",
+    "model": "GX",
+    "generation": "3rd Gen",
+    "year_start": 2023,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 473,
+    "class_name": "lexus_hs_250h_2010",
+    "make": "Lexus",
+    "model": "Hs 250H",
+    "generation": null,
+    "year_start": 2010,
+    "year_end": 2011,
+    "rarity": "RARE"
+  },
+  {
+    "index": 474,
+    "class_name": "lexus_is_3rd_gen",
+    "make": "Lexus",
+    "model": "IS",
+    "generation": "3rd Gen",
+    "year_start": 2013,
+    "year_end": 2020,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 475,
+    "class_name": "lexus_is_3rd_gen_fl",
+    "make": "Lexus",
+    "model": "IS",
+    "generation": "3rd Gen FL",
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 476,
+    "class_name": "lexus_is_500_2022",
+    "make": "Lexus",
+    "model": "IS 500",
+    "generation": null,
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 477,
+    "class_name": "lexus_lc_2018",
+    "make": "Lexus",
+    "model": "LC",
+    "generation": null,
+    "year_start": 2017,
+    "year_end": 2025,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 478,
+    "class_name": "lexus_lfa",
+    "make": "Lexus",
+    "model": "LFA",
+    "generation": null,
+    "year_start": 2010,
+    "year_end": 2012,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 479,
+    "class_name": "lexus_ls_5th_gen",
+    "make": "Lexus",
+    "model": "LS",
+    "generation": "5th Gen",
+    "year_start": 2017,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 480,
+    "class_name": "lexus_lx_4th_gen",
+    "make": "Lexus",
+    "model": "LX",
+    "generation": "4th Gen",
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 481,
+    "class_name": "lexus_nx_1st_gen",
+    "make": "Lexus",
+    "model": "NX",
+    "generation": "1st Gen",
+    "year_start": 2014,
+    "year_end": 2021,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 482,
+    "class_name": "lexus_nx_2nd_gen",
+    "make": "Lexus",
+    "model": "NX",
+    "generation": "2nd Gen",
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 483,
+    "class_name": "lexus_rc_2015",
+    "make": "Lexus",
+    "model": "RC",
+    "generation": null,
+    "year_start": 2014,
+    "year_end": 2024,
+    "rarity": "RARE"
+  },
+  {
+    "index": 484,
+    "class_name": "lexus_rc_f_2015",
+    "make": "Lexus",
+    "model": "RC F",
+    "generation": null,
+    "year_start": 2014,
+    "year_end": 2024,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 485,
+    "class_name": "lexus_rx_4th_gen",
+    "make": "Lexus",
+    "model": "RX",
+    "generation": "4th Gen",
+    "year_start": 2015,
+    "year_end": 2022,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 486,
+    "class_name": "lexus_rx_5th_gen",
+    "make": "Lexus",
+    "model": "RX",
+    "generation": "5th Gen",
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 487,
+    "class_name": "lexus_rz_2023",
+    "make": "Lexus",
+    "model": "RZ",
+    "generation": null,
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 488,
+    "class_name": "lexus_tx_2024",
+    "make": "Lexus",
+    "model": "TX",
+    "generation": null,
+    "year_start": 2023,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 489,
+    "class_name": "lexus_ux_2019",
+    "make": "Lexus",
+    "model": "UX",
+    "generation": null,
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 490,
+    "class_name": "lincoln_aviator_2020",
+    "make": "Lincoln",
+    "model": "Aviator",
+    "generation": null,
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 491,
+    "class_name": "lincoln_corsair_2020",
+    "make": "Lincoln",
+    "model": "Corsair",
+    "generation": null,
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 492,
+    "class_name": "lincoln_mkc_1st_gen",
+    "make": "Lincoln",
+    "model": "Mkc",
+    "generation": "1st Gen",
+    "year_start": 2013,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 493,
+    "class_name": "lincoln_mks_2010",
+    "make": "Lincoln",
+    "model": "Mks",
+    "generation": null,
+    "year_start": 2010,
+    "year_end": 2013,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 494,
+    "class_name": "lincoln_mkt_1st_gen",
+    "make": "Lincoln",
+    "model": "Mkt",
+    "generation": "1st Gen",
+    "year_start": 2010,
+    "year_end": 2013,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 495,
+    "class_name": "lincoln_mkx_2nd_gen",
+    "make": "Lincoln",
+    "model": "Mkx",
+    "generation": "2nd Gen",
+    "year_start": 2009,
+    "year_end": 2016,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 496,
+    "class_name": "lincoln_mkz_2nd_gen",
+    "make": "Lincoln",
+    "model": "Mkz",
+    "generation": "2nd Gen",
+    "year_start": 2007,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 497,
+    "class_name": "lincoln_nautilus_2019",
+    "make": "Lincoln",
+    "model": "Nautilus",
+    "generation": null,
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 498,
+    "class_name": "lincoln_navigator_4th_gen",
+    "make": "Lincoln",
+    "model": "Navigator",
+    "generation": "4th Gen",
+    "year_start": 2017,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 499,
+    "class_name": "london_taxi_tx4_2007",
+    "make": "London Taxi",
+    "model": "Taxi Tx4",
+    "generation": null,
+    "year_start": 2009,
+    "year_end": 2012,
+    "rarity": "RARE"
+  },
+  {
+    "index": 500,
+    "class_name": "lotus_eletre_2024",
+    "make": "Lotus",
+    "model": "Eletre",
+    "generation": null,
+    "year_start": 2023,
+    "year_end": 2025,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 501,
+    "class_name": "lotus_elise_s3_2011",
+    "make": "Lotus",
+    "model": "Elise S3",
+    "generation": null,
+    "year_start": 2011,
+    "year_end": 2015,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 502,
+    "class_name": "lotus_emira_2023",
+    "make": "Lotus",
+    "model": "Emira",
+    "generation": null,
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 503,
+    "class_name": "lotus_evora_2015",
+    "make": "Lotus",
+    "model": "Evora",
+    "generation": null,
+    "year_start": 2015,
+    "year_end": 2021,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 504,
+    "class_name": "lotus_exige_s3_2012",
+    "make": "Lotus",
+    "model": "Exige S3",
+    "generation": null,
+    "year_start": 2011,
+    "year_end": 2014,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 505,
+    "class_name": "lucid_air_2022",
+    "make": "Lucid",
+    "model": "Air",
+    "generation": null,
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 506,
+    "class_name": "lucid_air_sapphire_2024",
+    "make": "Lucid",
+    "model": "Air Sapphire",
+    "generation": null,
+    "year_start": 2023,
+    "year_end": 2025,
+    "rarity": "EPIC"
+  },
+  {
+    "index": 507,
+    "class_name": "lucid_gravity_2025",
+    "make": "Lucid",
+    "model": "Gravity",
+    "generation": null,
+    "year_start": 2024,
+    "year_end": 2026,
+    "rarity": "RARE"
+  },
+  {
+    "index": 508,
+    "class_name": "maserati_ghibli_2015",
+    "make": "Maserati",
+    "model": "Ghibli",
+    "generation": null,
+    "year_start": 2013,
+    "year_end": 2023,
+    "rarity": "RARE"
+  },
+  {
+    "index": 509,
+    "class_name": "maserati_granturismo_new",
+    "make": "Maserati",
+    "model": "GranTurismo",
+    "generation": "New",
+    "year_start": 2023,
+    "year_end": 2026,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 510,
+    "class_name": "maserati_grecale_2023",
+    "make": "Maserati",
+    "model": "Grecale",
+    "generation": null,
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 511,
+    "class_name": "maserati_levante_2017",
+    "make": "Maserati",
+    "model": "Levante",
+    "generation": null,
+    "year_start": 2016,
+    "year_end": 2023,
+    "rarity": "RARE"
+  },
+  {
+    "index": 512,
+    "class_name": "maserati_mc20_2022",
+    "make": "Maserati",
+    "model": "MC20",
+    "generation": null,
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "EPIC"
+  },
+  {
+    "index": 513,
+    "class_name": "maserati_quattroporte_2015",
+    "make": "Maserati",
+    "model": "Quattroporte",
+    "generation": null,
+    "year_start": 2013,
+    "year_end": 2023,
+    "rarity": "RARE"
+  },
+  {
+    "index": 514,
+    "class_name": "maxus_g10_2014",
+    "make": "Maxus",
+    "model": "G10",
+    "generation": null,
+    "year_start": 2013,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 515,
+    "class_name": "mazda_cx7_2010",
+    "make": "Mazda",
+    "model": "Cx7",
+    "generation": null,
+    "year_start": 2010,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 516,
+    "class_name": "mazda_cx_30_2020",
+    "make": "Mazda",
+    "model": "CX-30",
+    "generation": null,
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 517,
+    "class_name": "mazda_cx_50_2023",
+    "make": "Mazda",
+    "model": "CX-50",
+    "generation": null,
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 518,
+    "class_name": "mazda_cx_5_2nd_gen",
+    "make": "Mazda",
+    "model": "CX-5",
+    "generation": "2nd Gen",
+    "year_start": 2016,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 519,
+    "class_name": "mazda_cx_70_2025",
+    "make": "Mazda",
+    "model": "CX-70",
+    "generation": null,
+    "year_start": 2024,
+    "year_end": 2026,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 520,
+    "class_name": "mazda_cx_90_2024",
+    "make": "Mazda",
+    "model": "CX-90",
+    "generation": null,
+    "year_start": 2023,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 521,
+    "class_name": "mazda_cx_9_2016",
+    "make": "Mazda",
+    "model": "CX-9",
+    "generation": null,
+    "year_start": 2015,
+    "year_end": 2023,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 522,
+    "class_name": "mazda_mazda3_3rd_gen",
+    "make": "Mazda",
+    "model": "Mazda3",
+    "generation": "3rd Gen",
+    "year_start": 2013,
+    "year_end": 2018,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 523,
+    "class_name": "mazda_mazda3_4th_gen",
+    "make": "Mazda",
+    "model": "Mazda3",
+    "generation": "4th Gen",
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 524,
+    "class_name": "mazda_mazda6_2015",
+    "make": "Mazda",
+    "model": "Mazda6",
+    "generation": null,
+    "year_start": 2012,
+    "year_end": 2021,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 525,
+    "class_name": "mazda_mazda6_2nd_gen",
+    "make": "Mazda",
+    "model": "Mazda6",
+    "generation": "2nd Gen",
+    "year_start": 2009,
+    "year_end": 2012,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 526,
+    "class_name": "mazda_mazda6_2nd_gen_facelift_2010",
+    "make": "Mazda",
+    "model": "Mazda6 2Nd Gen Facelift",
+    "generation": null,
+    "year_start": 2010,
+    "year_end": 2012,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 527,
+    "class_name": "mazda_mx_5_miata_nd",
+    "make": "Mazda",
+    "model": "MX-5 Miata",
+    "generation": "ND",
+    "year_start": 2015,
+    "year_end": 2024,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 528,
+    "class_name": "mclaren_570s_2016",
+    "make": "McLaren",
+    "model": "570S",
+    "generation": null,
+    "year_start": 2015,
+    "year_end": 2021,
+    "rarity": "EPIC"
+  },
+  {
+    "index": 529,
+    "class_name": "mclaren_600lt_2019",
+    "make": "McLaren",
+    "model": "600LT",
+    "generation": null,
+    "year_start": 2018,
+    "year_end": 2020,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 530,
+    "class_name": "mclaren_620r_2021",
+    "make": "McLaren",
+    "model": "620R",
+    "generation": null,
+    "year_start": 2020,
+    "year_end": 2021,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 531,
+    "class_name": "mclaren_720s_2018",
+    "make": "McLaren",
+    "model": "720S",
+    "generation": null,
+    "year_start": 2017,
+    "year_end": 2023,
+    "rarity": "EPIC"
+  },
+  {
+    "index": 532,
+    "class_name": "mclaren_750s_2024",
+    "make": "McLaren",
+    "model": "750S",
+    "generation": null,
+    "year_start": 2023,
+    "year_end": 2026,
+    "rarity": "EPIC"
+  },
+  {
+    "index": 533,
+    "class_name": "mclaren_765lt_2021",
+    "make": "McLaren",
+    "model": "765LT",
+    "generation": null,
+    "year_start": 2020,
+    "year_end": 2022,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 534,
+    "class_name": "mclaren_artura_2022",
+    "make": "McLaren",
+    "model": "Artura",
+    "generation": null,
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "EPIC"
+  },
+  {
+    "index": 535,
+    "class_name": "mclaren_gt_2020",
+    "make": "McLaren",
+    "model": "GT",
+    "generation": null,
+    "year_start": 2019,
+    "year_end": 2023,
+    "rarity": "EPIC"
+  },
+  {
+    "index": 536,
+    "class_name": "mclaren_mp4_12c_2011",
+    "make": "McLaren",
+    "model": "Mp4 12C",
+    "generation": null,
+    "year_start": 2011,
+    "year_end": 2014,
+    "rarity": "EPIC"
+  },
+  {
+    "index": 537,
+    "class_name": "mclaren_p1_2015",
+    "make": "McLaren",
+    "model": "P1",
+    "generation": null,
+    "year_start": 2013,
+    "year_end": 2015,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 538,
+    "class_name": "mclaren_senna_2019",
+    "make": "McLaren",
+    "model": "Senna",
+    "generation": null,
+    "year_start": 2018,
+    "year_end": 2020,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 539,
+    "class_name": "mclaren_speedtail_2020",
+    "make": "McLaren",
+    "model": "Speedtail",
+    "generation": null,
+    "year_start": 2020,
+    "year_end": 2021,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 540,
+    "class_name": "mclaren_w1_2025",
+    "make": "McLaren",
+    "model": "W1",
+    "generation": null,
+    "year_start": 2025,
+    "year_end": 2026,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 541,
+    "class_name": "mercedes_amg_c63_w205",
+    "make": "Mercedes-AMG",
+    "model": "C63",
+    "generation": "W205",
+    "year_start": 2014,
+    "year_end": 2021,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 542,
+    "class_name": "mercedes_amg_c63_w206",
+    "make": "Mercedes-AMG",
+    "model": "C63",
+    "generation": "W206",
+    "year_start": 2023,
+    "year_end": 2025,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 543,
+    "class_name": "mercedes_amg_cls63_w218",
+    "make": "Mercedes-AMG",
+    "model": "Amg Cls63",
+    "generation": "W218",
+    "year_start": 2009,
+    "year_end": 2015,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 544,
+    "class_name": "mercedes_amg_e63_w213",
+    "make": "Mercedes-AMG",
+    "model": "E63",
+    "generation": "W213",
+    "year_start": 2016,
+    "year_end": 2023,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 545,
+    "class_name": "mercedes_amg_g63_2019",
+    "make": "Mercedes-AMG",
+    "model": "G63",
+    "generation": null,
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 546,
+    "class_name": "mercedes_amg_gt_4_door_2019",
+    "make": "Mercedes-AMG",
+    "model": "GT 4-Door",
+    "generation": null,
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 547,
+    "class_name": "mercedes_amg_gt_black_series_2021",
+    "make": "Mercedes-AMG",
+    "model": "GT Black Series",
+    "generation": null,
+    "year_start": 2020,
+    "year_end": 2022,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 548,
+    "class_name": "mercedes_amg_gt_c190",
+    "make": "Mercedes-AMG",
+    "model": "GT",
+    "generation": "C190",
+    "year_start": 2014,
+    "year_end": 2021,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 549,
+    "class_name": "mercedes_amg_gt_x290_2",
+    "make": "Mercedes-AMG",
+    "model": "GT",
+    "generation": "X290.2",
+    "year_start": 2023,
+    "year_end": 2026,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 550,
+    "class_name": "mercedes_amg_one_2023",
+    "make": "Mercedes-AMG",
+    "model": "ONE",
+    "generation": null,
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 551,
+    "class_name": "mercedes_amg_sl_r232",
+    "make": "Mercedes-AMG",
+    "model": "SL",
+    "generation": "R232",
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 552,
+    "class_name": "mercedes_benz_a_class_2019",
+    "make": "Mercedes-Benz",
+    "model": "A-Class",
+    "generation": null,
+    "year_start": 2018,
+    "year_end": 2022,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 553,
+    "class_name": "mercedes_benz_a_class_w176",
+    "make": "Mercedes-Benz",
+    "model": "A Class",
+    "generation": "W176",
+    "year_start": 2011,
+    "year_end": 2015,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 554,
+    "class_name": "mercedes_benz_b_class_w246",
+    "make": "Mercedes-Benz",
+    "model": "B-Class",
+    "generation": "W246",
+    "year_start": 2011,
+    "year_end": 2018,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 555,
+    "class_name": "mercedes_benz_b_class_w247",
+    "make": "Mercedes-Benz",
+    "model": "B-Class",
+    "generation": "W247",
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 556,
+    "class_name": "mercedes_benz_c_class_w204_estate",
+    "make": "Mercedes-Benz",
+    "model": "C Class W204 Estate",
+    "generation": null,
+    "year_start": 2010,
+    "year_end": 2014,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 557,
+    "class_name": "mercedes_benz_c_class_w205",
+    "make": "Mercedes-Benz",
+    "model": "C-Class",
+    "generation": "W205",
+    "year_start": 2014,
+    "year_end": 2021,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 558,
+    "class_name": "mercedes_benz_c_class_w206",
+    "make": "Mercedes-Benz",
+    "model": "C-Class",
+    "generation": "W206",
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 559,
+    "class_name": "mercedes_benz_cla_1st_gen",
+    "make": "Mercedes-Benz",
+    "model": "CLA",
+    "generation": "1st Gen",
+    "year_start": 2013,
+    "year_end": 2019,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 560,
+    "class_name": "mercedes_benz_cla_2nd_gen",
+    "make": "Mercedes-Benz",
+    "model": "CLA",
+    "generation": "2nd Gen",
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 561,
+    "class_name": "mercedes_benz_cls_c218_2012",
+    "make": "Mercedes-Benz",
+    "model": "Cls C218",
+    "generation": null,
+    "year_start": 2012,
+    "year_end": 2015,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 562,
+    "class_name": "mercedes_benz_e_class_cabriolet_a207",
+    "make": "Mercedes-Benz",
+    "model": "E Class Cabriolet",
+    "generation": "A207",
+    "year_start": 2010,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 563,
+    "class_name": "mercedes_benz_e_class_coupe_c207",
+    "make": "Mercedes-Benz",
+    "model": "E Class Coupe",
+    "generation": "C207",
+    "year_start": 2009,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 564,
+    "class_name": "mercedes_benz_e_class_w212",
+    "make": "Mercedes-Benz",
+    "model": "E Class",
+    "generation": "W212",
+    "year_start": 2009,
+    "year_end": 2015,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 565,
+    "class_name": "mercedes_benz_e_class_w213",
+    "make": "Mercedes-Benz",
+    "model": "E-Class",
+    "generation": "W213",
+    "year_start": 2016,
+    "year_end": 2023,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 566,
+    "class_name": "mercedes_benz_e_class_w214",
+    "make": "Mercedes-Benz",
+    "model": "E-Class",
+    "generation": "W214",
+    "year_start": 2023,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 567,
+    "class_name": "mercedes_benz_eqa_2021",
+    "make": "Mercedes-Benz",
+    "model": "EQA",
+    "generation": null,
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 568,
+    "class_name": "mercedes_benz_eqb_2022",
+    "make": "Mercedes-Benz",
+    "model": "EQB",
+    "generation": null,
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 569,
+    "class_name": "mercedes_benz_eqe_sedan",
+    "make": "Mercedes-Benz",
+    "model": "EQE",
+    "generation": "Sedan",
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 570,
+    "class_name": "mercedes_benz_eqs_sedan",
+    "make": "Mercedes-Benz",
+    "model": "EQS",
+    "generation": "Sedan",
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 571,
+    "class_name": "mercedes_benz_eqs_suv",
+    "make": "Mercedes-Benz",
+    "model": "EQS",
+    "generation": "SUV",
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 572,
+    "class_name": "mercedes_benz_g_class_w463",
+    "make": "Mercedes-Benz",
+    "model": "G-Class",
+    "generation": "W463",
+    "year_start": 2015,
+    "year_end": 2018,
+    "rarity": "RARE"
+  },
+  {
+    "index": 573,
+    "class_name": "mercedes_benz_gl_x166",
+    "make": "Mercedes-Benz",
+    "model": "Gl",
+    "generation": "X166",
+    "year_start": 2011,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 574,
+    "class_name": "mercedes_benz_gla_2nd_gen",
+    "make": "Mercedes-Benz",
+    "model": "GLA",
+    "generation": "2nd Gen",
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 575,
+    "class_name": "mercedes_benz_glb_2020",
+    "make": "Mercedes-Benz",
+    "model": "GLB",
+    "generation": null,
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 576,
+    "class_name": "mercedes_benz_glc_1st_gen",
+    "make": "Mercedes-Benz",
+    "model": "GLC",
+    "generation": "1st Gen",
+    "year_start": 2015,
+    "year_end": 2022,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 577,
+    "class_name": "mercedes_benz_glc_2nd_gen",
+    "make": "Mercedes-Benz",
+    "model": "GLC",
+    "generation": "2nd Gen",
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 578,
+    "class_name": "mercedes_benz_gle_coupe_2020",
+    "make": "Mercedes-Benz",
+    "model": "GLE Coupe",
+    "generation": null,
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 579,
+    "class_name": "mercedes_benz_gle_w167",
+    "make": "Mercedes-Benz",
+    "model": "GLE",
+    "generation": "W167",
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 580,
+    "class_name": "mercedes_benz_glk_x204",
+    "make": "Mercedes-Benz",
+    "model": "Glk",
+    "generation": "X204",
+    "year_start": 2008,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 581,
+    "class_name": "mercedes_benz_gls_2020",
+    "make": "Mercedes-Benz",
+    "model": "GLS",
+    "generation": null,
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 582,
+    "class_name": "mercedes_benz_maybach_gls_2021",
+    "make": "Mercedes-Benz",
+    "model": "Maybach GLS",
+    "generation": null,
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 583,
+    "class_name": "mercedes_benz_maybach_s_class_2021",
+    "make": "Mercedes-Benz",
+    "model": "Maybach S-Class",
+    "generation": null,
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 584,
+    "class_name": "mercedes_benz_ml_w166",
+    "make": "Mercedes-Benz",
+    "model": "Ml",
+    "generation": "W166",
+    "year_start": 2010,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 585,
+    "class_name": "mercedes_benz_r_class_w251",
+    "make": "Mercedes-Benz",
+    "model": "R Class",
+    "generation": "W251",
+    "year_start": 2006,
+    "year_end": 2014,
+    "rarity": "RARE"
+  },
+  {
+    "index": 586,
+    "class_name": "mercedes_benz_s_class_w222",
+    "make": "Mercedes-Benz",
+    "model": "S-Class",
+    "generation": "W222",
+    "year_start": 2013,
+    "year_end": 2020,
+    "rarity": "RARE"
+  },
+  {
+    "index": 587,
+    "class_name": "mercedes_benz_s_class_w223",
+    "make": "Mercedes-Benz",
+    "model": "S-Class",
+    "generation": "W223",
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 588,
+    "class_name": "mercedes_benz_sl_r231_2012",
+    "make": "Mercedes-Benz",
+    "model": "Sl R231",
+    "generation": null,
+    "year_start": 2009,
+    "year_end": 2014,
+    "rarity": "RARE"
+  },
+  {
+    "index": 589,
+    "class_name": "mercedes_benz_slk_r172",
+    "make": "Mercedes-Benz",
+    "model": "Slk",
+    "generation": "R172",
+    "year_start": 2009,
+    "year_end": 2015,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 590,
+    "class_name": "mercedes_benz_sls_amg_c197",
+    "make": "Mercedes-Benz",
+    "model": "Sls Amg",
+    "generation": "C197",
+    "year_start": 2011,
+    "year_end": 2014,
+    "rarity": "EPIC"
+  },
+  {
+    "index": 591,
+    "class_name": "mercedes_benz_viano_w639",
+    "make": "Mercedes-Benz",
+    "model": "Viano",
+    "generation": "W639",
+    "year_start": 2010,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 592,
+    "class_name": "mercedes_benz_vito_2nd_gen",
+    "make": "Mercedes-Benz",
+    "model": "Vito",
+    "generation": "2nd Gen",
+    "year_start": 2010,
+    "year_end": 2014,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 593,
+    "class_name": "mg_3_2nd_gen",
+    "make": "MG",
+    "model": "3",
+    "generation": "2nd Gen",
+    "year_start": 2012,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 594,
+    "class_name": "mg_3_hybrid_2024",
+    "make": "MG",
+    "model": "3 Hybrid",
+    "generation": null,
+    "year_start": 2024,
+    "year_end": 2026,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 595,
+    "class_name": "mg_4_2023",
+    "make": "MG",
+    "model": "4",
+    "generation": null,
+    "year_start": 2022,
+    "year_end": 2026,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 596,
+    "class_name": "mg_5_2022",
+    "make": "MG",
+    "model": "5",
+    "generation": null,
+    "year_start": 2022,
+    "year_end": 2026,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 597,
+    "class_name": "mg_7_1st_gen",
+    "make": "MG",
+    "model": "7",
+    "generation": "1st Gen",
+    "year_start": 2007,
+    "year_end": 2010,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 598,
+    "class_name": "mg_cyberster_2024",
+    "make": "MG",
+    "model": "Cyberster",
+    "generation": null,
+    "year_start": 2023,
+    "year_end": 2026,
+    "rarity": "RARE"
+  },
+  {
+    "index": 599,
+    "class_name": "mg_hs_2020",
+    "make": "MG",
+    "model": "HS",
+    "generation": null,
+    "year_start": 2018,
+    "year_end": 2026,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 600,
+    "class_name": "mg_mg3_2011",
+    "make": "MG",
+    "model": "Mg3",
+    "generation": null,
+    "year_start": 2011,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 601,
+    "class_name": "mg_zs_2020",
+    "make": "MG",
+    "model": "ZS",
+    "generation": null,
+    "year_start": 2020,
+    "year_end": 2026,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 602,
+    "class_name": "mini_clubman_f54",
+    "make": "Mini",
+    "model": "Clubman",
+    "generation": "F54",
+    "year_start": 2015,
+    "year_end": 2023,
+    "rarity": "RARE"
+  },
+  {
+    "index": 603,
+    "class_name": "mini_cooper_f56",
+    "make": "Mini",
+    "model": "Cooper",
+    "generation": "F56",
+    "year_start": 2014,
+    "year_end": 2024,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 604,
+    "class_name": "mini_cooper_jcw_2015",
+    "make": "Mini",
+    "model": "Cooper JCW",
+    "generation": null,
+    "year_start": 2015,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 605,
+    "class_name": "mini_countryman_f60",
+    "make": "Mini",
+    "model": "Countryman",
+    "generation": "F60",
+    "year_start": 2016,
+    "year_end": 2024,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 606,
+    "class_name": "mini_countryman_jcw_r60",
+    "make": "Mini",
+    "model": "Countryman Jcw",
+    "generation": "R60",
+    "year_start": 2013,
+    "year_end": 2014,
+    "rarity": "RARE"
+  },
+  {
+    "index": 607,
+    "class_name": "mini_paceman_r61",
+    "make": "Mini",
+    "model": "Paceman",
+    "generation": "R61",
+    "year_start": 2013,
+    "year_end": 2015,
+    "rarity": "RARE"
+  },
+  {
+    "index": 608,
+    "class_name": "mitsubishi_eclipse_cross_2018",
+    "make": "Mitsubishi",
+    "model": "Eclipse Cross",
+    "generation": null,
+    "year_start": 2017,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 609,
+    "class_name": "mitsubishi_lancer_2006",
+    "make": "Mitsubishi",
+    "model": "Lancer",
+    "generation": null,
+    "year_start": 2006,
+    "year_end": 2015,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 610,
+    "class_name": "mitsubishi_lancer_ex_2013",
+    "make": "Mitsubishi",
+    "model": "Lancer Ex",
+    "generation": null,
+    "year_start": 2013,
+    "year_end": 2013,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 611,
+    "class_name": "mitsubishi_mirage_2015",
+    "make": "Mitsubishi",
+    "model": "Mirage",
+    "generation": null,
+    "year_start": 2012,
+    "year_end": 2023,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 612,
+    "class_name": "mitsubishi_outlander_3rd_gen",
+    "make": "Mitsubishi",
+    "model": "Outlander",
+    "generation": "3rd Gen",
+    "year_start": 2012,
+    "year_end": 2021,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 613,
+    "class_name": "mitsubishi_outlander_4th_gen",
+    "make": "Mitsubishi",
+    "model": "Outlander",
+    "generation": "4th Gen",
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 614,
+    "class_name": "mitsubishi_outlander_sport_2015",
+    "make": "Mitsubishi",
+    "model": "Outlander Sport",
+    "generation": null,
+    "year_start": 2010,
+    "year_end": 2024,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 615,
+    "class_name": "mitsubishi_pajero_4th_gen",
+    "make": "Mitsubishi",
+    "model": "Pajero",
+    "generation": "4th Gen",
+    "year_start": 2008,
+    "year_end": 2015,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 616,
+    "class_name": "mitsubishi_zinger_2008",
+    "make": "Mitsubishi",
+    "model": "Zinger",
+    "generation": null,
+    "year_start": 2008,
+    "year_end": 2011,
+    "rarity": "RARE"
+  },
+  {
+    "index": 617,
+    "class_name": "mitsuoka_orochi_2006",
+    "make": "Mitsuoka",
+    "model": "Orochi",
+    "generation": null,
+    "year_start": 2010,
+    "year_end": 2011,
+    "rarity": "EPIC"
+  },
+  {
+    "index": 618,
+    "class_name": "nissan_370z_2015",
+    "make": "Nissan",
+    "model": "370Z",
+    "generation": null,
+    "year_start": 2009,
+    "year_end": 2020,
+    "rarity": "RARE"
+  },
+  {
+    "index": 619,
+    "class_name": "nissan_altima_5th_gen",
+    "make": "Nissan",
+    "model": "Altima",
+    "generation": "5th Gen",
+    "year_start": 2013,
+    "year_end": 2018,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 620,
+    "class_name": "nissan_altima_6th_gen",
+    "make": "Nissan",
+    "model": "Altima",
+    "generation": "6th Gen",
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 621,
+    "class_name": "nissan_ariya_2023",
+    "make": "Nissan",
+    "model": "Ariya",
+    "generation": null,
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 622,
+    "class_name": "nissan_armada_2nd_gen",
+    "make": "Nissan",
+    "model": "Armada",
+    "generation": "2nd Gen",
+    "year_start": 2016,
+    "year_end": 2024,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 623,
+    "class_name": "nissan_armada_3rd_gen",
+    "make": "Nissan",
+    "model": "Armada",
+    "generation": "3rd Gen",
+    "year_start": 2024,
+    "year_end": 2026,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 624,
+    "class_name": "nissan_frontier_3rd_gen",
+    "make": "Nissan",
+    "model": "Frontier",
+    "generation": "3rd Gen",
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 625,
+    "class_name": "nissan_gt_r_nismo_r35",
+    "make": "Nissan",
+    "model": "GT-R Nismo",
+    "generation": "R35",
+    "year_start": 2014,
+    "year_end": 2024,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 626,
+    "class_name": "nissan_gt_r_r35",
+    "make": "Nissan",
+    "model": "GT-R",
+    "generation": "R35",
+    "year_start": 2007,
+    "year_end": 2024,
+    "rarity": "EPIC"
+  },
+  {
+    "index": 627,
+    "class_name": "nissan_juke_1st_gen",
+    "make": "Nissan",
+    "model": "Juke",
+    "generation": "1st Gen",
+    "year_start": 2011,
+    "year_end": 2015,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 628,
+    "class_name": "nissan_kicks_2018",
+    "make": "Nissan",
+    "model": "Kicks",
+    "generation": null,
+    "year_start": 2016,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 629,
+    "class_name": "nissan_leaf_2018",
+    "make": "Nissan",
+    "model": "Leaf",
+    "generation": null,
+    "year_start": 2017,
+    "year_end": 2024,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 630,
+    "class_name": "nissan_maxima_2016",
+    "make": "Nissan",
+    "model": "Maxima",
+    "generation": null,
+    "year_start": 2015,
+    "year_end": 2023,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 631,
+    "class_name": "nissan_murano_2015",
+    "make": "Nissan",
+    "model": "Murano",
+    "generation": null,
+    "year_start": 2014,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 632,
+    "class_name": "nissan_paladin_1st_gen",
+    "make": "Nissan",
+    "model": "Paladin",
+    "generation": "1st Gen",
+    "year_start": 2004,
+    "year_end": 2013,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 633,
+    "class_name": "nissan_pathfinder_5th_gen",
+    "make": "Nissan",
+    "model": "Pathfinder",
+    "generation": "5th Gen",
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 634,
+    "class_name": "nissan_patrol_y62",
+    "make": "Nissan",
+    "model": "Patrol",
+    "generation": "Y62",
+    "year_start": 2004,
+    "year_end": 2014,
+    "rarity": "RARE"
+  },
+  {
+    "index": 635,
+    "class_name": "nissan_pulsar_c13_2014",
+    "make": "Nissan",
+    "model": "Pulsar C13",
+    "generation": null,
+    "year_start": 2014,
+    "year_end": 2015,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 636,
+    "class_name": "nissan_qashqai_2nd_gen",
+    "make": "Nissan",
+    "model": "Qashqai",
+    "generation": "2nd Gen",
+    "year_start": 2010,
+    "year_end": 2014,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 637,
+    "class_name": "nissan_rogue_2nd_gen",
+    "make": "Nissan",
+    "model": "Rogue",
+    "generation": "2nd Gen",
+    "year_start": 2013,
+    "year_end": 2020,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 638,
+    "class_name": "nissan_rogue_3rd_gen",
+    "make": "Nissan",
+    "model": "Rogue",
+    "generation": "3rd Gen",
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 639,
+    "class_name": "nissan_sentra_8th_gen",
+    "make": "Nissan",
+    "model": "Sentra",
+    "generation": "8th Gen",
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 640,
+    "class_name": "nissan_teana_2nd_gen",
+    "make": "Nissan",
+    "model": "Teana",
+    "generation": "2nd Gen",
+    "year_start": 2008,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 641,
+    "class_name": "nissan_titan_2016",
+    "make": "Nissan",
+    "model": "Titan",
+    "generation": null,
+    "year_start": 2015,
+    "year_end": 2024,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 642,
+    "class_name": "nissan_versa_2020",
+    "make": "Nissan",
+    "model": "Versa",
+    "generation": null,
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 643,
+    "class_name": "nissan_z_2023",
+    "make": "Nissan",
+    "model": "Z",
+    "generation": null,
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 644,
+    "class_name": "nissan_z_nismo_2024",
+    "make": "Nissan",
+    "model": "Z Nismo",
+    "generation": null,
+    "year_start": 2023,
+    "year_end": 2025,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 645,
+    "class_name": "opel_adam_2013",
+    "make": "Opel",
+    "model": "Adam",
+    "generation": null,
+    "year_start": 2013,
+    "year_end": 2015,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 646,
+    "class_name": "opel_antara_1st_gen",
+    "make": "Opel",
+    "model": "Antara",
+    "generation": "1st Gen",
+    "year_start": 2009,
+    "year_end": 2013,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 647,
+    "class_name": "opel_astra_k",
+    "make": "Opel",
+    "model": "Astra",
+    "generation": "K",
+    "year_start": 2015,
+    "year_end": 2021,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 648,
+    "class_name": "opel_astra_l",
+    "make": "Opel",
+    "model": "Astra",
+    "generation": "L",
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 649,
+    "class_name": "opel_corsa_e",
+    "make": "Opel",
+    "model": "Corsa",
+    "generation": "E",
+    "year_start": 2014,
+    "year_end": 2019,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 650,
+    "class_name": "opel_corsa_f",
+    "make": "Opel",
+    "model": "Corsa",
+    "generation": "F",
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 651,
+    "class_name": "opel_crossland_2017",
+    "make": "Opel",
+    "model": "Crossland",
+    "generation": null,
+    "year_start": 2017,
+    "year_end": 2024,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 652,
+    "class_name": "opel_grandland_1st_gen",
+    "make": "Opel",
+    "model": "Grandland",
+    "generation": "1st Gen",
+    "year_start": 2017,
+    "year_end": 2023,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 653,
+    "class_name": "opel_grandland_2nd_gen",
+    "make": "Opel",
+    "model": "Grandland",
+    "generation": "2nd Gen",
+    "year_start": 2024,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 654,
+    "class_name": "opel_insignia_b",
+    "make": "Opel",
+    "model": "Insignia",
+    "generation": "B",
+    "year_start": 2017,
+    "year_end": 2022,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 655,
+    "class_name": "opel_meriva_2nd_gen",
+    "make": "Opel",
+    "model": "Meriva",
+    "generation": "2nd Gen",
+    "year_start": 2006,
+    "year_end": 2014,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 656,
+    "class_name": "opel_mokka_1st_gen",
+    "make": "Opel",
+    "model": "Mokka",
+    "generation": "1st Gen",
+    "year_start": 2012,
+    "year_end": 2020,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 657,
+    "class_name": "opel_mokka_2nd_gen",
+    "make": "Opel",
+    "model": "Mokka",
+    "generation": "2nd Gen",
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 658,
+    "class_name": "opel_zafira_tourer_2012",
+    "make": "Opel",
+    "model": "Zafira Tourer",
+    "generation": null,
+    "year_start": 2013,
+    "year_end": 2013,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 659,
+    "class_name": "pagani_huayra_2013",
+    "make": "Pagani",
+    "model": "Huayra",
+    "generation": null,
+    "year_start": 2011,
+    "year_end": 2015,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 660,
+    "class_name": "peugeot_2008_1st_gen",
+    "make": "Peugeot",
+    "model": "2008",
+    "generation": "1st Gen",
+    "year_start": 2013,
+    "year_end": 2019,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 661,
+    "class_name": "peugeot_2008_2nd_gen",
+    "make": "Peugeot",
+    "model": "2008",
+    "generation": "2nd Gen",
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 662,
+    "class_name": "peugeot_207_1st_gen",
+    "make": "Peugeot",
+    "model": "207",
+    "generation": "1st Gen",
+    "year_start": 2009,
+    "year_end": 2011,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 663,
+    "class_name": "peugeot_207_sedan_2008",
+    "make": "Peugeot",
+    "model": "207 Sedan",
+    "generation": null,
+    "year_start": 2008,
+    "year_end": 2011,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 664,
+    "class_name": "peugeot_208_1st_gen",
+    "make": "Peugeot",
+    "model": "208",
+    "generation": "1st Gen",
+    "year_start": 2012,
+    "year_end": 2019,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 665,
+    "class_name": "peugeot_208_2nd_gen",
+    "make": "Peugeot",
+    "model": "208",
+    "generation": "2nd Gen",
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 666,
+    "class_name": "peugeot_3008_1st_gen",
+    "make": "Peugeot",
+    "model": "3008",
+    "generation": "2nd Gen (P84)",
+    "year_start": 2016,
+    "year_end": 2023,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 667,
+    "class_name": "peugeot_3008_2nd_gen",
+    "make": "Peugeot",
+    "model": "3008",
+    "generation": "3rd Gen",
+    "year_start": 2023,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 668,
+    "class_name": "peugeot_308_2nd_gen",
+    "make": "Peugeot",
+    "model": "308",
+    "generation": "2nd Gen",
+    "year_start": 2013,
+    "year_end": 2021,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 669,
+    "class_name": "peugeot_308_3rd_gen",
+    "make": "Peugeot",
+    "model": "308",
+    "generation": "3rd Gen",
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 670,
+    "class_name": "peugeot_308_cc_1st_gen",
+    "make": "Peugeot",
+    "model": "308 Cc",
+    "generation": "1st Gen",
+    "year_start": 2009,
+    "year_end": 2013,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 671,
+    "class_name": "peugeot_4008_1st_gen",
+    "make": "Peugeot",
+    "model": "4008",
+    "generation": "1st Gen",
+    "year_start": 2012,
+    "year_end": 2013,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 672,
+    "class_name": "peugeot_408_2010",
+    "make": "Peugeot",
+    "model": "408",
+    "generation": null,
+    "year_start": 2010,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 673,
+    "class_name": "peugeot_5008_1st_gen",
+    "make": "Peugeot",
+    "model": "5008",
+    "generation": "2nd Gen (P87)",
+    "year_start": 2017,
+    "year_end": 2023,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 674,
+    "class_name": "peugeot_5008_2nd_gen",
+    "make": "Peugeot",
+    "model": "5008",
+    "generation": "3rd Gen",
+    "year_start": 2024,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 675,
+    "class_name": "peugeot_508_2nd_gen",
+    "make": "Peugeot",
+    "model": "508",
+    "generation": "2nd Gen",
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 676,
+    "class_name": "peugeot_rcz_2010",
+    "make": "Peugeot",
+    "model": "Rcz",
+    "generation": null,
+    "year_start": 2011,
+    "year_end": 2015,
+    "rarity": "RARE"
+  },
+  {
+    "index": 677,
+    "class_name": "polestar_1_2020",
+    "make": "Polestar",
+    "model": "1",
+    "generation": null,
+    "year_start": 2019,
+    "year_end": 2021,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 678,
+    "class_name": "polestar_2_2021",
+    "make": "Polestar",
+    "model": "2",
+    "generation": null,
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 679,
+    "class_name": "polestar_3_2025",
+    "make": "Polestar",
+    "model": "3",
+    "generation": null,
+    "year_start": 2024,
+    "year_end": 2026,
+    "rarity": "RARE"
+  },
+  {
+    "index": 680,
+    "class_name": "polestar_4_2025",
+    "make": "Polestar",
+    "model": "4",
+    "generation": null,
+    "year_start": 2023,
+    "year_end": 2026,
+    "rarity": "RARE"
+  },
+  {
+    "index": 681,
+    "class_name": "porsche_718_boxster_2017",
+    "make": "Porsche",
+    "model": "718 Boxster",
+    "generation": "982",
+    "year_start": 2016,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 682,
+    "class_name": "porsche_718_cayman_2017",
+    "make": "Porsche",
+    "model": "718 Cayman",
+    "generation": "982",
+    "year_start": 2016,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 683,
+    "class_name": "porsche_718_cayman_gt4_2020",
+    "make": "Porsche",
+    "model": "718 Cayman GT4",
+    "generation": "982",
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 684,
+    "class_name": "porsche_718_spyder_2020",
+    "make": "Porsche",
+    "model": "718 Spyder",
+    "generation": "982",
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 685,
+    "class_name": "porsche_911_991_1",
+    "make": "Porsche",
+    "model": "911",
+    "generation": "991.1",
+    "year_start": 2012,
+    "year_end": 2015,
+    "rarity": "RARE"
+  },
+  {
+    "index": 686,
+    "class_name": "porsche_911_992_1",
+    "make": "Porsche",
+    "model": "911",
+    "generation": "992.1",
+    "year_start": 2019,
+    "year_end": 2024,
+    "rarity": "RARE"
+  },
+  {
+    "index": 687,
+    "class_name": "porsche_911_gt2_rs_991_2",
+    "make": "Porsche",
+    "model": "911 GT2 RS",
+    "generation": "991.2",
+    "year_start": 2017,
+    "year_end": 2019,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 688,
+    "class_name": "porsche_911_gt3_991_2",
+    "make": "Porsche",
+    "model": "911 GT3",
+    "generation": "991.2",
+    "year_start": 2017,
+    "year_end": 2019,
+    "rarity": "EPIC"
+  },
+  {
+    "index": 689,
+    "class_name": "porsche_911_gt3_992",
+    "make": "Porsche",
+    "model": "911 GT3",
+    "generation": "992.1",
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "EPIC"
+  },
+  {
+    "index": 690,
+    "class_name": "porsche_911_gt3_rs_991_2",
+    "make": "Porsche",
+    "model": "911 GT3 RS",
+    "generation": "991.2",
+    "year_start": 2018,
+    "year_end": 2019,
+    "rarity": "EPIC"
+  },
+  {
+    "index": 691,
+    "class_name": "porsche_911_gt3_rs_992",
+    "make": "Porsche",
+    "model": "911 GT3 RS",
+    "generation": "992.1",
+    "year_start": 2023,
+    "year_end": 2025,
+    "rarity": "EPIC"
+  },
+  {
+    "index": 692,
+    "class_name": "porsche_911_turbo_s_992",
+    "make": "Porsche",
+    "model": "911 Turbo S",
+    "generation": "992.1",
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "EPIC"
+  },
+  {
+    "index": 693,
+    "class_name": "porsche_918_spyder_2015",
+    "make": "Porsche",
+    "model": "918 Spyder",
+    "generation": null,
+    "year_start": 2013,
+    "year_end": 2015,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 694,
+    "class_name": "porsche_cayenne_958_fl",
+    "make": "Porsche",
+    "model": "Cayenne",
+    "generation": "958.2",
+    "year_start": 2014,
+    "year_end": 2018,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 695,
+    "class_name": "porsche_cayenne_e3",
+    "make": "Porsche",
+    "model": "Cayenne",
+    "generation": "E3",
+    "year_start": 2017,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 696,
+    "class_name": "porsche_macan_2nd_gen",
+    "make": "Porsche",
+    "model": "Macan",
+    "generation": "2nd Gen",
+    "year_start": 2024,
+    "year_end": 2026,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 697,
+    "class_name": "porsche_macan_95b",
+    "make": "Porsche",
+    "model": "Macan",
+    "generation": "95B",
+    "year_start": 2014,
+    "year_end": 2024,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 698,
+    "class_name": "porsche_panamera_971",
+    "make": "Porsche",
+    "model": "Panamera",
+    "generation": "971",
+    "year_start": 2016,
+    "year_end": 2023,
+    "rarity": "RARE"
+  },
+  {
+    "index": 699,
+    "class_name": "porsche_taycan_j1",
+    "make": "Porsche",
+    "model": "Taycan",
+    "generation": "J1",
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 700,
+    "class_name": "porsche_taycan_turbo_gt_2025",
+    "make": "Porsche",
+    "model": "Taycan Turbo GT",
+    "generation": null,
+    "year_start": 2024,
+    "year_end": 2026,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 701,
+    "class_name": "ram_1500_4th_gen",
+    "make": "Ram",
+    "model": "1500",
+    "generation": "4th Gen",
+    "year_start": 2009,
+    "year_end": 2018,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 702,
+    "class_name": "ram_1500_5th_gen",
+    "make": "Ram",
+    "model": "1500",
+    "generation": "5th Gen",
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 703,
+    "class_name": "ram_1500_rev_2025",
+    "make": "Ram",
+    "model": "1500 REV",
+    "generation": null,
+    "year_start": 2025,
+    "year_end": 2026,
+    "rarity": "RARE"
+  },
+  {
+    "index": 704,
+    "class_name": "ram_1500_trx_2021",
+    "make": "Ram",
+    "model": "1500 TRX",
+    "generation": null,
+    "year_start": 2020,
+    "year_end": 2024,
+    "rarity": "RARE"
+  },
+  {
+    "index": 705,
+    "class_name": "ram_2500_2019",
+    "make": "Ram",
+    "model": "2500/3500",
+    "generation": null,
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 706,
+    "class_name": "ram_3500_2019",
+    "make": "Ram",
+    "model": "3500",
+    "generation": null,
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 707,
+    "class_name": "ram_promaster_2015",
+    "make": "Ram",
+    "model": "ProMaster",
+    "generation": null,
+    "year_start": 2014,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 708,
+    "class_name": "renault_arkana_2021",
+    "make": "Renault",
+    "model": "Arkana",
+    "generation": null,
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 709,
+    "class_name": "renault_austral_2023",
+    "make": "Renault",
+    "model": "Austral",
+    "generation": null,
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 710,
+    "class_name": "renault_captur_1st_gen",
+    "make": "Renault",
+    "model": "Captur",
+    "generation": "1st Gen",
+    "year_start": 2013,
+    "year_end": 2019,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 711,
+    "class_name": "renault_captur_2nd_gen",
+    "make": "Renault",
+    "model": "Captur",
+    "generation": "2nd Gen",
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 712,
+    "class_name": "renault_clio_4th_gen",
+    "make": "Renault",
+    "model": "Clio",
+    "generation": "4th Gen",
+    "year_start": 2012,
+    "year_end": 2019,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 713,
+    "class_name": "renault_clio_5th_gen",
+    "make": "Renault",
+    "model": "Clio",
+    "generation": "5th Gen",
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 714,
+    "class_name": "renault_kadjar_2015",
+    "make": "Renault",
+    "model": "Kadjar",
+    "generation": null,
+    "year_start": 2015,
+    "year_end": 2022,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 715,
+    "class_name": "renault_koleos_1st_gen",
+    "make": "Renault",
+    "model": "Koleos",
+    "generation": "1st Gen",
+    "year_start": 2009,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 716,
+    "class_name": "renault_laguna_3rd_gen",
+    "make": "Renault",
+    "model": "Laguna",
+    "generation": "3rd Gen",
+    "year_start": 2008,
+    "year_end": 2012,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 717,
+    "class_name": "renault_latitude_2011",
+    "make": "Renault",
+    "model": "Latitude",
+    "generation": null,
+    "year_start": 2011,
+    "year_end": 2013,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 718,
+    "class_name": "renault_megane_4th_gen",
+    "make": "Renault",
+    "model": "Megane",
+    "generation": "4th Gen",
+    "year_start": 2015,
+    "year_end": 2022,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 719,
+    "class_name": "renault_megane_e_tech_2022",
+    "make": "Renault",
+    "model": "Megane E-Tech",
+    "generation": null,
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 720,
+    "class_name": "renault_scenic_2nd_3rd_gen",
+    "make": "Renault",
+    "model": "Scenic 2Nd",
+    "generation": "3rd Gen",
+    "year_start": 2004,
+    "year_end": 2013,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 721,
+    "class_name": "renault_scenic_e_tech_2024",
+    "make": "Renault",
+    "model": "Scenic E-Tech",
+    "generation": null,
+    "year_start": 2024,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 722,
+    "class_name": "renault_talisman_2012",
+    "make": "Renault",
+    "model": "Talisman",
+    "generation": null,
+    "year_start": 2012,
+    "year_end": 2013,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 723,
+    "class_name": "renault_twingo_3rd_gen",
+    "make": "Renault",
+    "model": "Twingo",
+    "generation": "3rd Gen",
+    "year_start": 2014,
+    "year_end": 2024,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 724,
+    "class_name": "renault_zoe_2015",
+    "make": "Renault",
+    "model": "Zoe",
+    "generation": null,
+    "year_start": 2012,
+    "year_end": 2024,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 725,
+    "class_name": "rivian_r1s_2022",
+    "make": "Rivian",
+    "model": "R1S",
+    "generation": null,
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 726,
+    "class_name": "rivian_r1t_2022",
+    "make": "Rivian",
+    "model": "R1T",
+    "generation": null,
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 727,
+    "class_name": "rivian_r2_2026",
+    "make": "Rivian",
+    "model": "R2",
+    "generation": null,
+    "year_start": 2026,
+    "year_end": 2026,
+    "rarity": "RARE"
+  },
+  {
+    "index": 728,
+    "class_name": "rolls_royce_cullinan_2019",
+    "make": "Rolls-Royce",
+    "model": "Cullinan",
+    "generation": null,
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "EPIC"
+  },
+  {
+    "index": 729,
+    "class_name": "rolls_royce_dawn_2016",
+    "make": "Rolls-Royce",
+    "model": "Dawn",
+    "generation": null,
+    "year_start": 2015,
+    "year_end": 2023,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 730,
+    "class_name": "rolls_royce_ghost_1st_gen",
+    "make": "Rolls-Royce",
+    "model": "Ghost",
+    "generation": "1st Gen",
+    "year_start": 2009,
+    "year_end": 2020,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 731,
+    "class_name": "rolls_royce_ghost_2nd_gen",
+    "make": "Rolls-Royce",
+    "model": "Ghost",
+    "generation": "2nd Gen",
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 732,
+    "class_name": "rolls_royce_phantom_viii",
+    "make": "Rolls-Royce",
+    "model": "Phantom",
+    "generation": "VIII",
+    "year_start": 2017,
+    "year_end": 2025,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 733,
+    "class_name": "rolls_royce_spectre_2024",
+    "make": "Rolls-Royce",
+    "model": "Spectre",
+    "generation": null,
+    "year_start": 2023,
+    "year_end": 2025,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 734,
+    "class_name": "rolls_royce_wraith_2015",
+    "make": "Rolls-Royce",
+    "model": "Wraith",
+    "generation": null,
+    "year_start": 2013,
+    "year_end": 2023,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 735,
+    "class_name": "seat_alhambra_2nd_gen",
+    "make": "Seat",
+    "model": "Alhambra",
+    "generation": "2nd Gen",
+    "year_start": 2011,
+    "year_end": 2013,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 736,
+    "class_name": "seat_arona_2018",
+    "make": "Seat",
+    "model": "Arona",
+    "generation": null,
+    "year_start": 2017,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 737,
+    "class_name": "seat_ateca_2016",
+    "make": "Seat",
+    "model": "Ateca",
+    "generation": null,
+    "year_start": 2016,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 738,
+    "class_name": "seat_exeo_st_2009",
+    "make": "Seat",
+    "model": "Exeo St",
+    "generation": null,
+    "year_start": 2009,
+    "year_end": 2010,
+    "rarity": "RARE"
+  },
+  {
+    "index": 739,
+    "class_name": "seat_ibiza_5th_gen",
+    "make": "Seat",
+    "model": "Ibiza",
+    "generation": "5th Gen",
+    "year_start": 2017,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 740,
+    "class_name": "seat_leon_3rd_gen",
+    "make": "Seat",
+    "model": "Leon",
+    "generation": "3rd Gen",
+    "year_start": 2012,
+    "year_end": 2020,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 741,
+    "class_name": "seat_leon_4th_gen",
+    "make": "Seat",
+    "model": "Leon",
+    "generation": "4th Gen",
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 742,
+    "class_name": "seat_tarraco_2019",
+    "make": "Seat",
+    "model": "Tarraco",
+    "generation": null,
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 743,
+    "class_name": "skoda_enyaq_iv_2021",
+    "make": "Skoda",
+    "model": "Enyaq iV",
+    "generation": null,
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 744,
+    "class_name": "skoda_fabia_3rd_gen",
+    "make": "Skoda",
+    "model": "Fabia",
+    "generation": "3rd Gen",
+    "year_start": 2014,
+    "year_end": 2021,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 745,
+    "class_name": "skoda_fabia_4th_gen",
+    "make": "Skoda",
+    "model": "Fabia",
+    "generation": "4th Gen",
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 746,
+    "class_name": "skoda_kamiq_2019",
+    "make": "Skoda",
+    "model": "Kamiq",
+    "generation": null,
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 747,
+    "class_name": "skoda_karoq_2018",
+    "make": "Skoda",
+    "model": "Karoq",
+    "generation": null,
+    "year_start": 2017,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 748,
+    "class_name": "skoda_kodiaq_1st_gen",
+    "make": "Skoda",
+    "model": "Kodiaq",
+    "generation": "1st Gen",
+    "year_start": 2016,
+    "year_end": 2023,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 749,
+    "class_name": "skoda_kodiaq_2nd_gen",
+    "make": "Skoda",
+    "model": "Kodiaq",
+    "generation": "2nd Gen",
+    "year_start": 2024,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 750,
+    "class_name": "skoda_octavia_3rd_gen",
+    "make": "Skoda",
+    "model": "Octavia",
+    "generation": "3rd Gen",
+    "year_start": 2013,
+    "year_end": 2019,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 751,
+    "class_name": "skoda_octavia_4th_gen",
+    "make": "Skoda",
+    "model": "Octavia",
+    "generation": "4th Gen",
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 752,
+    "class_name": "skoda_rapid_spaceback_1st_gen",
+    "make": "Skoda",
+    "model": "Rapid Spaceback",
+    "generation": "1st Gen",
+    "year_start": 2014,
+    "year_end": 2014,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 753,
+    "class_name": "skoda_scala_2019",
+    "make": "Skoda",
+    "model": "Scala",
+    "generation": null,
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 754,
+    "class_name": "skoda_superb_3rd_gen",
+    "make": "Skoda",
+    "model": "Superb",
+    "generation": "3rd Gen",
+    "year_start": 2015,
+    "year_end": 2023,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 755,
+    "class_name": "skoda_superb_4th_gen",
+    "make": "Skoda",
+    "model": "Superb",
+    "generation": "4th Gen",
+    "year_start": 2024,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 756,
+    "class_name": "smart_fortwo_2nd_gen",
+    "make": "Smart",
+    "model": "Fortwo",
+    "generation": "2nd Gen",
+    "year_start": 2010,
+    "year_end": 2015,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 757,
+    "class_name": "ssangyong_actyon_2006",
+    "make": "SsangYong",
+    "model": "Actyon",
+    "generation": "1st gen",
+    "year_start": 2005,
+    "year_end": 2011,
+    "rarity": "RARE"
+  },
+  {
+    "index": 758,
+    "class_name": "ssangyong_actyon_2012",
+    "make": "SsangYong",
+    "model": "Actyon",
+    "generation": "2nd gen (Korando C)",
+    "year_start": 2012,
+    "year_end": 2019,
+    "rarity": "RARE"
+  },
+  {
+    "index": 759,
+    "class_name": "ssangyong_kyron_2005",
+    "make": "SsangYong",
+    "model": "Kyron",
+    "generation": null,
+    "year_start": 2006,
+    "year_end": 2011,
+    "rarity": "RARE"
+  },
+  {
+    "index": 760,
+    "class_name": "ssangyong_rexton_2017",
+    "make": "SsangYong",
+    "model": "Rexton",
+    "generation": "Y400",
+    "year_start": 2017,
+    "year_end": 2024,
+    "rarity": "RARE"
+  },
+  {
+    "index": 761,
+    "class_name": "ssangyong_rexton_2nd_gen",
+    "make": "SsangYong",
+    "model": "Rexton",
+    "generation": "2nd Gen",
+    "year_start": 2013,
+    "year_end": 2015,
+    "rarity": "RARE"
+  },
+  {
+    "index": 762,
+    "class_name": "ssangyong_rexton_w_2012",
+    "make": "SsangYong",
+    "model": "Rexton W",
+    "generation": null,
+    "year_start": 2011,
+    "year_end": 2015,
+    "rarity": "RARE"
+  },
+  {
+    "index": 763,
+    "class_name": "ssangyong_rodius_2004",
+    "make": "SsangYong",
+    "model": "Rodius",
+    "generation": null,
+    "year_start": 2007,
+    "year_end": 2014,
+    "rarity": "RARE"
+  },
+  {
+    "index": 764,
+    "class_name": "ssangyong_tivoli_2015",
+    "make": "SsangYong",
+    "model": "Tivoli",
+    "generation": null,
+    "year_start": 2015,
+    "year_end": 2023,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 765,
+    "class_name": "subaru_ascent_2019",
+    "make": "Subaru",
+    "model": "Ascent",
+    "generation": null,
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 766,
+    "class_name": "subaru_brz_1st_gen",
+    "make": "Subaru",
+    "model": "BRZ",
+    "generation": "1st Gen",
+    "year_start": 2012,
+    "year_end": 2020,
+    "rarity": "RARE"
+  },
+  {
+    "index": 767,
+    "class_name": "subaru_brz_2nd_gen",
+    "make": "Subaru",
+    "model": "BRZ",
+    "generation": "2nd Gen",
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 768,
+    "class_name": "subaru_crosstrek_2nd_gen",
+    "make": "Subaru",
+    "model": "Crosstrek",
+    "generation": "2nd Gen",
+    "year_start": 2017,
+    "year_end": 2023,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 769,
+    "class_name": "subaru_crosstrek_3rd_gen",
+    "make": "Subaru",
+    "model": "Crosstrek",
+    "generation": "3rd Gen",
+    "year_start": 2023,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 770,
+    "class_name": "subaru_forester_4th_gen",
+    "make": "Subaru",
+    "model": "Forester",
+    "generation": "4th Gen",
+    "year_start": 2012,
+    "year_end": 2018,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 771,
+    "class_name": "subaru_forester_5th_gen",
+    "make": "Subaru",
+    "model": "Forester",
+    "generation": "5th Gen",
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 772,
+    "class_name": "subaru_impreza_5th_gen",
+    "make": "Subaru",
+    "model": "Impreza",
+    "generation": "5th Gen",
+    "year_start": 2016,
+    "year_end": 2023,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 773,
+    "class_name": "subaru_impreza_6th_gen",
+    "make": "Subaru",
+    "model": "Impreza",
+    "generation": "6th Gen",
+    "year_start": 2023,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 774,
+    "class_name": "subaru_legacy_2020",
+    "make": "Subaru",
+    "model": "Legacy",
+    "generation": null,
+    "year_start": 2019,
+    "year_end": 2024,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 775,
+    "class_name": "subaru_legacy_5th_gen",
+    "make": "Subaru",
+    "model": "Legacy",
+    "generation": "5th Gen",
+    "year_start": 2009,
+    "year_end": 2015,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 776,
+    "class_name": "subaru_outback_5th_gen",
+    "make": "Subaru",
+    "model": "Outback",
+    "generation": "5th Gen",
+    "year_start": 2014,
+    "year_end": 2019,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 777,
+    "class_name": "subaru_outback_6th_gen",
+    "make": "Subaru",
+    "model": "Outback",
+    "generation": "6th Gen",
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 778,
+    "class_name": "subaru_solterra_2023",
+    "make": "Subaru",
+    "model": "Solterra",
+    "generation": null,
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 779,
+    "class_name": "subaru_tribeca_2005",
+    "make": "Subaru",
+    "model": "Tribeca",
+    "generation": null,
+    "year_start": 2005,
+    "year_end": 2012,
+    "rarity": "RARE"
+  },
+  {
+    "index": 780,
+    "class_name": "subaru_wrx_sti_va",
+    "make": "Subaru",
+    "model": "WRX STI",
+    "generation": "VA",
+    "year_start": 2014,
+    "year_end": 2021,
+    "rarity": "RARE"
+  },
+  {
+    "index": 781,
+    "class_name": "subaru_wrx_va",
+    "make": "Subaru",
+    "model": "WRX",
+    "generation": "VA",
+    "year_start": 2014,
+    "year_end": 2021,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 782,
+    "class_name": "subaru_wrx_vb",
+    "make": "Subaru",
+    "model": "WRX",
+    "generation": "VB",
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 783,
+    "class_name": "suzuki_alivio_2014",
+    "make": "Suzuki",
+    "model": "Alivio",
+    "generation": null,
+    "year_start": 2014,
+    "year_end": 2015,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 784,
+    "class_name": "suzuki_alto_2009",
+    "make": "Suzuki",
+    "model": "Alto",
+    "generation": null,
+    "year_start": 2009,
+    "year_end": 2013,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 785,
+    "class_name": "suzuki_kizashi_2010",
+    "make": "Suzuki",
+    "model": "Kizashi",
+    "generation": null,
+    "year_start": 2010,
+    "year_end": 2014,
+    "rarity": "RARE"
+  },
+  {
+    "index": 786,
+    "class_name": "suzuki_splash_2008",
+    "make": "Suzuki",
+    "model": "Splash",
+    "generation": null,
+    "year_start": 2012,
+    "year_end": 2012,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 787,
+    "class_name": "suzuki_swift_2nd_gen",
+    "make": "Suzuki",
+    "model": "Swift",
+    "generation": "2nd Gen",
+    "year_start": 2010,
+    "year_end": 2014,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 788,
+    "class_name": "suzuki_swift_sport_3rd_gen",
+    "make": "Suzuki",
+    "model": "Swift Sport",
+    "generation": "3rd Gen",
+    "year_start": 2010,
+    "year_end": 2014,
+    "rarity": "RARE"
+  },
+  {
+    "index": 789,
+    "class_name": "suzuki_sx4_1st_gen",
+    "make": "Suzuki",
+    "model": "Sx4",
+    "generation": "1st Gen",
+    "year_start": 2009,
+    "year_end": 2013,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 790,
+    "class_name": "suzuki_sx4_s_cross_1st_gen",
+    "make": "Suzuki",
+    "model": "Sx4 S Cross",
+    "generation": "1st Gen",
+    "year_start": 2014,
+    "year_end": 2014,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 791,
+    "class_name": "tesla_cybertruck_2024",
+    "make": "Tesla",
+    "model": "Cybertruck",
+    "generation": null,
+    "year_start": 2023,
+    "year_end": 2026,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 792,
+    "class_name": "tesla_model_3_original",
+    "make": "Tesla",
+    "model": "Model 3",
+    "generation": "Original",
+    "year_start": 2017,
+    "year_end": 2023,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 793,
+    "class_name": "tesla_model_s_pre_refresh",
+    "make": "Tesla",
+    "model": "Model S",
+    "generation": "Pre-refresh",
+    "year_start": 2012,
+    "year_end": 2020,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 794,
+    "class_name": "tesla_model_s_refresh",
+    "make": "Tesla",
+    "model": "Model S (Refresh)",
+    "generation": "Refresh",
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 795,
+    "class_name": "tesla_model_x_pre_refresh",
+    "make": "Tesla",
+    "model": "Model X",
+    "generation": "Pre-refresh",
+    "year_start": 2016,
+    "year_end": 2021,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 796,
+    "class_name": "tesla_model_x_refresh",
+    "make": "Tesla",
+    "model": "Model X",
+    "generation": "Refresh",
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 797,
+    "class_name": "tesla_model_y_2020",
+    "make": "Tesla",
+    "model": "Model Y",
+    "generation": null,
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 798,
+    "class_name": "tesla_roadster_2nd_gen",
+    "make": "Tesla",
+    "model": "Roadster",
+    "generation": "2nd Gen",
+    "year_start": 2026,
+    "year_end": 2026,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 799,
+    "class_name": "toyota_4runner_5th_gen",
+    "make": "Toyota",
+    "model": "4Runner",
+    "generation": "5th Gen",
+    "year_start": 2009,
+    "year_end": 2024,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 800,
+    "class_name": "toyota_4runner_6th_gen",
+    "make": "Toyota",
+    "model": "4Runner",
+    "generation": "6th Gen",
+    "year_start": 2024,
+    "year_end": 2026,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 801,
+    "class_name": "toyota_86_2017",
+    "make": "Toyota",
+    "model": "86",
+    "generation": null,
+    "year_start": 2017,
+    "year_end": 2021,
+    "rarity": "RARE"
+  },
+  {
+    "index": 802,
+    "class_name": "toyota_alphard_2nd_gen",
+    "make": "Toyota",
+    "model": "Alphard",
+    "generation": "2nd Gen",
+    "year_start": 2011,
+    "year_end": 2015,
+    "rarity": "RARE"
+  },
+  {
+    "index": 803,
+    "class_name": "toyota_auris_2nd_gen",
+    "make": "Toyota",
+    "model": "Auris",
+    "generation": "2nd Gen",
+    "year_start": 2010,
+    "year_end": 2016,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 804,
+    "class_name": "toyota_avensis_3rd_gen",
+    "make": "Toyota",
+    "model": "Avensis",
+    "generation": "3rd Gen",
+    "year_start": 2009,
+    "year_end": 2015,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 805,
+    "class_name": "toyota_aygo_2nd_gen",
+    "make": "Toyota",
+    "model": "Aygo",
+    "generation": "2nd Gen",
+    "year_start": 2009,
+    "year_end": 2015,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 806,
+    "class_name": "toyota_bz4x_2023",
+    "make": "Toyota",
+    "model": "bZ4X",
+    "generation": null,
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 807,
+    "class_name": "toyota_c_hr_2nd_gen",
+    "make": "Toyota",
+    "model": "C-HR",
+    "generation": "2nd Gen",
+    "year_start": 2023,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 808,
+    "class_name": "toyota_camry_xv50",
+    "make": "Toyota",
+    "model": "Camry",
+    "generation": "XV50",
+    "year_start": 2012,
+    "year_end": 2017,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 809,
+    "class_name": "toyota_camry_xv70",
+    "make": "Toyota",
+    "model": "Camry",
+    "generation": "XV70",
+    "year_start": 2017,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 810,
+    "class_name": "toyota_corolla_cross_2022",
+    "make": "Toyota",
+    "model": "Corolla Cross",
+    "generation": null,
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 811,
+    "class_name": "toyota_corolla_e170",
+    "make": "Toyota",
+    "model": "Corolla",
+    "generation": "E170",
+    "year_start": 2012,
+    "year_end": 2019,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 812,
+    "class_name": "toyota_corolla_e210",
+    "make": "Toyota",
+    "model": "Corolla",
+    "generation": "E210",
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 813,
+    "class_name": "toyota_crown_2023",
+    "make": "Toyota",
+    "model": "Crown",
+    "generation": null,
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 814,
+    "class_name": "toyota_crown_s210",
+    "make": "Toyota",
+    "model": "Crown",
+    "generation": "S210",
+    "year_start": 2010,
+    "year_end": 2015,
+    "rarity": "RARE"
+  },
+  {
+    "index": 815,
+    "class_name": "toyota_fj_cruiser_2007",
+    "make": "Toyota",
+    "model": "Fj Cruiser",
+    "generation": null,
+    "year_start": 2007,
+    "year_end": 2014,
+    "rarity": "RARE"
+  },
+  {
+    "index": 816,
+    "class_name": "toyota_gr86_2022",
+    "make": "Toyota",
+    "model": "GR86",
+    "generation": null,
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 817,
+    "class_name": "toyota_gr_corolla_2023",
+    "make": "Toyota",
+    "model": "GR Corolla",
+    "generation": null,
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 818,
+    "class_name": "toyota_gr_supra_a90",
+    "make": "Toyota",
+    "model": "GR Supra",
+    "generation": "A90",
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 819,
+    "class_name": "toyota_grand_highlander_2024",
+    "make": "Toyota",
+    "model": "Grand Highlander",
+    "generation": null,
+    "year_start": 2023,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 820,
+    "class_name": "toyota_highlander_3rd_gen",
+    "make": "Toyota",
+    "model": "Highlander",
+    "generation": "3rd Gen",
+    "year_start": 2013,
+    "year_end": 2019,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 821,
+    "class_name": "toyota_highlander_4th_gen",
+    "make": "Toyota",
+    "model": "Highlander",
+    "generation": "4th Gen",
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 822,
+    "class_name": "toyota_land_cruiser_j300",
+    "make": "Toyota",
+    "model": "Land Cruiser",
+    "generation": "J300",
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 823,
+    "class_name": "toyota_land_cruiser_prado_j150",
+    "make": "Toyota",
+    "model": "Land Cruiser Prado",
+    "generation": "J150",
+    "year_start": 2006,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 824,
+    "class_name": "toyota_mark_x_2nd_gen",
+    "make": "Toyota",
+    "model": "Mark X",
+    "generation": "2nd Gen",
+    "year_start": 2010,
+    "year_end": 2013,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 825,
+    "class_name": "toyota_previa_3rd_gen",
+    "make": "Toyota",
+    "model": "Previa",
+    "generation": "3rd Gen",
+    "year_start": 2004,
+    "year_end": 2012,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 826,
+    "class_name": "toyota_prius_4th_gen",
+    "make": "Toyota",
+    "model": "Prius",
+    "generation": "4th Gen",
+    "year_start": 2016,
+    "year_end": 2022,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 827,
+    "class_name": "toyota_prius_5th_gen",
+    "make": "Toyota",
+    "model": "Prius",
+    "generation": "5th Gen",
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 828,
+    "class_name": "toyota_rav4_xa40",
+    "make": "Toyota",
+    "model": "RAV4",
+    "generation": "XA40",
+    "year_start": 2012,
+    "year_end": 2018,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 829,
+    "class_name": "toyota_rav4_xa50",
+    "make": "Toyota",
+    "model": "RAV4",
+    "generation": "XA50",
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 830,
+    "class_name": "toyota_sequoia_3rd_gen",
+    "make": "Toyota",
+    "model": "Sequoia",
+    "generation": "3rd Gen",
+    "year_start": 2022,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 831,
+    "class_name": "toyota_sienna_4th_gen",
+    "make": "Toyota",
+    "model": "Sienna",
+    "generation": "4th Gen",
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 832,
+    "class_name": "toyota_tacoma_3rd_gen",
+    "make": "Toyota",
+    "model": "Tacoma",
+    "generation": "3rd Gen",
+    "year_start": 2015,
+    "year_end": 2023,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 833,
+    "class_name": "toyota_tacoma_4th_gen",
+    "make": "Toyota",
+    "model": "Tacoma",
+    "generation": "4th Gen",
+    "year_start": 2023,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 834,
+    "class_name": "toyota_tundra_2nd_gen",
+    "make": "Toyota",
+    "model": "Tundra",
+    "generation": "2nd Gen",
+    "year_start": 2007,
+    "year_end": 2021,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 835,
+    "class_name": "toyota_tundra_3rd_gen",
+    "make": "Toyota",
+    "model": "Tundra",
+    "generation": "3rd Gen",
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 836,
+    "class_name": "toyota_venza_1st_gen",
+    "make": "Toyota",
+    "model": "Venza",
+    "generation": "1st Gen",
+    "year_start": 2009,
+    "year_end": 2013,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 837,
+    "class_name": "toyota_venza_2021",
+    "make": "Toyota",
+    "model": "Venza",
+    "generation": null,
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 838,
+    "class_name": "toyota_verso_s_2010",
+    "make": "Toyota",
+    "model": "Verso S",
+    "generation": null,
+    "year_start": 2010,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 839,
+    "class_name": "toyota_yaris_xp150_2014",
+    "make": "Toyota",
+    "model": "Yaris Xp150",
+    "generation": null,
+    "year_start": 2013,
+    "year_end": 2015,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 840,
+    "class_name": "toyota_zelas_2011",
+    "make": "Toyota",
+    "model": "Zelas",
+    "generation": null,
+    "year_start": 2011,
+    "year_end": 2014,
+    "rarity": "RARE"
+  },
+  {
+    "index": 841,
+    "class_name": "tvr_griffith_new",
+    "make": "TVR",
+    "model": "Griffith",
+    "generation": "New",
+    "year_start": 2024,
+    "year_end": 2026,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 842,
+    "class_name": "tvr_sagaris_2004",
+    "make": "TVR",
+    "model": "Sagaris",
+    "generation": null,
+    "year_start": 2004,
+    "year_end": 2006,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 843,
+    "class_name": "tvr_tuscan_2000",
+    "make": "TVR",
+    "model": "Tuscan",
+    "generation": null,
+    "year_start": 1999,
+    "year_end": 2006,
+    "rarity": "LEGENDARY"
+  },
+  {
+    "index": 844,
+    "class_name": "vauxhall_vxr8_2007",
+    "make": "Vauxhall",
+    "model": "Vxr8",
+    "generation": null,
+    "year_start": 2007,
+    "year_end": 2014,
+    "rarity": "ULTRA_RARE"
+  },
+  {
+    "index": 845,
+    "class_name": "volkswagen_amarok_1st_gen",
+    "make": "Volkswagen",
+    "model": "Amarok",
+    "generation": "1st Gen",
+    "year_start": 2011,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 846,
+    "class_name": "volkswagen_arteon_2019",
+    "make": "Volkswagen",
+    "model": "Arteon",
+    "generation": null,
+    "year_start": 2017,
+    "year_end": 2023,
+    "rarity": "RARE"
+  },
+  {
+    "index": 847,
+    "class_name": "volkswagen_atlas_2018",
+    "make": "Volkswagen",
+    "model": "Atlas",
+    "generation": null,
+    "year_start": 2016,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 848,
+    "class_name": "volkswagen_atlas_cross_sport_2020",
+    "make": "Volkswagen",
+    "model": "Atlas Cross Sport",
+    "generation": null,
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 849,
+    "class_name": "volkswagen_beetle_2012",
+    "make": "Volkswagen",
+    "model": "Beetle",
+    "generation": null,
+    "year_start": 2010,
+    "year_end": 2015,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 850,
+    "class_name": "volkswagen_cross_lavida_2014",
+    "make": "Volkswagen",
+    "model": "Cross Lavida",
+    "generation": null,
+    "year_start": 2014,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 851,
+    "class_name": "volkswagen_golf_gti_mk7",
+    "make": "Volkswagen",
+    "model": "Golf GTI",
+    "generation": "Mk7",
+    "year_start": 2013,
+    "year_end": 2021,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 852,
+    "class_name": "volkswagen_golf_gti_mk8",
+    "make": "Volkswagen",
+    "model": "Golf GTI",
+    "generation": "Mk8",
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 853,
+    "class_name": "volkswagen_golf_mk7",
+    "make": "Volkswagen",
+    "model": "Golf",
+    "generation": "Mk7",
+    "year_start": 2012,
+    "year_end": 2021,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 854,
+    "class_name": "volkswagen_golf_mk8",
+    "make": "Volkswagen",
+    "model": "Golf",
+    "generation": "Mk8",
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 855,
+    "class_name": "volkswagen_golf_r_mk7",
+    "make": "Volkswagen",
+    "model": "Golf R",
+    "generation": "Mk7",
+    "year_start": 2013,
+    "year_end": 2021,
+    "rarity": "RARE"
+  },
+  {
+    "index": 856,
+    "class_name": "volkswagen_golf_r_mk8",
+    "make": "Volkswagen",
+    "model": "Golf R",
+    "generation": "Mk8",
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 857,
+    "class_name": "volkswagen_id.3_2020",
+    "make": "Volkswagen",
+    "model": "ID.3",
+    "generation": null,
+    "year_start": 2019,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 858,
+    "class_name": "volkswagen_id.4_2021",
+    "make": "Volkswagen",
+    "model": "ID.4",
+    "generation": null,
+    "year_start": 2020,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 859,
+    "class_name": "volkswagen_id.5_2022",
+    "make": "Volkswagen",
+    "model": "ID.5",
+    "generation": null,
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 860,
+    "class_name": "volkswagen_id.buzz_2025",
+    "make": "Volkswagen",
+    "model": "ID.Buzz",
+    "generation": null,
+    "year_start": 2022,
+    "year_end": 2026,
+    "rarity": "RARE"
+  },
+  {
+    "index": 861,
+    "class_name": "volkswagen_jetta_6th_gen",
+    "make": "Volkswagen",
+    "model": "Jetta",
+    "generation": "6th Gen",
+    "year_start": 2010,
+    "year_end": 2018,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 862,
+    "class_name": "volkswagen_jetta_7th_gen",
+    "make": "Volkswagen",
+    "model": "Jetta",
+    "generation": "7th Gen",
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 863,
+    "class_name": "volkswagen_lavida_1st_gen",
+    "make": "Volkswagen",
+    "model": "Lavida",
+    "generation": "1st Gen",
+    "year_start": 2008,
+    "year_end": 2015,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 864,
+    "class_name": "volkswagen_passat_2015",
+    "make": "Volkswagen",
+    "model": "Passat",
+    "generation": null,
+    "year_start": 2014,
+    "year_end": 2022,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 865,
+    "class_name": "volkswagen_passat_cc_2008",
+    "make": "Volkswagen",
+    "model": "Passat CC",
+    "generation": null,
+    "year_start": 2008,
+    "year_end": 2012,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 866,
+    "class_name": "volkswagen_phaeton_1st_gen",
+    "make": "Volkswagen",
+    "model": "Phaeton",
+    "generation": "1st Gen",
+    "year_start": 2009,
+    "year_end": 2014,
+    "rarity": "RARE"
+  },
+  {
+    "index": 867,
+    "class_name": "volkswagen_polo_mk5",
+    "make": "Volkswagen",
+    "model": "Polo",
+    "generation": "Mk5",
+    "year_start": 2009,
+    "year_end": 2017,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 868,
+    "class_name": "volkswagen_polo_mk6",
+    "make": "Volkswagen",
+    "model": "Polo",
+    "generation": "Mk6",
+    "year_start": 2017,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 869,
+    "class_name": "volkswagen_sagitar_2006",
+    "make": "Volkswagen",
+    "model": "Sagitar",
+    "generation": null,
+    "year_start": 2008,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 870,
+    "class_name": "volkswagen_scirocco_3rd_gen",
+    "make": "Volkswagen",
+    "model": "Scirocco",
+    "generation": "3rd Gen",
+    "year_start": 2009,
+    "year_end": 2015,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 871,
+    "class_name": "volkswagen_sharan_2nd_gen",
+    "make": "Volkswagen",
+    "model": "Sharan",
+    "generation": "2nd Gen",
+    "year_start": 2012,
+    "year_end": 2015,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 872,
+    "class_name": "volkswagen_t_cross_2019",
+    "make": "Volkswagen",
+    "model": "T-Cross",
+    "generation": null,
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 873,
+    "class_name": "volkswagen_t_roc_2018",
+    "make": "Volkswagen",
+    "model": "T-Roc",
+    "generation": null,
+    "year_start": 2017,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 874,
+    "class_name": "volkswagen_taos_2022",
+    "make": "Volkswagen",
+    "model": "Taos",
+    "generation": null,
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 875,
+    "class_name": "volkswagen_tiguan_2nd_gen",
+    "make": "Volkswagen",
+    "model": "Tiguan",
+    "generation": "2nd Gen",
+    "year_start": 2016,
+    "year_end": 2025,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 876,
+    "class_name": "volkswagen_touareg_cr",
+    "make": "Volkswagen",
+    "model": "Touareg",
+    "generation": "CR",
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 877,
+    "class_name": "volkswagen_touran_2nd_gen",
+    "make": "Volkswagen",
+    "model": "Touran",
+    "generation": "2nd Gen",
+    "year_start": 2008,
+    "year_end": 2015,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 878,
+    "class_name": "volkswagen_transporter_t5",
+    "make": "Volkswagen",
+    "model": "Transporter",
+    "generation": "T5",
+    "year_start": 2006,
+    "year_end": 2015,
+    "rarity": "COMMON"
+  },
+  {
+    "index": 879,
+    "class_name": "volkswagen_up!_2015",
+    "make": "Volkswagen",
+    "model": "Up!",
+    "generation": null,
+    "year_start": 2011,
+    "year_end": 2023,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 880,
+    "class_name": "volkswagen_xl1_2014",
+    "make": "Volkswagen",
+    "model": "Xl1",
+    "generation": null,
+    "year_start": 2009,
+    "year_end": 2014,
+    "rarity": "EPIC"
+  },
+  {
+    "index": 881,
+    "class_name": "volvo_c30_2007_2013",
+    "make": "Volvo",
+    "model": "C30 2007",
+    "generation": null,
+    "year_start": 2008,
+    "year_end": 2013,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 882,
+    "class_name": "volvo_c40_recharge_2022",
+    "make": "Volvo",
+    "model": "C40 Recharge",
+    "generation": null,
+    "year_start": 2021,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 883,
+    "class_name": "volvo_c70_2nd_gen",
+    "make": "Volvo",
+    "model": "C70",
+    "generation": "2nd Gen",
+    "year_start": 2008,
+    "year_end": 2010,
+    "rarity": "RARE"
+  },
+  {
+    "index": 884,
+    "class_name": "volvo_ex30_2024",
+    "make": "Volvo",
+    "model": "EX30",
+    "generation": null,
+    "year_start": 2023,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 885,
+    "class_name": "volvo_ex90_2024",
+    "make": "Volvo",
+    "model": "EX90",
+    "generation": null,
+    "year_start": 2023,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 886,
+    "class_name": "volvo_s60_3rd_gen",
+    "make": "Volvo",
+    "model": "S60",
+    "generation": "3rd Gen",
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 887,
+    "class_name": "volvo_s80_2nd_gen",
+    "make": "Volvo",
+    "model": "S80",
+    "generation": "2nd Gen",
+    "year_start": 2009,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 888,
+    "class_name": "volvo_s90_2017",
+    "make": "Volvo",
+    "model": "S90",
+    "generation": null,
+    "year_start": 2016,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 889,
+    "class_name": "volvo_v40_2015",
+    "make": "Volvo",
+    "model": "V40",
+    "generation": null,
+    "year_start": 2012,
+    "year_end": 2019,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 890,
+    "class_name": "volvo_v60_2019",
+    "make": "Volvo",
+    "model": "V60",
+    "generation": null,
+    "year_start": 2018,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 891,
+    "class_name": "volvo_v90_cross_country_2017",
+    "make": "Volvo",
+    "model": "V90 Cross Country",
+    "generation": null,
+    "year_start": 2016,
+    "year_end": 2025,
+    "rarity": "RARE"
+  },
+  {
+    "index": 892,
+    "class_name": "volvo_xc40_2019",
+    "make": "Volvo",
+    "model": "XC40",
+    "generation": null,
+    "year_start": 2017,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 893,
+    "class_name": "volvo_xc60_2nd_gen",
+    "make": "Volvo",
+    "model": "XC60",
+    "generation": "2nd Gen",
+    "year_start": 2017,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 894,
+    "class_name": "volvo_xc70_2nd_gen",
+    "make": "Volvo",
+    "model": "Xc70",
+    "generation": "2nd Gen",
+    "year_start": 2004,
+    "year_end": 2014,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 895,
+    "class_name": "volvo_xc90_2nd_gen",
+    "make": "Volvo",
+    "model": "XC90",
+    "generation": "2nd Gen",
+    "year_start": 2014,
+    "year_end": 2025,
+    "rarity": "UNCOMMON"
+  },
+  {
+    "index": 896,
+    "class_name": "zzz_background",
+    "make": "_background",
+    "model": "_background",
+    "generation": null,
+    "year_start": 0,
+    "year_end": 0,
+    "rarity": "BACKGROUND"
+  }
+]

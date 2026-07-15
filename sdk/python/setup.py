@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="autovision",
-    version="0.1.0",
+    version="0.2.0",
     description="Car make/model/generation recognition engine",
     packages=find_packages(),
     python_requires=">=3.9",

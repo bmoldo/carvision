@@ -1,0 +1,52 @@
+{
+  "version": "5.13.0",
+  "model_format": "tflite",
+  "num_classes": 897,
+  "num_makes": 77,
+  "has_make_head": false,
+  "input_size": 384,
+  "input_channels": 3,
+  "normalization": {
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "temperature": 1.0,
+  "quantization": "float16",
+  "preprocessing": {
+    "crop_policy": "center_crop_square",
+    "resize": 384,
+    "normalize": "imagenet_mean_std",
+    "channel_order": "RGB",
+    "pixel_range": "float32_0_1"
+  },
+  "output_tensors": [
+    {
+      "name": "Identity",
+      "shape": [
+        1,
+        897
+      ],
+      "dtype": "float32",
+      "description": "class_logits"
+    }
+  ],
+  "ood_threshold": 0.05,
+  "confidence_thresholds": {
+    "COMMON": 0.4,
+    "UNCOMMON": 0.5,
+    "RARE": 0.6,
+    "ULTRA_RARE": 0.65,
+    "EPIC": 0.67,
+    "LEGENDARY": 0.7
+  },
+  "confusion_pair_margin": 0.08,
+  "ece": 0.049
+}

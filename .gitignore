@@ -1,7 +1,8 @@
-# Models (distributed via releases/S3)
-models/*.tflite
-models/*.onnx
-models/*.pt
+# Model weights (distributed via releases/S3 — metadata JSONs are tracked)
+models/**/*.tflite
+models/**/*.onnx
+models/**/*.pt
+models/**/*.mlpackage/
 
 # Python
 __pycache__/
@@ -34,3 +35,6 @@ Thumbs.db
 
 # Docker
 .dockerignore
+
+# Internal business docs (not for the public repo)
+docs/PRODUCTIZATION_PLAN.md

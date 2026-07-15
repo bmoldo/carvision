@@ -1,0 +1,461 @@
+[
+  {
+    "class_a": "dodge_charger_7th_gen",
+    "class_b": "dodge_charger_srt_hellcat_2015",
+    "rarity_a": "UNCOMMON",
+    "rarity_b": "RARE",
+    "confusion_count": 11,
+    "cross_rarity": true,
+    "margin_threshold": 0.15
+  },
+  {
+    "class_a": "acura_nsx_2nd_gen",
+    "class_b": "acura_nsx_type_s_2022",
+    "rarity_a": "ULTRA_RARE",
+    "rarity_b": "LEGENDARY",
+    "confusion_count": 11,
+    "cross_rarity": true,
+    "margin_threshold": 0.15
+  },
+  {
+    "class_a": "volkswagen_golf_mk7",
+    "class_b": "volkswagen_golf_gti_mk7",
+    "rarity_a": "UNCOMMON",
+    "rarity_b": "UNCOMMON",
+    "confusion_count": 7,
+    "cross_rarity": false,
+    "margin_threshold": 0.1
+  },
+  {
+    "class_a": "peugeot_3008_2nd_gen",
+    "class_b": "peugeot_3008_1st_gen",
+    "rarity_a": "COMMON",
+    "rarity_b": "COMMON",
+    "confusion_count": 6,
+    "cross_rarity": false,
+    "margin_threshold": 0.1
+  },
+  {
+    "class_a": "tesla_model_s_refresh",
+    "class_b": "tesla_model_s_pre_refresh",
+    "rarity_a": "UNCOMMON",
+    "rarity_b": "UNCOMMON",
+    "confusion_count": 6,
+    "cross_rarity": false,
+    "margin_threshold": 0.1
+  },
+  {
+    "class_a": "honda_civic_11th_gen",
+    "class_b": "honda_civic_si_11th_gen",
+    "rarity_a": "COMMON",
+    "rarity_b": "UNCOMMON",
+    "confusion_count": 6,
+    "cross_rarity": true,
+    "margin_threshold": 0.15
+  },
+  {
+    "class_a": "opel_corsa_e",
+    "class_b": "opel_corsa_f",
+    "rarity_a": "COMMON",
+    "rarity_b": "COMMON",
+    "confusion_count": 6,
+    "cross_rarity": false,
+    "margin_threshold": 0.1
+  },
+  {
+    "class_a": "volkswagen_golf_mk7",
+    "class_b": "volkswagen_golf_r_mk7",
+    "rarity_a": "UNCOMMON",
+    "rarity_b": "RARE",
+    "confusion_count": 5,
+    "cross_rarity": true,
+    "margin_threshold": 0.15
+  },
+  {
+    "class_a": "ram_2500_2019",
+    "class_b": "ram_3500_2019",
+    "rarity_a": "COMMON",
+    "rarity_b": "UNCOMMON",
+    "confusion_count": 5,
+    "cross_rarity": true,
+    "margin_threshold": 0.15
+  },
+  {
+    "class_a": "aston_martin_dbx_2021",
+    "class_b": "aston_martin_dbx707_2023",
+    "rarity_a": "ULTRA_RARE",
+    "rarity_b": "ULTRA_RARE",
+    "confusion_count": 5,
+    "cross_rarity": false,
+    "margin_threshold": 0.1
+  },
+  {
+    "class_a": "porsche_911_992_1",
+    "class_b": "porsche_911_991_1",
+    "rarity_a": "RARE",
+    "rarity_b": "RARE",
+    "confusion_count": 5,
+    "cross_rarity": false,
+    "margin_threshold": 0.1
+  },
+  {
+    "class_a": "mercedes_benz_eqs_suv",
+    "class_b": "mercedes_benz_eqs_sedan",
+    "rarity_a": "RARE",
+    "rarity_b": "RARE",
+    "confusion_count": 5,
+    "cross_rarity": false,
+    "margin_threshold": 0.1
+  },
+  {
+    "class_a": "mercedes_benz_cla_2nd_gen",
+    "class_b": "mercedes_benz_cla_1st_gen",
+    "rarity_a": "UNCOMMON",
+    "rarity_b": "UNCOMMON",
+    "confusion_count": 4,
+    "cross_rarity": false,
+    "margin_threshold": 0.1
+  },
+  {
+    "class_a": "skoda_kodiaq_1st_gen",
+    "class_b": "skoda_kodiaq_2nd_gen",
+    "rarity_a": "UNCOMMON",
+    "rarity_b": "UNCOMMON",
+    "confusion_count": 4,
+    "cross_rarity": false,
+    "margin_threshold": 0.1
+  },
+  {
+    "class_a": "honda_pilot_4th_gen",
+    "class_b": "honda_pilot_3rd_gen",
+    "rarity_a": "COMMON",
+    "rarity_b": "COMMON",
+    "confusion_count": 4,
+    "cross_rarity": false,
+    "margin_threshold": 0.1
+  },
+  {
+    "class_a": "mercedes_amg_gt_c190",
+    "class_b": "mercedes_amg_gt_4_door_2019",
+    "rarity_a": "ULTRA_RARE",
+    "rarity_b": "ULTRA_RARE",
+    "confusion_count": 4,
+    "cross_rarity": false,
+    "margin_threshold": 0.1
+  },
+  {
+    "class_a": "mercedes_benz_gle_w167",
+    "class_b": "mercedes_benz_gle_coupe_2020",
+    "rarity_a": "UNCOMMON",
+    "rarity_b": "RARE",
+    "confusion_count": 4,
+    "cross_rarity": true,
+    "margin_threshold": 0.15
+  },
+  {
+    "class_a": "subaru_wrx_va",
+    "class_b": "subaru_wrx_sti_va",
+    "rarity_a": "UNCOMMON",
+    "rarity_b": "RARE",
+    "confusion_count": 4,
+    "cross_rarity": true,
+    "margin_threshold": 0.15
+  },
+  {
+    "class_a": "honda_hr_v_3rd_gen",
+    "class_b": "honda_hr_v_2nd_gen",
+    "rarity_a": "COMMON",
+    "rarity_b": "UNCOMMON",
+    "confusion_count": 4,
+    "cross_rarity": true,
+    "margin_threshold": 0.15
+  },
+  {
+    "class_a": "dodge_charger_7th_gen",
+    "class_b": "dodge_charger_8th_gen",
+    "rarity_a": "UNCOMMON",
+    "rarity_b": "UNCOMMON",
+    "confusion_count": 4,
+    "cross_rarity": false,
+    "margin_threshold": 0.1
+  },
+  {
+    "class_a": "bmw_8_series_g15",
+    "class_b": "bmw_m8_f91",
+    "rarity_a": "RARE",
+    "rarity_b": "ULTRA_RARE",
+    "confusion_count": 3,
+    "cross_rarity": true,
+    "margin_threshold": 0.15
+  },
+  {
+    "class_a": "cadillac_ct5_2020",
+    "class_b": "cadillac_ct5_v_blackwing_2022",
+    "rarity_a": "UNCOMMON",
+    "rarity_b": "ULTRA_RARE",
+    "confusion_count": 3,
+    "cross_rarity": true,
+    "margin_threshold": 0.15
+  },
+  {
+    "class_a": "polestar_3_2025",
+    "class_b": "polestar_4_2025",
+    "rarity_a": "RARE",
+    "rarity_b": "RARE",
+    "confusion_count": 3,
+    "cross_rarity": false,
+    "margin_threshold": 0.1
+  },
+  {
+    "class_a": "nissan_gt_r_r35",
+    "class_b": "nissan_gt_r_nismo_r35",
+    "rarity_a": "EPIC",
+    "rarity_b": "LEGENDARY",
+    "confusion_count": 3,
+    "cross_rarity": true,
+    "margin_threshold": 0.15
+  },
+  {
+    "class_a": "ford_mustang_s650",
+    "class_b": "ford_mustang_s550",
+    "rarity_a": "UNCOMMON",
+    "rarity_b": "UNCOMMON",
+    "confusion_count": 3,
+    "cross_rarity": false,
+    "margin_threshold": 0.1
+  },
+  {
+    "class_a": "lexus_is_3rd_gen",
+    "class_b": "lexus_gs_2016",
+    "rarity_a": "UNCOMMON",
+    "rarity_b": "RARE",
+    "confusion_count": 3,
+    "cross_rarity": true,
+    "margin_threshold": 0.15
+  },
+  {
+    "class_a": "audi_a6_c8",
+    "class_b": "audi_a6_c7_5",
+    "rarity_a": "UNCOMMON",
+    "rarity_b": "UNCOMMON",
+    "confusion_count": 3,
+    "cross_rarity": false,
+    "margin_threshold": 0.1
+  },
+  {
+    "class_a": "peugeot_5008_1st_gen",
+    "class_b": "peugeot_5008_2nd_gen",
+    "rarity_a": "UNCOMMON",
+    "rarity_b": "UNCOMMON",
+    "confusion_count": 3,
+    "cross_rarity": false,
+    "margin_threshold": 0.1
+  },
+  {
+    "class_a": "peugeot_308_2nd_gen",
+    "class_b": "peugeot_308_3rd_gen",
+    "rarity_a": "UNCOMMON",
+    "rarity_b": "UNCOMMON",
+    "confusion_count": 3,
+    "cross_rarity": false,
+    "margin_threshold": 0.1
+  },
+  {
+    "class_a": "toyota_highlander_4th_gen",
+    "class_b": "toyota_highlander_3rd_gen",
+    "rarity_a": "COMMON",
+    "rarity_b": "COMMON",
+    "confusion_count": 3,
+    "cross_rarity": false,
+    "margin_threshold": 0.1
+  },
+  {
+    "class_a": "land_rover_range_rover_sport_3rd_gen",
+    "class_b": "land_rover_range_rover_sport_2nd_gen",
+    "rarity_a": "RARE",
+    "rarity_b": "RARE",
+    "confusion_count": 3,
+    "cross_rarity": false,
+    "margin_threshold": 0.1
+  },
+  {
+    "class_a": "bentley_bentayga_1st_gen",
+    "class_b": "bentley_bentayga_2nd_gen",
+    "rarity_a": "ULTRA_RARE",
+    "rarity_b": "ULTRA_RARE",
+    "confusion_count": 3,
+    "cross_rarity": false,
+    "margin_threshold": 0.1
+  },
+  {
+    "class_a": "lexus_is_3rd_gen_fl",
+    "class_b": "lexus_is_500_2022",
+    "rarity_a": "UNCOMMON",
+    "rarity_b": "ULTRA_RARE",
+    "confusion_count": 3,
+    "cross_rarity": true,
+    "margin_threshold": 0.15
+  },
+  {
+    "class_a": "alfa_romeo_giulia_2017",
+    "class_b": "alfa_romeo_giulia_quadrifoglio_2017",
+    "rarity_a": "RARE",
+    "rarity_b": "ULTRA_RARE",
+    "confusion_count": 3,
+    "cross_rarity": true,
+    "margin_threshold": 0.15
+  },
+  {
+    "class_a": "audi_q2_2017",
+    "class_b": "audi_r8_2nd_gen",
+    "rarity_a": "UNCOMMON",
+    "rarity_b": "EPIC",
+    "confusion_count": 2,
+    "cross_rarity": true,
+    "margin_threshold": 0.15
+  },
+  {
+    "class_a": "tesla_model_s_refresh",
+    "class_b": "tesla_model_3_original",
+    "rarity_a": "UNCOMMON",
+    "rarity_b": "COMMON",
+    "confusion_count": 2,
+    "cross_rarity": true,
+    "margin_threshold": 0.15
+  },
+  {
+    "class_a": "fiat_500_2015",
+    "class_b": "fiat_500x_2016",
+    "rarity_a": "UNCOMMON",
+    "rarity_b": "RARE",
+    "confusion_count": 2,
+    "cross_rarity": true,
+    "margin_threshold": 0.15
+  },
+  {
+    "class_a": "peugeot_208_2nd_gen",
+    "class_b": "peugeot_208_1st_gen",
+    "rarity_a": "COMMON",
+    "rarity_b": "COMMON",
+    "confusion_count": 2,
+    "cross_rarity": false,
+    "margin_threshold": 0.1
+  },
+  {
+    "class_a": "ssangyong_actyon_2012",
+    "class_b": "ssangyong_actyon_2006",
+    "rarity_a": "RARE",
+    "rarity_b": "RARE",
+    "confusion_count": 2,
+    "cross_rarity": false,
+    "margin_threshold": 0.1
+  },
+  {
+    "class_a": "nissan_armada_3rd_gen",
+    "class_b": "nissan_rogue_3rd_gen",
+    "rarity_a": "UNCOMMON",
+    "rarity_b": "COMMON",
+    "confusion_count": 2,
+    "cross_rarity": true,
+    "margin_threshold": 0.15
+  },
+  {
+    "class_a": "bmw_4_series_coupe_g22",
+    "class_b": "bmw_m4_g82",
+    "rarity_a": "UNCOMMON",
+    "rarity_b": "RARE",
+    "confusion_count": 2,
+    "cross_rarity": true,
+    "margin_threshold": 0.15
+  },
+  {
+    "class_a": "opel_grandland_2nd_gen",
+    "class_b": "opel_grandland_1st_gen",
+    "rarity_a": "UNCOMMON",
+    "rarity_b": "UNCOMMON",
+    "confusion_count": 2,
+    "cross_rarity": false,
+    "margin_threshold": 0.1
+  },
+  {
+    "class_a": "tesla_model_3_original",
+    "class_b": "tesla_model_y_2020",
+    "rarity_a": "COMMON",
+    "rarity_b": "COMMON",
+    "confusion_count": 2,
+    "cross_rarity": false,
+    "margin_threshold": 0.1
+  },
+  {
+    "class_a": "bmw_5_series_f10",
+    "class_b": "bmw_2_series_coupe_f22",
+    "rarity_a": "UNCOMMON",
+    "rarity_b": "UNCOMMON",
+    "confusion_count": 0,
+    "cross_rarity": false,
+    "margin_threshold": 0.1
+  },
+  {
+    "class_a": "bmw_5_series_g30",
+    "class_b": "bmw_2_series_coupe_g42",
+    "rarity_a": "UNCOMMON",
+    "rarity_b": "UNCOMMON",
+    "confusion_count": 0,
+    "cross_rarity": false,
+    "margin_threshold": 0.1
+  },
+  {
+    "class_a": "bmw_5_series_g60",
+    "class_b": "bmw_2_series_coupe_g42",
+    "rarity_a": "UNCOMMON",
+    "rarity_b": "UNCOMMON",
+    "confusion_count": 0,
+    "cross_rarity": false,
+    "margin_threshold": 0.1
+  },
+  {
+    "class_a": "volkswagen_golf_mk7",
+    "class_b": "volkswagen_jetta_6th_gen",
+    "rarity_a": "UNCOMMON",
+    "rarity_b": "UNCOMMON",
+    "confusion_count": 0,
+    "cross_rarity": false,
+    "margin_threshold": 0.1
+  },
+  {
+    "class_a": "volkswagen_golf_mk8",
+    "class_b": "volkswagen_jetta_7th_gen",
+    "rarity_a": "UNCOMMON",
+    "rarity_b": "UNCOMMON",
+    "confusion_count": 0,
+    "cross_rarity": false,
+    "margin_threshold": 0.1
+  },
+  {
+    "class_a": "bmw_5_series_e60",
+    "class_b": "bmw_2_series_coupe_f22",
+    "rarity_a": "UNCOMMON",
+    "rarity_b": "UNCOMMON",
+    "confusion_count": 0,
+    "cross_rarity": false,
+    "margin_threshold": 0.1
+  },
+  {
+    "class_a": "volkswagen_golf_mk7",
+    "class_b": "volkswagen_golf_mk8",
+    "rarity_a": "UNCOMMON",
+    "rarity_b": "UNCOMMON",
+    "confusion_count": 0,
+    "cross_rarity": false,
+    "margin_threshold": 0.1
+  },
+  {
+    "class_a": "volkswagen_jetta_6th_gen",
+    "class_b": "volkswagen_jetta_7th_gen",
+    "rarity_a": "UNCOMMON",
+    "rarity_b": "UNCOMMON",
+    "confusion_count": 0,
+    "cross_rarity": false,
+    "margin_threshold": 0.1
+  }
+]

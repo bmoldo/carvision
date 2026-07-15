@@ -2,40 +2,53 @@
 
 ## Classification Capabilities
 
-- **667 classes**: 666 car model-generations + 1 background/non-car class
-- **60 makes**: Acura, Alfa Romeo, Aston Martin, Audi, Bentley, BMW, Bugatti, Buick, Cadillac, Chevrolet, Chrysler, Dodge, Ferrari, Fiat, Ford, Genesis, GMC, Honda, Hyundai, Infiniti, Jaguar, Jeep, Kia, Lamborghini, Land Rover, Lexus, Lincoln, Lotus, Maserati, Mazda, McLaren, Mercedes-Benz, Mini, Mitsubishi, Nissan, Pagani, Peugeot, Pontiac, Porsche, Ram, Renault, Rolls-Royce, Saab, Scion, Seat, Skoda, Smart, Subaru, Suzuki, Tesla, Toyota, Volkswagen, Volvo, and more
+- **897 classes**: 896 car model-generations + 1 background/non-car class
+- **76 makes**: Acura, Alfa Romeo, Alpine, Aston Martin, Audi, Bentley, BMW, Bugatti, Buick, BYD, Cadillac, Chevrolet, Chrysler, Citroen, Cupra, Dacia, Dodge, DS, Ferrari, Fiat, Fisker, Ford, Geely, Genesis, GMC, Great Wall, Haval, Honda, Hyundai, Infiniti, Jaguar, Jeep, Kia, Koenigsegg, KTM, Lada, Lamborghini, Lancia, Land Rover, Lexus, Lincoln, London Taxi, Lotus, Lucid, Maserati, Maxus, Mazda, McLaren, Mercedes-AMG, Mercedes-Benz, MG, Mini, Mitsubishi, Mitsuoka, Nissan, Opel, Pagani, Peugeot, Polestar, Porsche, Ram, Renault, Rivian, Rolls-Royce, Seat, Skoda, Smart, SsangYong, Subaru, Suzuki, Tesla, Toyota, TVR, Vauxhall, Volkswagen, Volvo
 - **Generation-level granularity**: Distinguishes facelifts and redesigns (e.g., BMW 3 Series E46 vs F30 vs G20)
-- **Year ranges**: Each class includes production year range
+- **Year ranges**: Each class includes production year range (class metadata, not per-image estimation)
 
 ## Model Architecture
 
 - **Backbone**: EfficientNet-V2-S
 - **Input**: 384 x 384 RGB, ImageNet normalization
-- **Output**: 666 class logits (+ background)
-- **Format**: TFLite float32 (83 MB) or ONNX
-- **Quantization**: Float32 only (dynamic range quantization degrades accuracy significantly)
+- **Output**: 897 class logits (896 model-generations + background)
+- **Formats**:
+  - TFLite FP16, 44 MB (primary; verified 32/32 top-1 parity vs FP32 on sampled validation images)
+  - Core ML mlpackage FP16 (iOS)
+  - ONNX (server)
 
 ## Accuracy
 
+Model v5.13.0, clean held-out validation set (21,381 images, 897 classes):
+
 | Metric | Value |
 |--------|-------|
-| Top-1 Accuracy | ~79% (validation) |
-| Top-3 Accuracy | ~91% (validation) |
-| Top-5 Accuracy | ~94% (validation) |
+| Top-1 Accuracy | 93.85% |
+| Top-5 Accuracy | 97.88% |
+| Calibration (ECE) | 0.049 |
 
-> Accuracy numbers from v4 model. Will be updated after v5 training.
+> Real-world accuracy on uncurated street photos is lower than clean validation accuracy. Rejection thresholds are tuned to favor precision over recall: the engine would rather reject an image than return a wrong answer. See [MODEL_CARD.md](MODEL_CARD.md).
 
 ## Rarity Classification
 
-Each car class is tagged with a rarity level:
+Each car class is tagged with a rarity tier:
 
-| Rarity | Description |
-|--------|-------------|
-| COMMON | Frequently seen on roads |
-| UNCOMMON | Regular but less frequent |
-| RARE | Uncommon to encounter |
-| ULTRA_RARE | Very rare, limited production |
-| LEGENDARY | Exotic supercars, classics |
+| Rarity | Classes | Description |
+|--------|---------|-------------|
+| COMMON | 150 | Frequently seen on roads |
+| UNCOMMON | 415 | Regular but less frequent |
+| RARE | 182 | Uncommon to encounter |
+| ULTRA_RARE | 66 | Very rare, limited production |
+| EPIC | 39 | Exceptional finds (new tier in v5.13) |
+| LEGENDARY | 44 | Exotic supercars, classics |
+
+## Rejection Gating
+
+Rejection is a first-class outcome. Every result includes `rejected` and `rejection_reason`; when a result is rejected, `top1` is null but the raw candidate predictions are still returned. Three gates run in order:
+
+1. **Non-car** (`not_a_car`): the background class wins, or the top softmax score is below 0.05.
+2. **Low confidence** (`low_confidence`): the top prediction's confidence is below its rarity tier's threshold — COMMON 0.4, UNCOMMON 0.5, RARE 0.6, ULTRA_RARE 0.65, EPIC 0.67, LEGENDARY 0.7. Rarer classes require more confidence.
+3. **Ambiguous** (`ambiguous`): the top-2 predictions form one of 51 known confusion pairs (shipped in `models/v5.13.0/confusion_pairs.json`) and the confidence margin between them is below the pair's threshold (default 0.08).
 
 ## Preprocessing Pipeline
 
@@ -46,14 +59,15 @@ All SDKs implement identical preprocessing:
 3. **Resize** — bilinear interpolation to 384x384
 4. **Normalize** — ImageNet mean/std normalization
 
-## Background Rejection
+## Versioning
 
-The model includes a dedicated background class for non-car images. Combined with OOD (out-of-distribution) detection thresholds, the engine can reliably reject:
+Every response carries three independent versions:
 
-- Non-vehicle images
-- Partial/obscured vehicles
-- Artwork or illustrations
-- Screenshots of cars (via separate screen detection)
+| Field | Current | Meaning |
+|-------|---------|---------|
+| `engine_version` | 0.2.0 | SDK/API code |
+| `model_version` | 5.13.0 | Model artifact |
+| `taxonomy_version` | 5.13.0-897 | Class mapping / label space |
 
 ## Performance
 
