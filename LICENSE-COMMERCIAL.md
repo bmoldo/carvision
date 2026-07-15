@@ -42,10 +42,27 @@ below).
 
 ## Pricing
 
-Pricing depends on deployment model (embedded SDK vs. self-hosted API),
-volume, and support level. Contact us for a quote:
+Published, self-serve pricing — no "contact sales" wall for standard tiers.
+Prices in USD; annual billing gets 2 months free.
+
+| Tier | Price | What it covers |
+|---|---|---|
+| **Evaluation** | Free, 30 days | Full commercial evaluation in a non-production environment. No registration; just email us that you're evaluating. |
+| **Self-Hosted API — Starter** | **$99 / month** | One production instance of the Docker API, up to 100,000 images/month, email support. |
+| **Self-Hosted API — Business** | **$299 / month** | Up to 3 production instances, up to 500,000 images/month, priority email support, upgrade assistance on new model releases. |
+| **On-Device SDK — Indie** | **$1,990 / year** | One app (Android and/or iOS), unlimited devices, for companies under $1M annual revenue. |
+| **On-Device SDK — Standard** | **$4,990 / year** | One app, unlimited devices, no revenue cap, priority support and day-one access to new model releases. |
+| **Enterprise / OEM** | Contact us | Air-gapped deployment, redistribution/OEM rights, custom classes or taxonomy extensions, white-label, SLAs, volume beyond Business tier. |
+
+Every paid license includes a **license-continuity clause**: if AutoVision
+ceases operations, your then-current license converts to a perpetual license
+for the model version you deployed. Your integration never becomes
+unlicensed because we went away.
+
+To purchase or ask anything:
 
 **bogdanmoldovan29@gmail.com**
 
 Include a short description of your product, expected volume, and target
-platforms (Android / iOS / server) so we can respond with relevant options.
+platforms (Android / iOS / server), and we'll send an invoice and license
+agreement — typically within one business day.

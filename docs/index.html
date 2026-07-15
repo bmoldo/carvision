@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AutoVision — Car Make, Model & Generation Recognition</title>
+<meta name="description" content="Identify 896 car model-generations across 76 makes from a single photo. On-device SDK (44 MB, <50 ms, offline) or self-hosted API. 93.85% top-1. Transparent pricing.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚗</text></svg>">
+<style>
+:root{
+  --bg:#fafaf8;--fg:#1a1d21;--muted:#5c6470;--card:#ffffff;--line:#e4e2dc;
+  --accent:#0e6e5c;--accent-fg:#ffffff;--accent-soft:#e3f0ec;
+  --code-bg:#14181c;--code-fg:#d6e2ea;--warn:#8a5a00;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#101418;--fg:#e8eaed;--muted:#9aa3ae;--card:#181d23;--line:#2a323b;
+  --accent:#3ecfae;--accent-fg:#08211b;--accent-soft:#12312a;
+  --code-bg:#0b0e11;--code-fg:#cdd9e1;--warn:#e0b45c;
+}}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+header{padding:18px 0;border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.brand{font-weight:700;font-size:18px;color:var(--fg)}
+.brand span{color:var(--accent)}
+nav{margin-left:auto;display:flex;gap:20px;font-size:14px}
+nav a{color:var(--muted)}
+.hero{padding:72px 0 56px;text-align:left}
+.hero h1{font-size:clamp(30px,5vw,46px);line-height:1.15;letter-spacing:-.02em;max-width:17ch}
+.hero p.lead{margin:20px 0 8px;font-size:19px;color:var(--muted);max-width:56ch}
+.stats{display:flex;gap:36px;margin:32px 0;flex-wrap:wrap}
+.stat b{display:block;font-size:26px;letter-spacing:-.01em}
+.stat span{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
+.btn{display:inline-block;padding:11px 20px;border-radius:8px;font-weight:600;font-size:15px;border:1px solid var(--line)}
+.btn.primary{background:var(--accent);color:var(--accent-fg);border-color:transparent}
+.btn.primary:hover{filter:brightness(1.08);text-decoration:none}
+.btn.ghost{color:var(--fg)}
+.btn.ghost:hover{border-color:var(--accent);text-decoration:none}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font-size:26px;letter-spacing:-.01em;margin-bottom:8px}
+.sub{color:var(--muted);margin-bottom:32px;max-width:64ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px}
+.card h3{font-size:16px;margin-bottom:6px}
+.card p{font-size:14.5px;color:var(--muted)}
+pre{background:var(--code-bg);color:var(--code-fg);border-radius:12px;padding:20px;overflow-x:auto;font:13.5px/1.6 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;margin-top:20px}
+pre .c{opacity:.45}
+pre .k{color:#7dd3a8}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:800px){.two{grid-template-columns:1fr}}
+table{width:100%;border-collapse:collapse;font-size:14.5px;background:var(--card);border-radius:12px;overflow:hidden}
+.tablebox{overflow-x:auto;border:1px solid var(--line);border-radius:12px}
+th,td{text-align:left;padding:13px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);background:var(--bg)}
+tr:last-child td{border-bottom:none}
+td b.price{font-size:17px}
+td small{color:var(--muted)}
+.pill{display:inline-block;background:var(--accent-soft);color:var(--accent);font-size:12px;font-weight:600;padding:2px 10px;border-radius:99px;margin-bottom:10px}
+.honest{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--warn);border-radius:12px;padding:22px}
+.honest ul{margin:10px 0 0 18px;font-size:14.5px;color:var(--muted)}
+.honest li{margin:4px 0}
+.continuity{margin-top:20px;padding:16px 20px;background:var(--accent-soft);border-radius:12px;font-size:14.5px}
+footer{border-top:1px solid var(--line);padding:36px 0;font-size:13.5px;color:var(--muted)}
+footer .wrap{display:flex;gap:24px;flex-wrap:wrap;justify-content:space-between}
+.uses{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="brand">Auto<span>Vision</span></div>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#usecases">Use cases</a>
+      <a href="#pricing">Pricing</a>
+      <a href="https://github.com/bmoldo/carvision/blob/main/docs/MODEL_CARD.md">Model card</a>
+      <a href="https://github.com/bmoldo/carvision">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero wrap">
+  <h1>Know every car on the road — from one photo.</h1>
+  <p class="lead">AutoVision identifies car make, model, and <b>generation</b> — not just “BMW 3 Series,” but “E90 (2005–2011)” vs “F30 (2012–2018).” Ship it inside your app with the on-device SDK, or run it as a self-hosted API. No cloud dependency, no per-photo bill shock.</p>
+  <div class="stats">
+    <div class="stat"><b>896</b><span>model-generations</span></div>
+    <div class="stat"><b>76</b><span>makes</span></div>
+    <div class="stat"><b>93.85%</b><span>top-1 accuracy*</span></div>
+    <div class="stat"><b>&lt;50 ms</b><span>on-device</span></div>
+    <div class="stat"><b>44 MB</b><span>FP16 model</span></div>
+  </div>
+  <div class="cta">
+    <a class="btn primary" href="https://github.com/bmoldo/carvision/releases/tag/v5.13.0">Download the model</a>
+    <a class="btn ghost" href="https://github.com/bmoldo/carvision">View source on GitHub</a>
+    <a class="btn ghost" href="#pricing">Pricing</a>
+  </div>
+  <pre><span class="c"># pip install, point at the release folder, classify</span>
+<span class="k">from</span> autovision <span class="k">import</span> AutoVision
+
+engine = AutoVision(<span class="k">"models/v5.13.0"</span>)
+result = engine.classify(<span class="k">"photo.jpg"</span>, top_k=5)
+
+<span class="k">if</span> result.rejected:
+    print(result.rejection_reason)  <span class="c"># not_a_car | low_confidence | ambiguous</span>
+<span class="k">else</span>:
+    car = result.top1
+    print(f<span class="k">"{car.make} {car.model} ({car.year_start}–{car.year_end}) {car.confidence:.0%}"</span>)</pre>
+</div>
+
+<section id="features">
+  <div class="wrap">
+    <h2>Built for production, not demos</h2>
+    <p class="sub">Every design decision assumes your users will point it at things that aren't cars, in bad light, at weird angles — and that your legal team will read the license.</p>
+    <div class="grid">
+      <div class="card"><h3>Generation-level identification</h3><p>Distinguishes facelifts and redesigns across 896 model-generation classes, each with production year ranges and a six-tier rarity tag.</p></div>
+      <div class="card"><h3>Runs entirely on-device</h3><p>44 MB FP16 model, &lt;50 ms with the Android GPU delegate, Core ML on iOS. Photos never leave the device — a privacy story you can put in writing.</p></div>
+      <div class="card"><h3>Rejection is a first-class answer</h3><p>Non-car photos, low-confidence calls, and known confusion pairs are explicitly rejected with a machine-readable reason — the engine tells you when <i>not</i> to trust it.</p></div>
+      <div class="card"><h3>Calibrated confidence</h3><p>ECE 0.049 — confidence scores behave like probabilities, so your thresholds mean what you think they mean.</p></div>
+      <div class="card"><h3>Versioned inference contract</h3><p>Every response carries engine, model, and taxonomy versions. Python SDK, Android SDK, and REST API return the same logical shape.</p></div>
+      <div class="card"><h3>Source-available</h3><p>SDKs, API server, class list, and model card are public. Evaluate everything — accuracy claims included — before paying anything.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="usecases">
+  <div class="wrap">
+    <h2>Where it earns its keep</h2>
+    <p class="sub">Worked examples with runnable code live in the <a href="https://github.com/bmoldo/carvision/tree/main/usecases">usecases/</a> folder.</p>
+    <div class="uses">
+      <div class="card"><h3>Parking &amp; ANPR enrichment</h3><p>Plate registered to a Golf, camera sees an SUV — catch cloned plates by cross-checking vehicle identity against the plate read.</p></div>
+      <div class="card"><h3>Dealer &amp; auction inventory</h3><p>Batch-tag photo sets with make, model, generation, and year range; route low-confidence shots to human review.</p></div>
+      <div class="card"><h3>Marketplace listing autofill</h3><p>Pre-fill listing forms from the seller's photos and flag listings whose photos don't match the claimed vehicle.</p></div>
+      <div class="card"><h3>Enthusiast &amp; consumer apps</h3><p>Offline car-spotting with rarity-tier gamification — the engine behind a live car-spotting app on both app stores.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="honest">
+      <h2>What it won't do</h2>
+      <p class="sub" style="margin-bottom:0">We'd rather you find out here than in production:</p>
+      <ul>
+        <li>Closed taxonomy — a car outside the 896 covered classes gets mapped to its nearest covered lookalike or rejected; it can't say "unknown model X".</li>
+        <li>No trim/engine detection, no color, damage, license plate, or VIN reading.</li>
+        <li>Assumes one dominant vehicle per photo — it's a classifier, not a detector or counter.</li>
+        <li>Degraded on interiors, heavy occlusion, night shots, renders and toys. No motorcycles, trucks, or buses.</li>
+        <li>*93.85% top-1 is on a clean held-out validation set — real-world street photos score lower, and thresholds are tuned to prefer rejection over wrong answers.</li>
+      </ul>
+      <p style="margin-top:14px;font-size:14.5px">Full details, known issues, and responsible-use guidance: <a href="https://github.com/bmoldo/carvision/blob/main/docs/MODEL_CARD.md">the model card</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="wrap">
+    <span class="pill">Published pricing — an industry first for generation-level recognition</span>
+    <h2>Pricing</h2>
+    <p class="sub">Free for personal, research, and noncommercial use under the <a href="https://github.com/bmoldo/carvision/blob/main/LICENSE">PolyForm Noncommercial License</a>. Commercial use is licensed below — every competitor makes you email sales to learn a number; here it is up front. Annual billing gets 2 months free.</p>
+    <div class="tablebox"><table>
+      <tr><th>Tier</th><th>Price</th><th>Covers</th></tr>
+      <tr><td><b>Evaluation</b></td><td><b class="price">Free</b><br><small>30 days</small></td><td>Full commercial evaluation, non-production. No registration — just tell us you're evaluating.</td></tr>
+      <tr><td><b>Self-Hosted API — Starter</b></td><td><b class="price">$99</b>/mo</td><td>One production instance of the Docker API, up to 100k images/month, email support.</td></tr>
+      <tr><td><b>Self-Hosted API — Business</b></td><td><b class="price">$299</b>/mo</td><td>Up to 3 instances, 500k images/month, priority support, upgrade help on new model releases.</td></tr>
+      <tr><td><b>On-Device SDK — Indie</b></td><td><b class="price">$1,990</b>/yr</td><td>One app (Android and/or iOS), unlimited devices, for companies under $1M annual revenue.</td></tr>
+      <tr><td><b>On-Device SDK — Standard</b></td><td><b class="price">$4,990</b>/yr</td><td>One app, unlimited devices, no revenue cap, priority support, day-one model releases.</td></tr>
+      <tr><td><b>Enterprise / OEM</b></td><td><b class="price">Custom</b></td><td>Air-gapped deployment, OEM/redistribution rights, custom classes, white-label, SLAs.</td></tr>
+    </table></div>
+    <div class="continuity">🛡️ <b>License continuity, in writing:</b> if AutoVision ever ceases operations, your license converts to a perpetual license for the model version you deployed. Your product never becomes unlicensed because we went away.</div>
+    <div class="cta" style="margin-top:24px">
+      <a class="btn primary" href="mailto:bogdanmoldovan29@gmail.com?subject=AutoVision%20commercial%20license">Get a license — bogdanmoldovan29@gmail.com</a>
+      <a class="btn ghost" href="https://github.com/bmoldo/carvision/blob/main/LICENSE-COMMERCIAL.md">Full commercial terms</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 AutoVision · Bogdan Moldovan — dual-licensed: <a href="https://github.com/bmoldo/carvision/blob/main/LICENSE">PolyForm Noncommercial 1.0.0</a> / <a href="https://github.com/bmoldo/carvision/blob/main/LICENSE-COMMERCIAL.md">commercial</a></div>
+    <div><a href="https://github.com/bmoldo/carvision">GitHub</a> · <a href="https://github.com/bmoldo/carvision/releases/tag/v5.13.0">Model weights</a> · <a href="mailto:bogdanmoldovan29@gmail.com">Contact</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
