@@ -1,6 +1,7 @@
 """AutoVision API server — car recognition via HTTP."""
 
 import os
+import secrets
 import sys
 import tempfile
 import time
@@ -8,9 +9,10 @@ from contextlib import asynccontextmanager
 from pathlib import Path
 from typing import Optional
 
-from fastapi import FastAPI, File, Form, Request, UploadFile
+from fastapi import FastAPI, File, Form, HTTPException, Request, Security, UploadFile
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
+from fastapi.security import APIKeyHeader
 from starlette.exceptions import HTTPException as StarletteHTTPException
 
 # Add SDK to path
@@ -29,7 +31,63 @@ MAX_UPLOAD_BYTES = 10 * 1024 * 1024  # 10 MB
 MAX_TOP_K = 20
 ACCEPTED_CONTENT_TYPES = {"image/jpeg", "image/png", "image/webp"}
 
+MIN_KEY_LENGTH = 16  # warn (not reject) below this
+
 engine: Optional[AutoVision] = None
+
+
+def _load_api_keys() -> list[str]:
+    """Load accepted API keys.
+
+    AUTOVISION_API_KEYS_FILE (one key per line) takes precedence over
+    AUTOVISION_API_KEYS (comma-separated). An empty result disables auth.
+    """
+    keys_file = os.environ.get("AUTOVISION_API_KEYS_FILE")
+    if keys_file:
+        raw = Path(keys_file).read_text().splitlines()
+    else:
+        raw = os.environ.get("AUTOVISION_API_KEYS", "").split(",")
+    keys = [k.strip() for k in raw if k.strip()]
+    for key in keys:
+        if len(key) < MIN_KEY_LENGTH:
+            print(
+                f"WARNING: An API key shorter than {MIN_KEY_LENGTH} characters is "
+                "configured. Generate strong keys, e.g.: "
+                "python3 -c \"import secrets; print('av_' + secrets.token_urlsafe(32))\""
+            )
+    return keys
+
+
+API_KEYS = _load_api_keys()
+
+_api_key_header = APIKeyHeader(
+    name="X-API-Key",
+    auto_error=False,
+    description="API key. Required when the server is configured with AUTOVISION_API_KEYS.",
+)
+
+
+def require_api_key(api_key: Optional[str] = Security(_api_key_header)) -> None:
+    """Reject requests without a valid X-API-Key header when auth is enabled."""
+    if not API_KEYS:
+        return  # auth disabled (no keys configured)
+    if api_key is None:
+        raise HTTPException(
+            status_code=401,
+            detail="Missing API key",
+            headers={"WWW-Authenticate": "ApiKey"},
+        )
+    supplied = api_key.encode("utf-8")
+    valid = False
+    for key in API_KEYS:
+        if secrets.compare_digest(supplied, key.encode("utf-8")):
+            valid = True
+    if not valid:
+        raise HTTPException(
+            status_code=401,
+            detail="Invalid API key",
+            headers={"WWW-Authenticate": "ApiKey"},
+        )
 
 
 def _error(status_code: int, code: str, message: str) -> JSONResponse:
@@ -69,6 +127,11 @@ def _load_engine() -> None:
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
+    if not API_KEYS:
+        print(
+            "WARNING: AUTOVISION_API_KEYS not set — API is unauthenticated. "
+            "Do not expose this container to untrusted networks."
+        )
     _load_engine()
     yield
 
@@ -83,10 +146,14 @@ app = FastAPI(
 
 @app.exception_handler(StarletteHTTPException)
 async def http_exception_handler(request: Request, exc: StarletteHTTPException):
-    """Ensure framework HTTP errors (404, 405, 413, ...) use the structured shape."""
+    """Ensure framework HTTP errors (401, 404, 405, 413, ...) use the structured shape."""
     if exc.status_code >= 500:
         return _error(exc.status_code, "inference_failed", "Internal server error")
-    return _error(exc.status_code, "bad_request", str(exc.detail))
+    code = "unauthorized" if exc.status_code == 401 else "bad_request"
+    response = _error(exc.status_code, code, str(exc.detail))
+    if exc.headers:
+        response.headers.update(exc.headers)
+    return response
 
 
 @app.exception_handler(RequestValidationError)
@@ -102,7 +169,7 @@ def health():
     }
 
 
-@app.get("/version")
+@app.get("/version", dependencies=[Security(require_api_key)])
 def version():
     return {
         "engine_version": ENGINE_VERSION,
@@ -111,7 +178,7 @@ def version():
     }
 
 
-@app.get("/metadata")
+@app.get("/metadata", dependencies=[Security(require_api_key)])
 def metadata():
     if engine is None:
         return {
@@ -163,7 +230,7 @@ def _serialize_result(result: ClassificationResult) -> dict:
     }
 
 
-@app.post("/classify")
+@app.post("/classify", dependencies=[Security(require_api_key)])
 async def classify(
     image: UploadFile = File(...),
     top_k: int = Form(default=5),

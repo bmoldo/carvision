@@ -111,11 +111,24 @@ All errors use a structured shape (no raw exception text):
 
 | HTTP status | code | When |
 |---|---|---|
+| 401 | `unauthorized` | Missing or invalid `X-API-Key` (when auth is enabled) |
 | 503 | `model_not_loaded` | Model is not loaded |
 | 422 | `invalid_image` | Upload could not be decoded as an image |
 | 400 | `bad_request` | Unsupported content type, empty upload, invalid parameters |
 | 413 | `bad_request` | Upload larger than 10 MB |
 | 500 | `inference_failed` | Unexpected inference error |
+
+## Authentication
+
+Set `AUTOVISION_API_KEYS` to enable API-key auth; clients then send the key in
+the `X-API-Key` header on every endpoint except `/health`. Without keys
+configured the server runs unauthenticated (startup warning is logged) — local
+development only. See `docs/API.md` for details and key rotation.
+
+```bash
+# Generate a key
+python3 -c "import secrets; print('av_' + secrets.token_urlsafe(32))"
+```
 
 ## Configuration
 
@@ -127,17 +140,23 @@ Environment variables:
 - `AUTOVISION_MODEL` — legacy: direct path to a `.tflite`/`.onnx` model file
   (takes precedence over `AUTOVISION_MODEL_DIR` when set)
 - `AUTOVISION_CLASSES` — legacy: path to `class_mapping.json`
+- `AUTOVISION_API_KEYS` — comma-separated API keys; enables auth
+- `AUTOVISION_API_KEYS_FILE` — file with one key per line (takes precedence
+  over `AUTOVISION_API_KEYS`; use with Docker/K8s secrets)
 
 ## curl examples
 
 ```bash
-# Health / version / metadata
+# Health (never requires a key)
 curl http://localhost:8000/health
-curl http://localhost:8000/version
-curl http://localhost:8000/metadata
+
+# Version / metadata
+curl -H "X-API-Key: $AV_KEY" http://localhost:8000/version
+curl -H "X-API-Key: $AV_KEY" http://localhost:8000/metadata
 
 # Classify an image
 curl -X POST http://localhost:8000/classify \
+  -H "X-API-Key: $AV_KEY" \
   -F "image=@photo.jpg;type=image/jpeg" \
   -F "top_k=5"
 ```

@@ -6,12 +6,39 @@ Base URL in the examples below: `http://localhost:8000`.
 
 ## Endpoints
 
-| Method | Path | Purpose |
-|--------|------|---------|
-| POST | `/classify` | Classify a car image |
-| GET | `/health` | Liveness/readiness check |
-| GET | `/version` | Engine, model, and taxonomy versions |
-| GET | `/metadata` | Loaded model details |
+| Method | Path | Purpose | Auth |
+|--------|------|---------|------|
+| POST | `/classify` | Classify a car image | required |
+| GET | `/health` | Liveness/readiness check | none |
+| GET | `/version` | Engine, model, and taxonomy versions | required |
+| GET | `/metadata` | Loaded model details | required |
+
+---
+
+## Authentication
+
+The server authenticates requests with an API key in the **`X-API-Key`** header. Auth is enabled by configuring accepted keys at startup:
+
+```bash
+# Comma-separated keys
+docker run -e AUTOVISION_API_KEYS="av_yourkey1,av_yourkey2" ...
+
+# Or a file with one key per line (wins over AUTOVISION_API_KEYS; use with
+# Docker/Kubernetes secrets so keys don't appear in `docker inspect`)
+docker run -e AUTOVISION_API_KEYS_FILE=/run/secrets/autovision_keys ...
+```
+
+```bash
+curl -H "X-API-Key: av_yourkey1" http://localhost:8000/version
+```
+
+- Generate strong keys: `python3 -c "import secrets; print('av_' + secrets.token_urlsafe(32))"`
+- **If no keys are configured, auth is disabled** and the server logs a startup warning. This is intended for local development only — always set keys in production.
+- Multiple keys enable zero-downtime rotation: add the new key, migrate clients, remove the old key.
+- `GET /health` never requires a key, so container health checks and load-balancer probes work unmodified.
+- Keys are only accepted in the header — never in the query string.
+- The Swagger UI at `/docs` has an **Authorize** button for the key.
+- Requests without a valid key receive `401` with code `unauthorized` and a `WWW-Authenticate: ApiKey` header.
 
 ---
 
@@ -28,6 +55,7 @@ Classify a single image. Multipart form upload.
 
 ```bash
 curl -X POST http://localhost:8000/classify \
+  -H "X-API-Key: av_yourkey1" \
   -F "image=@photo.jpg" \
   -F "top_k=5"
 ```
@@ -227,6 +255,7 @@ All errors return a structured payload:
 
 | Code | HTTP status | Meaning |
 |------|-------------|---------|
+| `unauthorized` | 401 | Missing or invalid `X-API-Key` header (when auth is enabled) |
 | `model_not_loaded` | 503 | Server started but model is not loaded |
 | `invalid_image` | 422 | Upload accepted but the image could not be decoded |
 | `bad_request` | 400 | Missing/empty `image` field, unsupported content type, or malformed request |

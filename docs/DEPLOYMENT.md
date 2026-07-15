@@ -25,15 +25,25 @@ Best for: web applications, batch processing, centralized inference.
 # Build the container
 docker build -t autovision-api -f api/Dockerfile .
 
+# Generate an API key
+AV_KEY=$(python3 -c "import secrets; print('av_' + secrets.token_urlsafe(32))")
+
 # Run with model volume (mount the release directory)
 docker run -d \
   --name autovision \
   -p 8000:8000 \
   -v /path/to/models:/app/models \
+  -e AUTOVISION_API_KEYS="$AV_KEY" \
   autovision-api
 ```
 
 The server loads the release directory (default `/app/models/v5.13.0`, override with `AUTOVISION_MODEL_DIR`) and selects the backend from the weight file present — TFLite if available, otherwise ONNX (use ONNX for GPU inference). Endpoint reference: [API.md](API.md).
+
+### Security
+
+- **Always set `AUTOVISION_API_KEYS` in production.** Without it the API is unauthenticated (a startup warning is logged); that mode is for local development only. Clients authenticate with the `X-API-Key` header; `/health` stays open for probes. Prefer `AUTOVISION_API_KEYS_FILE` with Docker/Kubernetes secrets so keys don't leak via `docker inspect`.
+- **Key rotation**: configure the new key alongside the old (comma-separated), migrate clients, then remove the old key — no downtime.
+- **TLS**: the container serves plain HTTP. Terminate TLS at a reverse proxy (nginx, Traefik, Caddy) or your cloud load balancer in front of it; the proxy is also the right place for rate limiting and IP allowlists.
 
 ### Scaling
 
