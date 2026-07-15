@@ -1,9 +1,11 @@
 # AutoVision Use Cases
 
-Worked, end-to-end scenarios showing how companies integrate AutoVision's car
+Worked scenarios showing how companies integrate AutoVision's car
 make/model/generation recognition. Each folder contains a README describing the
-business scenario and integration pattern, plus a runnable, well-commented
-script written against the real v5.13.0 contract.
+business scenario and integration pattern. Five scenarios include a runnable,
+well-commented Python script written against the real v5.13.0 contract;
+[mobile-carspotting-app](mobile-carspotting-app/) is an Android integration
+pattern in Kotlin (code in its README, no standalone script).
 
 New here? Do the zero-to-first-classification setup in
 [docs/GETTING_STARTED.md](../docs/GETTING_STARTED.md) first.

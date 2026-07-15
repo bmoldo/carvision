@@ -125,18 +125,18 @@ h1{font-size:clamp(32px,4.6vw,50px);line-height:1.08;letter-spacing:-.025em;max-
 .fineprint{margin-top:14px;font-size:13px;color:var(--muted)}
 
 /* result-card mock */
-.demo{display:grid;gap:16px;position:relative}
-.rcard{background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);overflow:hidden;font-size:13.5px}
+.demo{display:grid;gap:16px;position:relative;grid-auto-rows:1fr}
+.rcard{background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);overflow:hidden;font-size:13.5px;display:flex;flex-direction:column}
 .rcard .rhead{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 14px;border-bottom:1px solid var(--line)}
 .chip{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:3px 10px;border-radius:99px}
 .chip.ok{background:var(--soft);color:var(--accent)}
 .chip.no{background:var(--warn-soft);color:var(--warn)}
 .chip .dot{width:6px;height:6px;border-radius:50%;background:currentColor}
 .rhead small{color:var(--muted);font-size:12px}
-.rimg{padding:18px 20px 10px;color:var(--muted);background:linear-gradient(180deg,color-mix(in srgb,var(--accent) 6%,transparent),transparent)}
+.rimg{padding:16px 20px 8px;color:var(--muted);background:linear-gradient(180deg,color-mix(in srgb,var(--accent) 6%,transparent),transparent);display:grid;place-items:center}
 .rcard.rej .rimg{background:linear-gradient(180deg,color-mix(in srgb,var(--warn) 7%,transparent),transparent)}
-.rimg svg{width:min(100%,240px);height:auto;margin:0 auto}
-.rbody{padding:6px 16px 16px}
+.rimg svg{width:min(100%,250px);height:auto}
+.rbody{padding:6px 16px 16px;flex:1}
 .rbody h3{font-size:16px;letter-spacing:-.01em}
 .rbody .yrs{color:var(--muted);font-size:13px;margin-bottom:10px}
 .bar{height:6px;background:var(--line);border-radius:99px;overflow:hidden;margin:6px 0 4px}
@@ -149,7 +149,6 @@ h1{font-size:clamp(32px,4.6vw,50px);line-height:1.08;letter-spacing:-.025em;max-
 .rej .rbody p{color:var(--muted)}
 .rej .rbody code{color:var(--warn);font-weight:600}
 .demo-note{font-size:12px;color:var(--muted);text-align:center}
-@media(min-width:921px){.rcard.rej{margin-left:34px}}
 
 /* sections */
 section{padding:64px 0;border-top:1px solid var(--line)}
@@ -294,12 +293,17 @@ footer a:hover{color:var(--accent)}
       <div class="rcard reveal">
         <div class="rhead"><span class="chip ok"><span class="dot"></span>Identified</span><small>38 ms · on-device</small></div>
         <div class="rimg">
-          <svg viewBox="0 0 260 84" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Line drawing of a sedan, side profile">
-            <path d="M14 62c2-8 8-11 20-13l16-2c10-9 22-16 40-18 26-3 52 0 68 10l14 9c18 2 34 4 40 9 4 3 5 8 4 12h-14"/>
-            <path d="M14 62c-2 4-1 7 2 7h12"/><path d="M78 69h74"/><path d="M216 69h14"/>
-            <circle cx="53" cy="65" r="11"/><circle cx="191" cy="65" r="11"/>
-            <path d="M96 30c-8 3-14 8-18 14h34l-2-15c-5 0-10 0-14 1Z" opacity=".55"/>
-            <path d="M118 29l2 15h36c-6-7-15-12-24-14-4-1-9-1-14-1Z" opacity=".55"/>
+          <svg viewBox="0 0 300 110" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Line drawing of a compact executive sedan, side profile">
+            <path d="M24 84Q18 84 17 76L17 68Q17 62 26 60L34 58Q64 52 96 50L124 32Q131 27 146 27L182 27Q194 28 208 40L230 46Q242 48 244 52L246 62Q246 74 240 78L240 84"/>
+            <path d="M24 84 59 84"/><path d="M59 84A21 21 0 0 1 101 84"/><path d="M101 84 203 84"/><path d="M203 84A21 21 0 0 1 245 84"/>
+            <circle cx="80" cy="84" r="16"/><circle cx="80" cy="84" r="9.5" opacity=".55"/><circle cx="80" cy="84" r="2" fill="currentColor" stroke="none"/>
+            <circle cx="224" cy="84" r="16"/><circle cx="224" cy="84" r="9.5" opacity=".55"/><circle cx="224" cy="84" r="2" fill="currentColor" stroke="none"/>
+            <path d="M104 49 128 33Q134 30 146 30L180 30Q190 31 202 41L206 45 104 49Z"/>
+            <path d="M158 30 156 47.5"/>
+            <path d="M106 46l8-5 4 3" opacity=".7"/>
+            <path d="M36 66Q140 60 236 58" opacity=".45"/>
+            <path d="M20 63 34 61" opacity=".7"/><path d="M246 55 236 52" opacity=".7"/>
+            <path d="M132 55h10M172 54h10" opacity=".5"/>
           </svg>
         </div>
         <div class="rbody">
@@ -314,9 +318,15 @@ footer a:hover{color:var(--accent)}
       <div class="rcard rej reveal">
         <div class="rhead"><span class="chip no"><span class="dot"></span>Rejected</span><small>top1 → null</small></div>
         <div class="rimg">
-          <svg viewBox="0 0 260 84" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Line drawing of a bicycle — not a car">
-            <circle cx="82" cy="58" r="18"/><circle cx="178" cy="58" r="18"/>
-            <path d="M82 58l24-34h44l28 34"/><path d="M106 24h-14"/><path d="M82 58h64l14-34"/><path d="M154 20h12"/>
+          <svg viewBox="0 0 300 110" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Line drawing of a bicycle — not a car">
+            <circle cx="85" cy="76" r="24"/><circle cx="85" cy="76" r="2.5" fill="currentColor" stroke="none"/>
+            <circle cx="215" cy="76" r="24"/><circle cx="215" cy="76" r="2.5" fill="currentColor" stroke="none"/>
+            <circle cx="150" cy="80" r="7"/>
+            <path d="M150 80 136 42"/><path d="M137 44 196 40"/><path d="M150 80 200 42"/>
+            <path d="M150 80 85 76"/><path d="M85 76 136 44"/>
+            <path d="M215 76 200 38 204 30"/><path d="M204 30Q214 28 216 34"/>
+            <path d="M136 42 135 36"/><path d="M125 36 147 36"/>
+            <path d="M150 80 162 90"/><path d="M158 92h10"/>
           </svg>
         </div>
         <div class="rbody">
@@ -405,7 +415,7 @@ result = engine.classify(<span class="s">"photo.jpg"</span>, top_k=5)
   <div class="wrap">
     <p class="eyebrow">Use cases</p>
     <h2 id="usecases-h">Where a car recognition API earns its keep</h2>
-    <p class="sub">Worked examples with runnable code live in the <a href="https://github.com/bmoldo/carvision/tree/main/usecases">usecases/</a> folder.</p>
+    <p class="sub">Six worked scenarios live in the <a href="https://github.com/bmoldo/carvision/tree/main/usecases">usecases/</a> folder — five with runnable Python scripts, plus an Android integration pattern in Kotlin.</p>
     <div class="grid g2">
       <div class="card reveal">
         <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3Z"/><circle cx="12" cy="13" r="3"/></svg></div>

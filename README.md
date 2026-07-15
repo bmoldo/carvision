@@ -106,7 +106,7 @@ AutoVision/
 ├── sdk/                # Drop-in SDKs (Android, Python, JS)
 ├── api/                # Self-hosted FastAPI server
 ├── examples/           # Usage examples
-├── usecases/           # End-to-end business scenarios with runnable scripts
+├── usecases/           # Worked business scenarios (5 runnable scripts + Android pattern)
 ├── models/
 │   └── v5.13.0/        # Release metadata: manifest, class mapping, confusion pairs
 └── docs/
@@ -119,7 +119,7 @@ AutoVision/
 
 ## Use Cases
 
-Worked, end-to-end scenarios with runnable scripts against the real contract live in [`usecases/`](usecases/README.md): marketplace listing autofill, dealer inventory batch tagging, insurance claims photo intake, ANPR/parking enrichment, a mobile car-spotting app pattern, and fleet yard audits — each showing which integration surface to use and how to handle rejections in that context.
+Six worked scenarios live in [`usecases/`](usecases/README.md): marketplace listing autofill, dealer inventory batch tagging, insurance claims photo intake, ANPR/parking enrichment, and fleet yard audits — each with a runnable Python script against the real contract — plus a mobile car-spotting integration pattern in Kotlin. Every scenario's README covers which integration surface to use and how to handle rejections in that context.
 
 ## Pricing
 
