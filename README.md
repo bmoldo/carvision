@@ -106,7 +106,7 @@ AutoVision/
 ├── sdk/                # Drop-in SDKs (Android, Python, JS)
 ├── api/                # Self-hosted FastAPI server
 ├── examples/           # Usage examples
-├── usecases/           # Worked business scenarios (5 runnable scripts + Android pattern)
+├── usecases/           # Possible use cases with example scripts
 ├── models/
 │   └── v5.13.0/        # Release metadata: manifest, class mapping, confusion pairs
 └── docs/
@@ -119,7 +119,7 @@ AutoVision/
 
 ## Use Cases
 
-Six worked scenarios live in [`usecases/`](usecases/README.md): marketplace listing autofill, dealer inventory batch tagging, insurance claims photo intake, ANPR/parking enrichment, and fleet yard audits — each with a runnable Python script against the real contract — plus a mobile car-spotting integration pattern in Kotlin. Every scenario's README covers which integration surface to use and how to handle rejections in that context.
+AutoVision is in production in one application today: **Boby's Garage**, the car-spotting app it was built for (live on both app stores). [`usecases/`](usecases/README.md) illustrates further **possible** integrations — marketplace listing autofill, dealer inventory batch tagging, insurance claims photo intake, ANPR/parking enrichment, and fleet yard audits, each with an example Python script against the real contract, plus the mobile car-spotting pattern in Kotlin. These are illustrations of how the engine *can* be used, not case studies of existing deployments. Every scenario's README covers which integration surface to use and how to handle rejections in that context.
 
 ## Pricing
 

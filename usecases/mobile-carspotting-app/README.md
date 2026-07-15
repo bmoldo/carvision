@@ -6,6 +6,11 @@ TFLite) — see
 This folder is a README-with-code pattern, not a Gradle project — copy the
 snippet into your app.
 
+This is the one scenario with a production deployment behind it: the AutoVision
+engine ships inside [Boby's Garage](https://play.google.com/store/apps/details?id=com.bobysgarage.app),
+the car-spotting app it was originally built for, live on both app stores. The
+pattern below is distilled from that integration.
+
 ## The business scenario
 
 A consumer app for car enthusiasts: point the camera at a car on the street,
