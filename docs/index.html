@@ -3,188 +3,634 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AutoVision — Car Make, Model & Generation Recognition</title>
-<meta name="description" content="Identify 896 car model-generations across 76 makes from a single photo. On-device SDK (44 MB, <50 ms, offline) or self-hosted API. 93.85% top-1. Transparent pricing.">
+<title>AutoVision — Car Make, Model & Generation Recognition API</title>
+<meta name="description" content="Car make, model &amp; generation recognition API and on-device SDK. 896 model-generations, 76 makes, 93.85% top-1*, under 50 ms offline. Transparent pricing.">
+<link rel="canonical" href="https://bmoldo.github.io/carvision/">
+<meta name="theme-color" content="#f7f6f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0c1114" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bmoldo.github.io/carvision/">
+<meta property="og:site_name" content="AutoVision">
+<meta property="og:title" content="AutoVision — Car Make, Model &amp; Generation Recognition API">
+<meta property="og:description" content="Identify 896 car model-generations across 76 makes from one photo. On-device SDK (44 MB FP16, &lt;50 ms, offline) or self-hosted API. 93.85% top-1*. Published pricing.">
+<meta property="og:image" content="https://bmoldo.github.io/carvision/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="AutoVision — car make, model and generation recognition. 896 model-generations, 76 makes, 93.85% top-1, under 50 ms on-device.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AutoVision — Car Make, Model &amp; Generation Recognition API">
+<meta name="twitter:description" content="Identify 896 car model-generations across 76 makes from one photo. On-device SDK or self-hosted API. 93.85% top-1*. Published pricing.">
+<meta name="twitter:image" content="https://bmoldo.github.io/carvision/og.png">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚗</text></svg>">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "AutoVision",
+  "url": "https://bmoldo.github.io/carvision/",
+  "description": "Car make, model and generation recognition engine: 896 model-generations across 76 makes from a single photo. Ships as an on-device SDK (Android, iOS, Python; 44 MB FP16, under 50 ms) or a self-hosted REST API. 93.85% top-1 on a clean held-out validation set, calibrated confidence (ECE 0.049), explicit rejection of non-car, low-confidence, and ambiguous inputs.",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "Android, iOS, Linux, macOS, Windows",
+  "softwareVersion": "5.13.0",
+  "author": {"@type": "Person", "name": "Bogdan Moldovan", "email": "mailto:bogdanmoldovan29@gmail.com"},
+  "offers": [
+    {"@type": "Offer", "name": "Evaluation", "price": "0", "priceCurrency": "USD", "description": "Free 30-day full commercial evaluation, non-production.", "url": "https://bmoldo.github.io/carvision/#pricing"},
+    {"@type": "Offer", "name": "Self-Hosted API — Starter", "price": "99", "priceCurrency": "USD", "description": "Per month. One production instance of the Docker API, up to 100k images/month, email support.", "url": "https://bmoldo.github.io/carvision/#pricing"},
+    {"@type": "Offer", "name": "Self-Hosted API — Business", "price": "299", "priceCurrency": "USD", "description": "Per month. Up to 3 instances, 500k images/month, priority support, upgrade help on new model releases.", "url": "https://bmoldo.github.io/carvision/#pricing"},
+    {"@type": "Offer", "name": "On-Device SDK — Indie", "price": "1990", "priceCurrency": "USD", "description": "Per year. One app (Android and/or iOS), unlimited devices, for companies under $1M annual revenue.", "url": "https://bmoldo.github.io/carvision/#pricing"},
+    {"@type": "Offer", "name": "On-Device SDK — Standard", "price": "4990", "priceCurrency": "USD", "description": "Per year. One app, unlimited devices, no revenue cap, priority support, day-one model releases.", "url": "https://bmoldo.github.io/carvision/#pricing"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Can I use AutoVision commercially, and what does the dual license mean?", "acceptedAnswer": {"@type": "Answer", "text": "AutoVision is source-available under a dual license. Personal, research, and noncommercial use is free under the PolyForm Noncommercial License 1.0.0. Commercial use — revenue-generating products, or internal use at a for-profit company — requires a paid license with published pricing: self-hosted API from $99/mo, on-device SDK from $1,990/yr, Enterprise custom. Model weights are covered by the same dual terms as the code."}},
+    {"@type": "Question", "name": "What happens to my license if AutoVision shuts down?", "acceptedAnswer": {"@type": "Answer", "text": "License continuity is written into the commercial terms: if AutoVision ever ceases operations, your license converts to a perpetual license for the model version you deployed. Your product never becomes unlicensed because the vendor went away."}},
+    {"@type": "Question", "name": "How accurate is it on real-world photos?", "acceptedAnswer": {"@type": "Answer", "text": "93.85% top-1 and 97.88% top-5 are measured on a clean held-out validation set (21,381 images, 897 classes). Real-world accuracy on uncurated street photos is lower. Rejection thresholds are deliberately tuned precision-over-recall — the engine prefers rejecting an image over returning a wrong answer. Evaluate on your own image distribution before committing to accuracy targets; the 30-day evaluation tier exists for exactly this."}},
+    {"@type": "Question", "name": "What happens with cars outside the 896 covered classes?", "acceptedAnswer": {"@type": "Answer", "text": "The taxonomy is closed. A car outside the 896 covered model-generations is mapped to its nearest covered lookalike or rejected — it cannot answer 'unknown model X'. If coverage of a specific class matters to you, check class_mapping.json in the release before integrating."}},
+    {"@type": "Question", "name": "Does it run on iOS?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The release ships a Core ML FP16 mlpackage for iOS alongside the TFLite FP16 model (44 MB) for Android and an ONNX export for servers. FP16 was verified at 32/32 top-1 agreement against FP32 on sampled validation images."}},
+    {"@type": "Question", "name": "Where do my photos go?", "acceptedAnswer": {"@type": "Answer", "text": "Nowhere. With the on-device SDK, inference runs entirely on the phone and photos never leave the device. With the self-hosted API, images go to your own server — there is no AutoVision cloud, no telemetry, and no per-photo metering that phones home."}}
+  ]
+}
+</script>
 <style>
 :root{
-  --bg:#fafaf8;--fg:#1a1d21;--muted:#5c6470;--card:#ffffff;--line:#e4e2dc;
-  --accent:#0e6e5c;--accent-fg:#ffffff;--accent-soft:#e3f0ec;
-  --code-bg:#14181c;--code-fg:#d6e2ea;--warn:#8a5a00;
+  --bg:#f7f6f2;--fg:#161a1d;--muted:#535e66;--card:#ffffff;--line:#e5e3da;
+  --accent:#0b6a57;--accent-hi:#0a5c4b;--accent-fg:#ffffff;--soft:#e2f0ea;
+  --warn:#8a5a00;--warn-soft:#f6edda;
+  --code-bg:#12181d;--code-fg:#d7e2ea;--code-line:#2a343d;
+  --shadow:0 1px 2px rgba(20,26,30,.05),0 8px 28px -12px rgba(20,26,30,.14);
+  --r:14px;
 }
 @media (prefers-color-scheme:dark){:root{
-  --bg:#101418;--fg:#e8eaed;--muted:#9aa3ae;--card:#181d23;--line:#2a323b;
-  --accent:#3ecfae;--accent-fg:#08211b;--accent-soft:#12312a;
-  --code-bg:#0b0e11;--code-fg:#cdd9e1;--warn:#e0b45c;
+  --bg:#0c1114;--fg:#e9edf0;--muted:#a0abb5;--card:#131a1f;--line:#26303a;
+  --accent:#43d6b2;--accent-hi:#5fe2c2;--accent-fg:#052019;--soft:#0f2e26;
+  --warn:#e4b866;--warn-soft:#2b2415;
+  --code-bg:#0a0e12;--code-fg:#cdd9e1;--code-line:#222c35;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px -12px rgba(0,0,0,.5);
 }}
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
-.wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+html{scroll-padding-top:76px}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+code,pre,.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
 a{color:var(--accent);text-decoration:none}
 a:hover{text-decoration:underline}
-header{padding:18px 0;border-bottom:1px solid var(--line)}
-header .wrap{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
-.brand{font-weight:700;font-size:18px;color:var(--fg)}
-.brand span{color:var(--accent)}
-nav{margin-left:auto;display:flex;gap:20px;font-size:14px}
-nav a{color:var(--muted)}
-.hero{padding:72px 0 56px;text-align:left}
-.hero h1{font-size:clamp(30px,5vw,46px);line-height:1.15;letter-spacing:-.02em;max-width:17ch}
-.hero p.lead{margin:20px 0 8px;font-size:19px;color:var(--muted);max-width:56ch}
-.stats{display:flex;gap:36px;margin:32px 0;flex-wrap:wrap}
-.stat b{display:block;font-size:26px;letter-spacing:-.01em}
-.stat span{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
-.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
-.btn{display:inline-block;padding:11px 20px;border-radius:8px;font-weight:600;font-size:15px;border:1px solid var(--line)}
-.btn.primary{background:var(--accent);color:var(--accent-fg);border-color:transparent}
-.btn.primary:hover{filter:brightness(1.08);text-decoration:none}
-.btn.ghost{color:var(--fg)}
-.btn.ghost:hover{border-color:var(--accent);text-decoration:none}
-section{padding:56px 0;border-top:1px solid var(--line)}
-h2{font-size:26px;letter-spacing:-.01em;margin-bottom:8px}
-.sub{color:var(--muted);margin-bottom:32px;max-width:64ch}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px}
-.card h3{font-size:16px;margin-bottom:6px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+.skip{position:absolute;left:-9999px;top:0;background:var(--accent);color:var(--accent-fg);padding:10px 16px;border-radius:0 0 8px 0;z-index:99;font-weight:600}
+.skip:focus{left:0}
+svg{display:block}
+
+/* header */
+header{position:sticky;top:0;z-index:50;border-bottom:1px solid var(--line);background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+@supports not (background:color-mix(in srgb,red,blue)){header{background:var(--bg)}}
+header .wrap{display:flex;align-items:center;gap:20px;min-height:60px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:17px;color:var(--fg);white-space:nowrap}
+.brand:hover{text-decoration:none}
+.brand .mark{width:28px;height:28px;border-radius:8px;background:var(--accent);color:var(--accent-fg);display:grid;place-items:center;flex:none}
+.brand em{font-style:normal;color:var(--accent)}
+header nav{margin-left:auto;display:flex;gap:4px;font-size:14px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+header nav::-webkit-scrollbar{display:none}
+header nav a{color:var(--muted);padding:6px 10px;border-radius:8px;white-space:nowrap}
+header nav a:hover{color:var(--fg);background:var(--soft);text-decoration:none}
+header nav a.gh{color:var(--fg);font-weight:600;display:inline-flex;align-items:center;gap:6px}
+
+/* hero */
+.hero{position:relative;padding:76px 0 64px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(720px 420px at 82% -12%,color-mix(in srgb,var(--accent) 16%,transparent),transparent 68%),
+    radial-gradient(color-mix(in srgb,var(--fg) 9%,transparent) 1px,transparent 1px);
+  background-size:auto,26px 26px;
+  -webkit-mask-image:linear-gradient(#000 55%,transparent);mask-image:linear-gradient(#000 55%,transparent)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:56px;align-items:center}
+@media(max-width:920px){.hero .wrap{grid-template-columns:1fr}.hero{padding:52px 0 48px}}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:18px}
+.eyebrow::before{content:"";width:22px;height:2px;background:var(--accent);border-radius:2px}
+h1{font-size:clamp(32px,4.6vw,50px);line-height:1.08;letter-spacing:-.025em;max-width:16ch;text-wrap:balance}
+.lead{margin:22px 0 4px;font-size:18px;color:var(--muted);max-width:54ch}
+.lead b{color:var(--fg)}
+.stats{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:18px 40px;margin:30px 0 26px}
+.stat b{display:block;font-size:26px;letter-spacing:-.02em;font-variant-numeric:tabular-nums;white-space:nowrap}
+.stat span{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.07em}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:10px;font-weight:600;font-size:15px;border:1px solid var(--line);color:var(--fg);background:var(--card);transition:border-color .15s,transform .15s,box-shadow .15s}
+.btn:hover{text-decoration:none;border-color:var(--accent);transform:translateY(-1px)}
+.btn.primary{background:var(--accent);color:var(--accent-fg);border-color:transparent;box-shadow:var(--shadow)}
+.btn.primary:hover{background:var(--accent-hi)}
+.fineprint{margin-top:14px;font-size:13px;color:var(--muted)}
+
+/* result-card mock */
+.demo{display:grid;gap:16px;position:relative}
+.rcard{background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);overflow:hidden;font-size:13.5px}
+.rcard .rhead{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 14px;border-bottom:1px solid var(--line)}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:3px 10px;border-radius:99px}
+.chip.ok{background:var(--soft);color:var(--accent)}
+.chip.no{background:var(--warn-soft);color:var(--warn)}
+.chip .dot{width:6px;height:6px;border-radius:50%;background:currentColor}
+.rhead small{color:var(--muted);font-size:12px}
+.rimg{padding:18px 20px 10px;color:var(--muted);background:linear-gradient(180deg,color-mix(in srgb,var(--accent) 6%,transparent),transparent)}
+.rcard.rej .rimg{background:linear-gradient(180deg,color-mix(in srgb,var(--warn) 7%,transparent),transparent)}
+.rimg svg{width:min(100%,240px);height:auto;margin:0 auto}
+.rbody{padding:6px 16px 16px}
+.rbody h3{font-size:16px;letter-spacing:-.01em}
+.rbody .yrs{color:var(--muted);font-size:13px;margin-bottom:10px}
+.bar{height:6px;background:var(--line);border-radius:99px;overflow:hidden;margin:6px 0 4px}
+.bar i{display:block;height:100%;width:96%;background:var(--accent);border-radius:99px}
+.rrow{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.rrow .conf{font-weight:700;font-variant-numeric:tabular-nums}
+.rmeta{display:flex;gap:6px;flex-wrap:wrap;padding:10px 16px;border-top:1px dashed var(--line);color:var(--muted);font-size:11.5px}
+.rmeta code{background:var(--soft);color:var(--accent);padding:1px 7px;border-radius:6px;font-size:11px}
+.rcard.rej .rmeta code{background:var(--warn-soft);color:var(--warn)}
+.rej .rbody p{color:var(--muted)}
+.rej .rbody code{color:var(--warn);font-weight:600}
+.demo-note{font-size:12px;color:var(--muted);text-align:center}
+@media(min-width:921px){.rcard.rej{margin-left:34px}}
+
+/* sections */
+section{padding:64px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(24px,3vw,31px);letter-spacing:-.02em;margin-bottom:10px;text-wrap:balance}
+.sub{color:var(--muted);margin-bottom:34px;max-width:64ch;font-size:16.5px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
+.grid.g2{grid-template-columns:repeat(auto-fit,minmax(min(400px,100%),1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:22px;transition:border-color .15s,transform .15s,box-shadow .15s}
+.card:hover{border-color:color-mix(in srgb,var(--accent) 45%,var(--line));box-shadow:var(--shadow)}
+.card h3{font-size:16px;margin:0 0 6px;letter-spacing:-.01em}
 .card p{font-size:14.5px;color:var(--muted)}
-pre{background:var(--code-bg);color:var(--code-fg);border-radius:12px;padding:20px;overflow-x:auto;font:13.5px/1.6 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;margin-top:20px}
-pre .c{opacity:.45}
+.card .ico{width:36px;height:36px;border-radius:10px;background:var(--soft);color:var(--accent);display:grid;place-items:center;margin-bottom:14px}
+.card .ico svg{width:19px;height:19px}
+
+/* code */
+.codebox{position:relative;margin-top:8px}
+pre{background:var(--code-bg);color:var(--code-fg);border:1px solid var(--code-line);border-radius:var(--r);padding:22px;overflow-x:auto;font-size:13.5px;line-height:1.6;box-shadow:var(--shadow)}
+pre .c{opacity:.5}
 pre .k{color:#7dd3a8}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-@media(max-width:800px){.two{grid-template-columns:1fr}}
-table{width:100%;border-collapse:collapse;font-size:14.5px;background:var(--card);border-radius:12px;overflow:hidden}
-.tablebox{overflow-x:auto;border:1px solid var(--line);border-radius:12px}
-th,td{text-align:left;padding:13px 16px;border-bottom:1px solid var(--line);vertical-align:top}
-th{font-size:12.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);background:var(--bg)}
+pre .s{color:#a8c7e8}
+.copybtn{position:absolute;top:10px;right:10px;background:var(--code-line);color:var(--code-fg);border:none;border-radius:8px;padding:6px 12px;font-size:12px;font-weight:600;cursor:pointer;font-family:inherit}
+.copybtn:hover{background:#3a4650}
+.two{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:32px;align-items:start}
+@media(max-width:860px){.two{grid-template-columns:1fr}}
+.pathlist{display:grid;gap:12px}
+.pathlist .card{display:flex;gap:14px;align-items:flex-start;padding:16px 18px}
+.pathlist .card p{font-size:13.5px}
+.pathlist .ico{margin:2px 0 0;flex:none}
+
+/* honest */
+.honest{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--warn);border-radius:var(--r);padding:26px 28px}
+.honest ul{margin:14px 0 0;padding-left:0;list-style:none;display:grid;gap:10px}
+.honest li{font-size:14.5px;color:var(--muted);padding-left:26px;position:relative}
+.honest li::before{content:"×";position:absolute;left:2px;top:-2px;color:var(--warn);font-weight:700;font-size:16px}
+.honest li b{color:var(--fg)}
+
+/* numbers */
+.tablebox{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);background:var(--card);box-shadow:var(--shadow)}
+table{width:100%;min-width:640px;border-collapse:collapse;font-size:14.5px}
+th,td{text-align:left;padding:13px 18px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);background:color-mix(in srgb,var(--fg) 3%,var(--card))}
 tr:last-child td{border-bottom:none}
-td b.price{font-size:17px}
-td small{color:var(--muted)}
-.pill{display:inline-block;background:var(--accent-soft);color:var(--accent);font-size:12px;font-weight:600;padding:2px 10px;border-radius:99px;margin-bottom:10px}
-.honest{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--warn);border-radius:12px;padding:22px}
-.honest ul{margin:10px 0 0 18px;font-size:14.5px;color:var(--muted)}
-.honest li{margin:4px 0}
-.continuity{margin-top:20px;padding:16px 20px;background:var(--accent-soft);border-radius:12px;font-size:14.5px}
-footer{border-top:1px solid var(--line);padding:36px 0;font-size:13.5px;color:var(--muted)}
-footer .wrap{display:flex;gap:24px;flex-wrap:wrap;justify-content:space-between}
-.uses{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+td.num{font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
+td small,th small{color:var(--muted);text-transform:none;letter-spacing:0}
+
+/* pricing */
+.pill{display:inline-block;background:var(--soft);color:var(--accent);font-size:12px;font-weight:700;letter-spacing:.02em;padding:3px 12px;border-radius:99px;margin-bottom:14px}
+.pstrip{display:flex;gap:16px;align-items:baseline;flex-wrap:wrap;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px 22px;margin-bottom:16px}
+.pstrip h3{font-size:16px}
+.pstrip .price{font-size:20px;font-weight:800;letter-spacing:-.01em}
+.pstrip p{font-size:14px;color:var(--muted);flex:1 1 320px;margin:0}
+.tiers{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:0 0 16px}
+.tier{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:22px;display:flex;flex-direction:column;gap:6px}
+.tier.hot{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent),var(--shadow)}
+.tier .tag{position:absolute;top:-11px;left:18px;background:var(--accent);color:var(--accent-fg);font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 10px;border-radius:99px}
+.tier .fam{font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.tier h3{font-size:16.5px;letter-spacing:-.01em}
+.tier .price{font-size:30px;font-weight:800;letter-spacing:-.03em;margin:2px 0;font-variant-numeric:tabular-nums}
+.tier .price small{font-size:14px;font-weight:600;color:var(--muted);letter-spacing:0}
+.tier ul{list-style:none;margin-top:6px;display:grid;gap:7px}
+.tier li{font-size:13.5px;color:var(--muted);padding-left:22px;position:relative}
+.tier li::before{content:"";position:absolute;left:0;top:6px;width:12px;height:7px;border-left:2px solid var(--accent);border-bottom:2px solid var(--accent);transform:rotate(-45deg)}
+.continuity{display:flex;gap:14px;align-items:flex-start;margin-top:20px;padding:18px 22px;background:var(--soft);border-radius:var(--r);font-size:14.5px}
+.continuity svg{flex:none;width:22px;height:22px;color:var(--accent);margin-top:2px}
+
+/* faq */
+.faq{max-width:780px}
+details{background:var(--card);border:1px solid var(--line);border-radius:var(--r);margin-bottom:10px}
+details[open]{border-color:color-mix(in srgb,var(--accent) 45%,var(--line))}
+summary{cursor:pointer;padding:16px 20px;font-weight:600;font-size:15.5px;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:20px;font-weight:400;color:var(--accent);flex:none;line-height:1}
+details[open] summary::after{content:"–"}
+details .a{padding:0 20px 18px;font-size:14.5px;color:var(--muted)}
+details .a a{font-weight:600}
+
+/* footer */
+.finalcta{text-align:center;padding:72px 0}
+.finalcta h2{margin-bottom:8px}
+.finalcta .sub{margin:0 auto 28px}
+.finalcta .cta{justify-content:center}
+footer{border-top:1px solid var(--line);padding:34px 0;font-size:13.5px;color:var(--muted)}
+footer .wrap{display:flex;gap:14px 28px;flex-wrap:wrap;justify-content:space-between;align-items:center}
+footer a{color:var(--muted);text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+footer a:hover{color:var(--accent)}
+
+/* motion */
+.js .reveal{opacity:0;transform:translateY(16px);transition:opacity .55s ease,transform .55s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .js .reveal{opacity:1;transform:none}
+}
+@media print{.js .reveal{opacity:1!important;transform:none!important}}
 </style>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
 <header>
   <div class="wrap">
-    <div class="brand">Auto<span>Vision</span></div>
-    <nav>
+    <a class="brand" href="#top" aria-label="AutoVision home">
+      <span class="mark" aria-hidden="true"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11 6.5 6.6A2 2 0 0 1 8.4 5.2h7.2a2 2 0 0 1 1.9 1.4L19 11"/><path d="M3 16v-2.6A2.4 2.4 0 0 1 5.4 11h13.2A2.4 2.4 0 0 1 21 13.4V16"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg></span>
+      Auto<em>Vision</em>
+    </a>
+    <nav aria-label="Main">
       <a href="#features">Features</a>
+      <a href="#quickstart">Quickstart</a>
       <a href="#usecases">Use cases</a>
+      <a href="#model-card">Model card</a>
       <a href="#pricing">Pricing</a>
-      <a href="https://github.com/bmoldo/carvision/blob/main/docs/MODEL_CARD.md">Model card</a>
-      <a href="https://github.com/bmoldo/carvision">GitHub</a>
+      <a href="#faq">FAQ</a>
+      <a class="gh" href="https://github.com/bmoldo/carvision"><svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.5 7.5 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>GitHub</a>
     </nav>
   </div>
 </header>
 
-<div class="hero wrap">
-  <h1>Know every car on the road — from one photo.</h1>
-  <p class="lead">AutoVision identifies car make, model, and <b>generation</b> — not just “BMW 3 Series,” but “E90 (2005–2011)” vs “F30 (2012–2018).” Ship it inside your app with the on-device SDK, or run it as a self-hosted API. No cloud dependency, no per-photo bill shock.</p>
-  <div class="stats">
-    <div class="stat"><b>896</b><span>model-generations</span></div>
-    <div class="stat"><b>76</b><span>makes</span></div>
-    <div class="stat"><b>93.85%</b><span>top-1 accuracy*</span></div>
-    <div class="stat"><b>&lt;50 ms</b><span>on-device</span></div>
-    <div class="stat"><b>44 MB</b><span>FP16 model</span></div>
+<main id="main">
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">On-device car recognition · v5.13.0</p>
+      <h1>Know every car on the road — from one photo.</h1>
+      <p class="lead">AutoVision is a vehicle make and model recognition engine that goes one level deeper: <b>generation</b>. Not just “BMW 3 Series,” but “E90 (2005–2011)” vs “F30 (2012–2018).” Ship it inside your app with the on-device SDK, or run it as a self-hosted car recognition API. No cloud dependency, no per-photo bill shock.</p>
+      <div class="stats" role="list" aria-label="Key metrics">
+        <div class="stat" role="listitem"><b>896</b><span>model-generations</span></div>
+        <div class="stat" role="listitem"><b>76</b><span>makes</span></div>
+        <div class="stat" role="listitem"><b>93.85%</b><span>top-1 accuracy*</span></div>
+        <div class="stat" role="listitem"><b>&lt;50 ms</b><span>on-device</span></div>
+        <div class="stat" role="listitem"><b>44 MB</b><span>FP16 model</span></div>
+      </div>
+      <div class="cta">
+        <a class="btn primary" href="https://github.com/bmoldo/carvision/releases/tag/v5.13.0">Download the model</a>
+        <a class="btn" href="https://github.com/bmoldo/carvision">View source on GitHub</a>
+        <a class="btn" href="#pricing">Pricing</a>
+      </div>
+      <p class="fineprint">*93.85% top-1 on a clean held-out validation set — <a href="#limits">real-world street photos score lower</a>.</p>
+    </div>
+
+    <div class="demo" aria-label="Illustration of the two possible SDK responses: an identification and a rejection">
+      <div class="rcard reveal">
+        <div class="rhead"><span class="chip ok"><span class="dot"></span>Identified</span><small>38 ms · on-device</small></div>
+        <div class="rimg">
+          <svg viewBox="0 0 260 84" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Line drawing of a sedan, side profile">
+            <path d="M14 62c2-8 8-11 20-13l16-2c10-9 22-16 40-18 26-3 52 0 68 10l14 9c18 2 34 4 40 9 4 3 5 8 4 12h-14"/>
+            <path d="M14 62c-2 4-1 7 2 7h12"/><path d="M78 69h74"/><path d="M216 69h14"/>
+            <circle cx="53" cy="65" r="11"/><circle cx="191" cy="65" r="11"/>
+            <path d="M96 30c-8 3-14 8-18 14h34l-2-15c-5 0-10 0-14 1Z" opacity=".55"/>
+            <path d="M118 29l2 15h36c-6-7-15-12-24-14-4-1-9-1-14-1Z" opacity=".55"/>
+          </svg>
+        </div>
+        <div class="rbody">
+          <h3>BMW 3 Series F30</h3>
+          <p class="yrs">2012–2018 · rarity <strong>COMMON</strong></p>
+          <div class="rrow"><span>confidence</span><span class="conf">96%</span></div>
+          <div class="bar" role="img" aria-label="Confidence bar at 96 percent"><i></i></div>
+        </div>
+        <div class="rmeta"><code>engine 5.13.0</code><code>model 5.13.0</code><code>taxonomy 5.13.0-897</code></div>
+      </div>
+
+      <div class="rcard rej reveal">
+        <div class="rhead"><span class="chip no"><span class="dot"></span>Rejected</span><small>top1 → null</small></div>
+        <div class="rimg">
+          <svg viewBox="0 0 260 84" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Line drawing of a bicycle — not a car">
+            <circle cx="82" cy="58" r="18"/><circle cx="178" cy="58" r="18"/>
+            <path d="M82 58l24-34h44l28 34"/><path d="M106 24h-14"/><path d="M82 58h64l14-34"/><path d="M154 20h12"/>
+          </svg>
+        </div>
+        <div class="rbody">
+          <p>rejection_reason: <code>not_a_car</code></p>
+          <p style="font-size:13px;margin-top:6px">Candidates still returned for inspection. Reasons: <code>not_a_car</code> · <code>low_confidence</code> · <code>ambiguous</code></p>
+        </div>
+        <div class="rmeta"><code>rejected true</code><code>taxonomy 5.13.0-897</code></div>
+      </div>
+      <p class="demo-note">Stylized illustration of the response contract — not a screenshot.</p>
+    </div>
   </div>
-  <div class="cta">
-    <a class="btn primary" href="https://github.com/bmoldo/carvision/releases/tag/v5.13.0">Download the model</a>
-    <a class="btn ghost" href="https://github.com/bmoldo/carvision">View source on GitHub</a>
-    <a class="btn ghost" href="#pricing">Pricing</a>
+</div>
+
+<section id="features" aria-labelledby="features-h">
+  <div class="wrap">
+    <p class="eyebrow">Capabilities</p>
+    <h2 id="features-h">Built for production, not demos</h2>
+    <p class="sub">Every design decision assumes your users will point it at things that aren't cars, in bad light, at weird angles — and that your legal team will read the license.</p>
+    <div class="grid">
+      <div class="card reveal">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 12 10 5 10-5"/><path d="m2 17 10 5 10-5"/></svg></div>
+        <h3>Generation-level identification</h3><p>Distinguishes facelifts and redesigns across 896 model-generation classes, each with production year ranges and a six-tier rarity tag.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg></div>
+        <h3>Runs entirely on-device</h3><p>44 MB FP16 model, &lt;50 ms with the Android GPU delegate, Core ML on iOS. Photos never leave the device — a privacy story you can put in writing.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-3.5 8-10V5.5L12 2 4 5.5V12c0 6.5 8 10 8 10Z"/><path d="m9.5 9.5 5 5m0-5-5 5"/></svg></div>
+        <h3>Rejection is a first-class answer</h3><p>Non-car photos, low-confidence calls, and known confusion pairs are explicitly rejected with a machine-readable reason — the engine tells you when <i>not</i> to trust it.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></svg></div>
+        <h3>Calibrated confidence</h3><p>ECE 0.049 — confidence scores behave like probabilities, so your thresholds mean what you think they mean.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.59 2.59A2 2 0 0 0 11.17 2H4a2 2 0 0 0-2 2v7.17a2 2 0 0 0 .59 1.42l8.7 8.7a2.43 2.43 0 0 0 3.42 0l6.58-6.58a2.43 2.43 0 0 0 0-3.42Z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></svg></div>
+        <h3>Versioned inference contract</h3><p>Every response carries engine, model, and taxonomy versions. Python SDK, Android SDK, and REST API return the same logical shape.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+        <h3>Source-available</h3><p>SDKs, API server, class list, and model card are public. Evaluate everything — accuracy claims included — before paying anything.</p>
+      </div>
+    </div>
   </div>
-  <pre><span class="c"># pip install, point at the release folder, classify</span>
+</section>
+
+<section id="quickstart" aria-labelledby="quickstart-h">
+  <div class="wrap">
+    <p class="eyebrow">Quickstart</p>
+    <h2 id="quickstart-h">A car identification SDK you can wire up before lunch</h2>
+    <p class="sub">Grab the weights from the <a href="https://github.com/bmoldo/carvision/releases/tag/v5.13.0">v5.13.0 release</a>, point the SDK at the folder, classify. Rejection is part of the return type, not an exception you discover in production.</p>
+    <div class="two">
+      <div class="codebox reveal">
+<pre data-copy tabindex="0" aria-label="Python quickstart code"><code><span class="c"># pip install, point at the release folder, classify</span>
 <span class="k">from</span> autovision <span class="k">import</span> AutoVision
 
-engine = AutoVision(<span class="k">"models/v5.13.0"</span>)
-result = engine.classify(<span class="k">"photo.jpg"</span>, top_k=5)
+engine = AutoVision(<span class="s">"models/v5.13.0"</span>)
+result = engine.classify(<span class="s">"photo.jpg"</span>, top_k=5)
 
 <span class="k">if</span> result.rejected:
     print(result.rejection_reason)  <span class="c"># not_a_car | low_confidence | ambiguous</span>
 <span class="k">else</span>:
     car = result.top1
-    print(f<span class="k">"{car.make} {car.model} ({car.year_start}–{car.year_end}) {car.confidence:.0%}"</span>)</pre>
-</div>
-
-<section id="features">
-  <div class="wrap">
-    <h2>Built for production, not demos</h2>
-    <p class="sub">Every design decision assumes your users will point it at things that aren't cars, in bad light, at weird angles — and that your legal team will read the license.</p>
-    <div class="grid">
-      <div class="card"><h3>Generation-level identification</h3><p>Distinguishes facelifts and redesigns across 896 model-generation classes, each with production year ranges and a six-tier rarity tag.</p></div>
-      <div class="card"><h3>Runs entirely on-device</h3><p>44 MB FP16 model, &lt;50 ms with the Android GPU delegate, Core ML on iOS. Photos never leave the device — a privacy story you can put in writing.</p></div>
-      <div class="card"><h3>Rejection is a first-class answer</h3><p>Non-car photos, low-confidence calls, and known confusion pairs are explicitly rejected with a machine-readable reason — the engine tells you when <i>not</i> to trust it.</p></div>
-      <div class="card"><h3>Calibrated confidence</h3><p>ECE 0.049 — confidence scores behave like probabilities, so your thresholds mean what you think they mean.</p></div>
-      <div class="card"><h3>Versioned inference contract</h3><p>Every response carries engine, model, and taxonomy versions. Python SDK, Android SDK, and REST API return the same logical shape.</p></div>
-      <div class="card"><h3>Source-available</h3><p>SDKs, API server, class list, and model card are public. Evaluate everything — accuracy claims included — before paying anything.</p></div>
+    print(f<span class="s">"{car.make} {car.model} ({car.year_start}–{car.year_end}) {car.confidence:.0%}"</span>)</code></pre>
+      </div>
+      <div class="pathlist">
+        <div class="card reveal">
+          <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg></div>
+          <div><h3>On-device SDK</h3><p>Android (TFLite FP16 + GPU delegate), iOS (Core ML), Python. Offline, &lt;50 ms, images stay on the phone.</p></div>
+        </div>
+        <div class="card reveal">
+          <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="7" rx="2"/><rect x="2" y="13" width="20" height="7" rx="2"/><path d="M6 7.5h.01M6 16.5h.01"/></svg></div>
+          <div><h3>Self-hosted API</h3><p>Docker + FastAPI on your own infrastructure. Same response contract over HTTP, for web apps and batch pipelines.</p></div>
+        </div>
+        <div class="card reveal">
+          <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h6"/></svg></div>
+          <div><h3>Read before you buy</h3><p>The <a href="https://github.com/bmoldo/carvision/blob/main/docs/MODEL_CARD.md">model card</a> documents evaluation, known issues, and limits — the sales pitch and the caveats in one place.</p></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="usecases">
+<section id="usecases" aria-labelledby="usecases-h">
   <div class="wrap">
-    <h2>Where it earns its keep</h2>
+    <p class="eyebrow">Use cases</p>
+    <h2 id="usecases-h">Where a car recognition API earns its keep</h2>
     <p class="sub">Worked examples with runnable code live in the <a href="https://github.com/bmoldo/carvision/tree/main/usecases">usecases/</a> folder.</p>
-    <div class="uses">
-      <div class="card"><h3>Parking &amp; ANPR enrichment</h3><p>Plate registered to a Golf, camera sees an SUV — catch cloned plates by cross-checking vehicle identity against the plate read.</p></div>
-      <div class="card"><h3>Dealer &amp; auction inventory</h3><p>Batch-tag photo sets with make, model, generation, and year range; route low-confidence shots to human review.</p></div>
-      <div class="card"><h3>Marketplace listing autofill</h3><p>Pre-fill listing forms from the seller's photos and flag listings whose photos don't match the claimed vehicle.</p></div>
-      <div class="card"><h3>Enthusiast &amp; consumer apps</h3><p>Offline car-spotting with rarity-tier gamification — the engine behind a live car-spotting app on both app stores.</p></div>
+    <div class="grid g2">
+      <div class="card reveal">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3Z"/><circle cx="12" cy="13" r="3"/></svg></div>
+        <h3>Parking &amp; ANPR/ALPR enrichment</h3><p>Plate registered to a Golf, camera sees an SUV — catch cloned plates by cross-checking vehicle make and model against the plate read.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V8l9-5 9 5v13"/><path d="M8 21v-7h8v7"/><path d="M3 21h18"/></svg></div>
+        <h3>Dealer &amp; auction inventory</h3><p>Batch-tag photo sets with make, model, generation, and year range; route low-confidence shots to human review.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/></svg></div>
+        <h3>Marketplace listing autofill</h3><p>Pre-fill listing forms from the seller's photos and flag listings whose photos don't match the claimed vehicle.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg></div>
+        <h3>Enthusiast &amp; consumer apps</h3><p>Offline car-spotting with rarity-tier gamification — the engine behind a live car-spotting app on both app stores.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section>
+<section id="limits" aria-labelledby="limits-h">
   <div class="wrap">
-    <div class="honest">
-      <h2>What it won't do</h2>
+    <div class="honest reveal">
+      <p class="eyebrow">Honest limits</p>
+      <h2 id="limits-h">What it won't do</h2>
       <p class="sub" style="margin-bottom:0">We'd rather you find out here than in production:</p>
       <ul>
-        <li>Closed taxonomy — a car outside the 896 covered classes gets mapped to its nearest covered lookalike or rejected; it can't say "unknown model X".</li>
+        <li><b>Closed taxonomy</b> — a car outside the 896 covered classes gets mapped to its nearest covered lookalike or rejected; it can't say "unknown model X".</li>
         <li>No trim/engine detection, no color, damage, license plate, or VIN reading.</li>
         <li>Assumes one dominant vehicle per photo — it's a classifier, not a detector or counter.</li>
         <li>Degraded on interiors, heavy occlusion, night shots, renders and toys. No motorcycles, trucks, or buses.</li>
         <li>*93.85% top-1 is on a clean held-out validation set — real-world street photos score lower, and thresholds are tuned to prefer rejection over wrong answers.</li>
       </ul>
-      <p style="margin-top:14px;font-size:14.5px">Full details, known issues, and responsible-use guidance: <a href="https://github.com/bmoldo/carvision/blob/main/docs/MODEL_CARD.md">the model card</a>.</p>
+      <p style="margin-top:16px;font-size:14.5px">Full details, known issues, and responsible-use guidance: <a href="https://github.com/bmoldo/carvision/blob/main/docs/MODEL_CARD.md">the model card</a>.</p>
     </div>
   </div>
 </section>
 
-<section id="pricing">
+<section id="model-card" aria-labelledby="modelcard-h">
   <div class="wrap">
-    <span class="pill">Published pricing — an industry first for generation-level recognition</span>
-    <h2>Pricing</h2>
-    <p class="sub">Free for personal, research, and noncommercial use under the <a href="https://github.com/bmoldo/carvision/blob/main/LICENSE">PolyForm Noncommercial License</a>. Commercial use is licensed below — every competitor makes you email sales to learn a number; here it is up front. Annual billing gets 2 months free.</p>
-    <div class="tablebox"><table>
-      <tr><th>Tier</th><th>Price</th><th>Covers</th></tr>
-      <tr><td><b>Evaluation</b></td><td><b class="price">Free</b><br><small>30 days</small></td><td>Full commercial evaluation, non-production. No registration — just tell us you're evaluating.</td></tr>
-      <tr><td><b>Self-Hosted API — Starter</b></td><td><b class="price">$99</b>/mo</td><td>One production instance of the Docker API, up to 100k images/month, email support.</td></tr>
-      <tr><td><b>Self-Hosted API — Business</b></td><td><b class="price">$299</b>/mo</td><td>Up to 3 instances, 500k images/month, priority support, upgrade help on new model releases.</td></tr>
-      <tr><td><b>On-Device SDK — Indie</b></td><td><b class="price">$1,990</b>/yr</td><td>One app (Android and/or iOS), unlimited devices, for companies under $1M annual revenue.</td></tr>
-      <tr><td><b>On-Device SDK — Standard</b></td><td><b class="price">$4,990</b>/yr</td><td>One app, unlimited devices, no revenue cap, priority support, day-one model releases.</td></tr>
-      <tr><td><b>Enterprise / OEM</b></td><td><b class="price">Custom</b></td><td>Air-gapped deployment, OEM/redistribution rights, custom classes, white-label, SLAs.</td></tr>
-    </table></div>
-    <div class="continuity">🛡️ <b>License continuity, in writing:</b> if AutoVision ever ceases operations, your license converts to a perpetual license for the model version you deployed. Your product never becomes unlicensed because we went away.</div>
-    <div class="cta" style="margin-top:24px">
-      <a class="btn primary" href="mailto:bogdanmoldovan29@gmail.com?subject=AutoVision%20commercial%20license">Get a license — bogdanmoldovan29@gmail.com</a>
-      <a class="btn ghost" href="https://github.com/bmoldo/carvision/blob/main/LICENSE-COMMERCIAL.md">Full commercial terms</a>
+    <p class="eyebrow">Model card</p>
+    <h2 id="modelcard-h">The numbers, as measured</h2>
+    <p class="sub">Everything below is from the published <a href="https://github.com/bmoldo/carvision/blob/main/docs/MODEL_CARD.md">model card</a> for v5.13.0 — measured, not marketed. Weights, class mapping, and checksums ship in the <a href="https://github.com/bmoldo/carvision/releases/tag/v5.13.0">GitHub release</a>.</p>
+    <div class="tablebox reveal">
+      <table>
+        <thead><tr><th scope="col">Metric</th><th scope="col">Value</th><th scope="col">Notes</th></tr></thead>
+        <tbody>
+          <tr><td>Top-1 accuracy</td><td class="num">93.85%*</td><td><small>Clean held-out validation set — real-world street photos score lower</small></td></tr>
+          <tr><td>Top-5 accuracy</td><td class="num">97.88%</td><td><small>Same validation set</small></td></tr>
+          <tr><td>Calibration (ECE)</td><td class="num">0.049</td><td><small>Confidence scores usable as approximate probabilities</small></td></tr>
+          <tr><td>Latency</td><td class="num">&lt;50 ms</td><td><small>On-device, modern Android phones with GPU delegate</small></td></tr>
+          <tr><td>Model size</td><td class="num">44 MB</td><td><small>TFLite FP16 (primary); Core ML for iOS, ONNX for server</small></td></tr>
+          <tr><td>Coverage</td><td class="num">896 / 76</td><td><small>Model-generation classes / makes, plus a background non-car class</small></td></tr>
+          <tr><td>Rejection reasons</td><td class="num mono" style="font-size:13px">not_a_car · low_confidence · ambiguous</td><td><small>Machine-readable; top1 is null when rejected</small></td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </section>
+
+<section id="pricing" aria-labelledby="pricing-h">
+  <div class="wrap">
+    <p class="eyebrow">Pricing</p>
+    <h2 id="pricing-h">Published pricing — an industry first for generation-level recognition</h2>
+    <p class="sub">Free for personal, research, and noncommercial use under the <a href="https://github.com/bmoldo/carvision/blob/main/LICENSE">PolyForm Noncommercial License</a>. Commercial use is licensed below — every competitor makes you email sales to learn a number; here it is up front. Annual billing gets 2 months free.</p>
+
+    <div class="pstrip reveal">
+      <h3>Evaluation</h3><span class="price">Free <small style="font-weight:600;color:var(--muted);font-size:13px">· 30 days</small></span>
+      <p>Full commercial evaluation, non-production. No registration — just tell us you're evaluating.</p>
+    </div>
+
+    <div class="tiers">
+      <div class="tier reveal">
+        <span class="fam">Self-Hosted API</span>
+        <h3>Starter</h3>
+        <p class="price">$99<small>/mo</small></p>
+        <ul>
+          <li>One production instance of the Docker API</li>
+          <li>Up to 100k images/month</li>
+          <li>Email support</li>
+        </ul>
+      </div>
+      <div class="tier hot reveal">
+        <span class="tag">Most popular</span>
+        <span class="fam">Self-Hosted API</span>
+        <h3>Business</h3>
+        <p class="price">$299<small>/mo</small></p>
+        <ul>
+          <li>Up to 3 instances</li>
+          <li>500k images/month</li>
+          <li>Priority support</li>
+          <li>Upgrade help on new model releases</li>
+        </ul>
+      </div>
+      <div class="tier reveal">
+        <span class="fam">On-Device SDK</span>
+        <h3>Indie</h3>
+        <p class="price">$1,990<small>/yr</small></p>
+        <ul>
+          <li>One app (Android and/or iOS)</li>
+          <li>Unlimited devices</li>
+          <li>For companies under $1M annual revenue</li>
+        </ul>
+      </div>
+      <div class="tier reveal">
+        <span class="fam">On-Device SDK</span>
+        <h3>Standard</h3>
+        <p class="price">$4,990<small>/yr</small></p>
+        <ul>
+          <li>One app, unlimited devices</li>
+          <li>No revenue cap</li>
+          <li>Priority support</li>
+          <li>Day-one model releases</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pstrip reveal">
+      <h3>Enterprise / OEM</h3><span class="price">Custom</span>
+      <p>Air-gapped deployment, OEM/redistribution rights, custom classes, white-label, SLAs.</p>
+    </div>
+
+    <div class="continuity reveal">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-3.5 8-10V5.5L12 2 4 5.5V12c0 6.5 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg>
+      <div><b>License continuity, in writing:</b> if AutoVision ever ceases operations, your license converts to a perpetual license for the model version you deployed. Your product never becomes unlicensed because we went away.</div>
+    </div>
+
+    <div class="cta" style="margin-top:26px">
+      <a class="btn primary" href="mailto:bogdanmoldovan29@gmail.com?subject=AutoVision%20commercial%20license">Get a license — bogdanmoldovan29@gmail.com</a>
+      <a class="btn" href="https://github.com/bmoldo/carvision/blob/main/LICENSE-COMMERCIAL.md">Full commercial terms</a>
+    </div>
+  </div>
+</section>
+
+<section id="faq" aria-labelledby="faq-h">
+  <div class="wrap">
+    <p class="eyebrow">FAQ</p>
+    <h2 id="faq-h">Questions engineers actually ask</h2>
+    <p class="sub">Short answers here; long answers in the <a href="https://github.com/bmoldo/carvision/blob/main/docs/MODEL_CARD.md">model card</a> and <a href="https://github.com/bmoldo/carvision/blob/main/LICENSE-COMMERCIAL.md">commercial terms</a>.</p>
+    <div class="faq">
+      <details class="reveal">
+        <summary>Can I use AutoVision commercially, and what does the dual license mean?</summary>
+        <div class="a">AutoVision is source-available under a dual license. Personal, research, and noncommercial use is free under the <a href="https://github.com/bmoldo/carvision/blob/main/LICENSE">PolyForm Noncommercial License 1.0.0</a>. Commercial use — revenue-generating products, or internal use at a for-profit company — requires a paid license with published pricing: self-hosted API from $99/mo, on-device SDK from $1,990/yr, Enterprise custom. Model weights are covered by the same dual terms as the code.</div>
+      </details>
+      <details class="reveal">
+        <summary>What happens to my license if AutoVision shuts down?</summary>
+        <div class="a">License continuity is written into the commercial terms: if AutoVision ever ceases operations, your license converts to a perpetual license for the model version you deployed. Your product never becomes unlicensed because the vendor went away.</div>
+      </details>
+      <details class="reveal">
+        <summary>How accurate is it on real-world photos?</summary>
+        <div class="a">93.85% top-1 and 97.88% top-5 are measured on a clean held-out validation set (21,381 images, 897 classes). Real-world accuracy on uncurated street photos is lower. Rejection thresholds are deliberately tuned precision-over-recall — the engine prefers rejecting an image over returning a wrong answer. Evaluate on your own image distribution before committing to accuracy targets; the 30-day evaluation tier exists for exactly this.</div>
+      </details>
+      <details class="reveal">
+        <summary>What happens with cars outside the 896 covered classes?</summary>
+        <div class="a">The taxonomy is closed. A car outside the 896 covered model-generations is mapped to its nearest covered lookalike or rejected — it cannot answer "unknown model X". If coverage of a specific class matters to you, check <code>class_mapping.json</code> in the release before integrating.</div>
+      </details>
+      <details class="reveal">
+        <summary>Does it run on iOS?</summary>
+        <div class="a">Yes. The release ships a Core ML FP16 mlpackage for iOS alongside the TFLite FP16 model (44 MB) for Android and an ONNX export for servers. FP16 was verified at 32/32 top-1 agreement against FP32 on sampled validation images.</div>
+      </details>
+      <details class="reveal">
+        <summary>Where do my photos go?</summary>
+        <div class="a">Nowhere. With the on-device SDK, inference runs entirely on the phone and photos never leave the device. With the self-hosted API, images go to your own server — there is no AutoVision cloud, no telemetry, and no per-photo metering that phones home.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="finalcta" aria-labelledby="finalcta-h">
+  <div class="wrap">
+    <p class="eyebrow" style="justify-content:center;display:flex">Get started</p>
+    <h2 id="finalcta-h">Evaluate it against your own photos.</h2>
+    <p class="sub" style="text-align:center">The weights, the SDKs, and the model card are all public. If the numbers hold up on your image distribution, the price is already on this page.</p>
+    <div class="cta">
+      <a class="btn primary" href="https://github.com/bmoldo/carvision/releases/tag/v5.13.0">Download v5.13.0</a>
+      <a class="btn" href="mailto:bogdanmoldovan29@gmail.com?subject=AutoVision%20evaluation">Start a 30-day evaluation</a>
+    </div>
+  </div>
+</section>
+
+</main>
 
 <footer>
   <div class="wrap">
     <div>© 2026 AutoVision · Bogdan Moldovan — dual-licensed: <a href="https://github.com/bmoldo/carvision/blob/main/LICENSE">PolyForm Noncommercial 1.0.0</a> / <a href="https://github.com/bmoldo/carvision/blob/main/LICENSE-COMMERCIAL.md">commercial</a></div>
-    <div><a href="https://github.com/bmoldo/carvision">GitHub</a> · <a href="https://github.com/bmoldo/carvision/releases/tag/v5.13.0">Model weights</a> · <a href="mailto:bogdanmoldovan29@gmail.com">Contact</a></div>
+    <div><a href="https://github.com/bmoldo/carvision">GitHub</a> · <a href="https://github.com/bmoldo/carvision/releases/tag/v5.13.0">Model weights</a> · <a href="https://github.com/bmoldo/carvision/blob/main/docs/MODEL_CARD.md">Model card</a> · <a href="mailto:bogdanmoldovan29@gmail.com">Contact</a></div>
   </div>
 </footer>
 
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+  /* copy button on code blocks — added only when JS runs */
+  document.querySelectorAll('pre[data-copy]').forEach(function(pre){
+    if(!navigator.clipboard) return;
+    var btn=document.createElement('button');
+    btn.className='copybtn';btn.type='button';btn.textContent='Copy';
+    btn.setAttribute('aria-label','Copy code to clipboard');
+    btn.addEventListener('click',function(){
+      navigator.clipboard.writeText(pre.querySelector('code').innerText).then(function(){
+        btn.textContent='Copied ✓';
+        setTimeout(function(){btn.textContent='Copy';},1600);
+      });
+    });
+    pre.parentElement.appendChild(btn);
+  });
+  /* scroll reveal — skipped for reduced motion */
+  var els=document.querySelectorAll('.reveal');
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window)){
+    els.forEach(function(el){el.classList.add('in');});
+    return;
+  }
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}
+    });
+  },{rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(el){
+    /* anything already in the initial viewport shows immediately —
+       the observer only animates what scrolls in later */
+    if(el.getBoundingClientRect().top<window.innerHeight){el.classList.add('in');}
+    else{io.observe(el);}
+  });
+})();
+</script>
 </body>
 </html>

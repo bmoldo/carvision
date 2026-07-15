@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bmoldo.github.io/carvision/sitemap.xml
