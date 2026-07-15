@@ -19,6 +19,8 @@ AutoVision is a production-ready car recognition engine powered by EfficientNet-
 
 **Accuracy: 93.85% top-1 / 97.88% top-5** on a clean held-out validation set (21,381 images, 897 classes). See [docs/MODEL_CARD.md](docs/MODEL_CARD.md) for full details and limitations.
 
+> **New integrator?** The step-by-step zero-to-first-classification guide (weights download + verification, Python SDK, Docker API, Android, production checklist, troubleshooting) is [docs/GETTING_STARTED.md](docs/GETTING_STARTED.md).
+
 ## Quick Start
 
 ### Python SDK
@@ -95,7 +97,7 @@ Full endpoint reference: [docs/API.md](docs/API.md).
 
 Full details, intended use, and honest limitations: [docs/MODEL_CARD.md](docs/MODEL_CARD.md).
 
-> Model weights are not included in this repo (44 MB). Release metadata (`models/v5.13.0/*.json`) is tracked; weights are distributed via GitHub Releases or on request.
+> **Download the weights:** [Release v5.13.0](https://github.com/bmoldo/carvision/releases/tag/v5.13.0) — FP16 TFLite (44 MB), Core ML package, metadata, and SHA-256 checksums. Drop them into `models/v5.13.0/` and you're ready. The weights are dual-licensed like the code: free for non-commercial use, commercial use requires a [license](LICENSE-COMMERCIAL.md).
 
 ## Project Structure
 
@@ -104,20 +106,41 @@ AutoVision/
 ├── sdk/                # Drop-in SDKs (Android, Python, JS)
 ├── api/                # Self-hosted FastAPI server
 ├── examples/           # Usage examples
+├── usecases/           # End-to-end business scenarios with runnable scripts
 ├── models/
 │   └── v5.13.0/        # Release metadata: manifest, class mapping, confusion pairs
 └── docs/
+    ├── GETTING_STARTED.md  # Zero-to-first-classification guide
     ├── API.md          # REST API reference
     ├── MODEL_CARD.md   # Model card: capabilities, limitations, evaluation
     ├── FEATURES.md     # Feature overview
     └── DEPLOYMENT.md   # Deployment guide
 ```
 
+## Use Cases
+
+Worked, end-to-end scenarios with runnable scripts against the real contract live in [`usecases/`](usecases/README.md): marketplace listing autofill, dealer inventory batch tagging, insurance claims photo intake, ANPR/parking enrichment, a mobile car-spotting app pattern, and fleet yard audits — each showing which integration surface to use and how to handle rejections in that context.
+
+## Pricing
+
+Personal, research, and noncommercial use is **free**. Commercial use is licensed with published, self-serve pricing — no "contact sales" wall for standard tiers. Annual billing gets 2 months free.
+
+| Tier | Price | Covers |
+|---|---|---|
+| **Evaluation** | Free (30 days) | Full commercial evaluation, non-production |
+| **Self-Hosted API — Starter** | **$99 / month** | 1 production instance, up to 100k images/month |
+| **Self-Hosted API — Business** | **$299 / month** | Up to 3 instances, 500k images/month, priority support |
+| **On-Device SDK — Indie** | **$1,990 / year** | 1 app, unlimited devices, companies under $1M revenue |
+| **On-Device SDK — Standard** | **$4,990 / year** | 1 app, unlimited devices, no revenue cap, day-one model releases |
+| **Enterprise / OEM** | Contact us | Air-gapped, OEM/redistribution, custom classes, SLAs |
+
+Every paid license includes a **license-continuity clause**: if AutoVision ceases operations, your license converts to a perpetual license for the model version you deployed. Full terms: [LICENSE-COMMERCIAL.md](LICENSE-COMMERCIAL.md) · Website: [bmoldo.github.io/carvision](https://bmoldo.github.io/carvision/) · Contact: **bogdanmoldovan29@gmail.com**
+
 ## License
 
 AutoVision is **source-available** under a dual license:
 
 - **Personal, research, and noncommercial use** — free under the [PolyForm Noncommercial License 1.0.0](LICENSE)
-- **Commercial use** (revenue-generating products, or internal use at a for-profit company) — requires a paid license, see [LICENSE-COMMERCIAL.md](LICENSE-COMMERCIAL.md)
+- **Commercial use** (revenue-generating products, or internal use at a for-profit company) — requires a paid license, see [LICENSE-COMMERCIAL.md](LICENSE-COMMERCIAL.md) and the [pricing table](#pricing) above
 
 This is not an OSI-approved open-source license. Model weights are covered by the same dual terms as the code. Commercial inquiries: **bogdanmoldovan29@gmail.com**.
